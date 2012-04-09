@@ -1,0 +1,240 @@
+label
+  :font-weight bold
+input
+  :margin 0.5em 0
+  :width 300px
+  :padding 5px
+textarea
+  :margin 0.5em 0
+  :width 390px
+  :height 250px
+  :padding 5px
+select
+  :margin 0
+fieldset
+  :padding 1.4em 1.8em 1.8em
+  :margin 0 0 1.5em 0
+  :border-top 1px solid #D4D4D2
+  :border-right 1px solid #b4b3b0
+  :border-bottom 1px solid #b4b3b0
+  :border-left 1px solid #D4D4D2
+  :background #fcfcfc
+  label
+    :line-height 1.1em !important
+    :font-weight normal
+  input
+    :color #222222 
+    :font-size 16px !important
+    :font-weight bold 
+    :padding 3px 
+    :margin .3em 0
+  fieldset
+    :margin 1.5em 0 0 0
+    legend
+      :font-size 1.2em
+      :margin-left 45px
+legend
+  :padding 0px 8px 
+  :font
+    :weight bold
+    :size 1.5em
+    :letter-spacing -1px !important
+    :family "Calibri","Helvetica Neue", Helvetica, Arial, sans-serif
+form
+  ol
+    :margin 0 
+    :padding 0
+    li
+      :list-style none 
+      :padding 5px 0px
+      :margin 0
+  label
+    :color #232323
+    :width 110px
+    :font-size .8em
+    :display inline-block
+    :line-height 1.8
+    :vertical-align middle
+  select
+    :font-size .78em
+    :width 150px
+    :padding 1px
+  input
+    :font-size .8em
+    :padding 4px
+    :width 440px
+  textarea
+    :width 440px
+  em
+    :font
+      :weight bold 
+      :style normal 
+    :color #D12F19 
+
+// ==== signup & login pages ==== >
+fieldset#account
+  label
+    :text-align right
+    :margin-right 18px
+    :width 120px
+  input
+    :width 340px
+  span
+    :text-align left
+    :padding-left 146px
+    :color #7d7d7d
+    :font
+      :size 10px
+      :weight normal
+  .buttons
+    :margin 20px 0px 0px 143px
+
+
+// ==== signup & login pages ==== >
+form#new_user, 
+form#new_user_session
+  :margin 0px auto 0px
+  h2
+    :text-align center
+    :margin-bottom 15px
+  label 
+    :width 90px
+    :line-height .9em
+  fieldset
+    :padding 1.8em
+    :margin-bottom 10px
+    :border 8px solid #a1c47e
+    :background #fff url(/images/login-head.gif) no-repeat bottom right
+  li
+    :clear both
+    :padding 0px
+    :margin 0px 0px 4px
+  .buttons
+    :margin-top 15px
+    &.small
+      :margin-top 0px
+  a#normal-login, a#normal-signup
+    :display none
+  img.openicon
+    :margin 0px 3px -2px 0px
+
+// ==== signup page ==== >
+form#new_user 
+  :width 480px      
+  input
+    :width 390px
+    &#user_openid_identifier
+      :width 390px
+  label
+    :width 200px
+  .error-with-field
+    :display inline
+    .error
+      :width 312px
+      :float left
+  #open_id
+    :border 1px solid #AFC75D
+    :width 402px
+    #open_id_header
+      :background #E6EFC2 url(/images/open_id_header.gif) repeat-x scroll center bottom
+      :color #437A0E
+      :font-size .8em
+      :padding 8px 12px
+      a
+        :float right
+    #providers
+      :padding 5px
+      :clear both
+      :color #000
+      :background-color #fff
+      a
+        :width 33%
+        :font-size .8em
+        :float left
+        :background-color #fff
+        :text-decoration none
+      
+// ==== login page ==== >
+form#new_user_session
+  :width 480px
+  .error-with-field
+    :display inline
+    .error
+      :width 383px
+      :float left      
+  input
+    &#user_session_email
+      :width 390px
+    &#user_session_password
+      :width 245px
+    &#user_session_openid_identifier
+      :width 390px
+    &#openid_username
+      :width 390px
+  #open_id
+    :border 1px solid #AFC75D
+    :width 402px
+    :clear both
+    #open_id_header
+      :background #E6EFC2 url(/images/open_id_header.gif) repeat-x scroll center bottom
+      :color #437A0E
+      :font-size .8em
+      :padding 8px 12px
+      a
+        :float right
+    #providers
+      :padding 5px
+      :clear both
+      :color #000
+      :background-color #fff
+      a
+        :width 33%
+        :font-size .8em
+        :float left
+        :background-color #fff
+        :text-decoration none
+
+// ==== other forms ==== >
+select#user_timezone
+  :width 354px
+  :padding 2px
+  :font-size 12px
+select#project_id
+  :font-size 10px
+  :margin-top -1px
+  :width 180px
+  :padding 2px  
+#insetbox
+  :margin-top 20px
+  :padding 4px 14px 2px
+  :background #EBEFF5 none repeat scroll 0 0
+  :border-left 1px solid #BDC8D8
+  :border-right 1px solid #BDC8D8
+  :border-top 1px solid #BDC8D8
+  :height 75px
+  p
+    :text-align center
+    :font-weight bold
+  label
+    :width 405px
+    :color #3e6193
+    :font-size 12px
+    :margin-bottom 1px
+  span#accepted
+    :font-weight normal
+#projects
+  input#project_name
+    :width 418px
+  input#project_rate
+    :width 65px
+  input#email
+    :width 404px
+    :height 19px
+#login_toggle
+  :margin-right 25px
+  :font-size 11px
+  a
+    :text-decoration none
+    :border-bottom 1px solid #c5c5c5
+    &:hover
+      :border-bottom 2px solid #b4b4b4

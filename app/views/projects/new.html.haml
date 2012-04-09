@@ -1,0 +1,14 @@
+#admin
+  #top
+    %h1 Create a new project
+  #main
+    - form_for(@project) do |f|
+      %fieldset
+        .errors= f.error_messages
+        %ol
+          %li.required
+            = f.label :name
+            = f.text_field :name, :size => 35, :class => 'limit'
+        .buttons
+          %button{:type => "submit"} Save
+          = link_to 'Cancel', projects_path, :class => 'negative'

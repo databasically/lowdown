@@ -1,0 +1,32 @@
+- prefix = "feature[tree][elements][]"
+%li.edit_scenario{:id => scenario_dom_id(@feature, index)}
+  .box
+    .inner
+      %ol
+        %li
+          .handle{:style => "display:none"}= image_tag "draggy.png", :alt => "Move"
+          %label{:for => "#{scenario_dom_id(@feature, index)}_name"} SCENARIO
+          = text_field_tag "#{prefix}[name]", form_feature_element.name, :class => "scenario_name", :id => "#{scenario_dom_id(@feature, index)}_name"
+          %label{:style => "width:55px"} HOURS
+          = text_field_tag "#{prefix}[comments][]", form_feature_element.comments.try(:first).try(:sub, /^#\s*/, ''), :id => "#{scenario_dom_id(@feature, index)}_estimate", :style => "width:30px;"
+          = hidden_field_tag "#{prefix}[line]", form_feature_element.line
+          = hidden_field_tag "#{prefix}[type]", form_feature_element[:type]
+        - form_feature_element.steps.andand.each_with_index do |step, sindex|
+          - step_id = "#{scenario_dom_id(@feature, index)}_step_#{sindex+1}"
+          %li{:id => step_id}
+            .handle{:style => "display:none"}= image_tag "draggy.png", :alt => "Move"
+            .buttons
+              %a.negative{:rel => 'remove', :href => "##{step_id}", :title => "Remove this step" }
+                X
+            = select_tag "#{prefix}[steps][][keyword]", options_for_select(%w{Given When Then And But}, step.keyword)
+            = text_field_tag "#{prefix}[steps][][name]", step.name
+            = hidden_field_tag "#{prefix}[steps][][line]", step.line
+        %li.add
+          .buttons
+            %a{ :rel => "add", :href => "#", :title => "Add another step" }
+              add new step
+            %a#remove_scenario.negative{ :rel => "remove", :href => "##{scenario_dom_id(@feature, index)}", :title => "Remove this scenario"}
+              remove scenario
+            .clear
+
+  .clear

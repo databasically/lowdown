@@ -1,0 +1,15 @@
+Tue Apr 21 11:42:57 PDT 2009  cygnus@janrain.com
+  tagged 2.1.6
+  Ignore-this: b97ef05fbb348ace2f86513a5de7db46
+
+Tue Apr 21 11:42:54 PDT 2009  cygnus@janrain.com
+  * Set version to 2.1.6
+  Ignore-this: 992c07fd2dca61765d11f90167008ebd
+
+Mon Apr 20 12:57:11 PDT 2009  cygnus@janrain.com
+  * Consumer: require that op_endpoint be signed in id_res responses
+  Ignore-this: a0fbd71a105194bac2624f7cff8a3e7a
+
+Fri Apr 17 11:05:55 PDT 2009  cygnus@janrain.com
+  tagged 2.1.5
+  Ignore-this: 5f2efd8e91589c54cb0833b6379b9cfa

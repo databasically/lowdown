@@ -1,0 +1,22 @@
+%li.edit_feature
+  .box
+    .inner
+      %ol
+        %li
+          %label{:for => "#{dom_id(@feature)}_name"} FEATURE
+          = text_field_tag "feature[tree][name]", @feature.name, :id => "#{dom_id(@feature)}_name"
+        - @feature.tree_mash.value_prop.andand.each_with_index do |value_prop, index|
+          - vp_id = "#{dom_id(@feature)}_vp_#{index+1}"
+          %li{:id => vp_id}
+            .handle{:style => "display:none"}= image_tag "draggy.png", :alt => "Move"
+            .buttons
+              %a.negative{:rel => "remove", :href => "##{vp_id}", :title => "Remove this line" } X
+            = select_tag "feature[tree][value_prop][][label]", options_for_select(["","In order to", "As a", "I want"], value_prop.label)
+            = text_field_tag "feature[tree][value_prop][][value]", value_prop.value
+        %li.add
+          .buttons
+            %a{ :href => "#", :title => "Add another line" }
+              add new line
+            .clear
+      
+  .clear

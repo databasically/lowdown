@@ -1,0 +1,365 @@
+--- 
+- :feature
+- features/authentication.feature
+- |-
+  Feature: Authentication
+    As a student, teacher, staff member, or administrator
+    I want to login to my account
+    In order to interact with other members
+- - :scenario_outline
+  - "Scenario Outline:"
+  - Successful authentication with email
+  - - :step
+    - 7
+    - Given
+    - a <type> named "<first name> <last name>" with email <email> and password "<password>"
+  - - :step
+    - 8
+    - And
+    - I am on the login screen
+  - - :step
+    - 9
+    - When
+    - I fill in "login" with "<email>"
+  - - :step
+    - 10
+    - And
+    - I fill in "password" with "<password>"
+  - - :step
+    - 11
+    - And
+    - I press "Login to Schoolbinder"
+  - - :step
+    - 12
+    - Then
+    - I should see "You are logged in"
+  - - :examples
+    - "Examples:"
+    - ""
+    - - :table
+      - - :row
+        - 15
+        - - :cell
+          - type
+        - - :cell
+          - email
+        - - :cell
+          - first name
+        - - :cell
+          - last name
+        - - :cell
+          - password
+      - - :row
+        - 16
+        - - :cell
+          - student
+        - - :cell
+          - joe@school.edu
+        - - :cell
+          - Joe
+        - - :cell
+          - Smith
+        - - :cell
+          - testing123
+      - - :row
+        - 17
+        - - :cell
+          - teacher
+        - - :cell
+          - jane@school.edu
+        - - :cell
+          - Jane
+        - - :cell
+          - Brown
+        - - :cell
+          - testing456
+      - - :row
+        - 18
+        - - :cell
+          - staff
+        - - :cell
+          - mark@school.edu
+        - - :cell
+          - Mark
+        - - :cell
+          - White
+        - - :cell
+          - testing789
+      - - :row
+        - 19
+        - - :cell
+          - admin
+        - - :cell
+          - paul@school.edu
+        - - :cell
+          - Paul
+        - - :cell
+          - Greene
+        - - :cell
+          - testing098
+- - :scenario_outline
+  - "Scenario Outline:"
+  - Unsuccessful authentication
+  - - :step
+    - 22
+    - Given
+    - a <type> named "<first name> <last name>" with email <email> and password "<password>"
+  - - :step
+    - 23
+    - And
+    - I am on the login screen
+  - - :step
+    - 24
+    - When
+    - I fill in "login" with "<email>"
+  - - :step
+    - 25
+    - And
+    - I fill in "password" with "not the real password"
+  - - :step
+    - 26
+    - And
+    - I press "Login to Schoolbinder"
+  - - :step
+    - 27
+    - Then
+    - I should not see "You are logged in"
+  - - :step
+    - 28
+    - And
+    - I should see "Couldn't log you in as '<email>'"
+  - - :examples
+    - "Examples:"
+    - ""
+    - - :table
+      - - :row
+        - 31
+        - - :cell
+          - type
+        - - :cell
+          - email
+        - - :cell
+          - first name
+        - - :cell
+          - last name
+        - - :cell
+          - password
+      - - :row
+        - 32
+        - - :cell
+          - student
+        - - :cell
+          - joe@school.edu
+        - - :cell
+          - Joe
+        - - :cell
+          - Smith
+        - - :cell
+          - testing123
+      - - :row
+        - 33
+        - - :cell
+          - teacher
+        - - :cell
+          - jane@school.edu
+        - - :cell
+          - Jane
+        - - :cell
+          - Brown
+        - - :cell
+          - testing456
+      - - :row
+        - 34
+        - - :cell
+          - staff
+        - - :cell
+          - mark@school.edu
+        - - :cell
+          - Mark
+        - - :cell
+          - White
+        - - :cell
+          - testing789
+      - - :row
+        - 35
+        - - :cell
+          - admin
+        - - :cell
+          - paul@school.edu
+        - - :cell
+          - Paul
+        - - :cell
+          - Greene
+        - - :cell
+          - testing098
+- - :scenario_outline
+  - "Scenario Outline:"
+  - Forgot password
+  - - :step
+    - 38
+    - Given
+    - a <type> named "<first name> <last name>" with email <email> and password "<password>"
+  - - :step
+    - 39
+    - And
+    - I am on the login screen
+  - - :step
+    - 40
+    - When
+    - I follow "I forgot my password"
+  - - :step
+    - 41
+    - And
+    - I should see "Did you forget your password?"
+  - - :step
+    - 42
+    - And
+    - I should see "Email"
+  - - :step
+    - 43
+    - And
+    - I fill in "Email" with "<email>"
+  - - :step
+    - 44
+    - And
+    - I press "Send me my password"
+  - - :step
+    - 45
+    - Then
+    - I should see "Your password has been sent to the email address we have on file"
+  - - :step
+    - 46
+    - And
+    - I should be on the login screen
+  - - :step
+    - 47
+    - And
+    - "\"<email>\" should get an email with subject \"Your new password\""
+  - - :examples
+    - "Examples:"
+    - ""
+    - - :table
+      - - :row
+        - 50
+        - - :cell
+          - type
+        - - :cell
+          - email
+        - - :cell
+          - first name
+        - - :cell
+          - last name
+        - - :cell
+          - password
+      - - :row
+        - 51
+        - - :cell
+          - student
+        - - :cell
+          - joe@school.edu
+        - - :cell
+          - Joe
+        - - :cell
+          - Smith
+        - - :cell
+          - testing123
+      - - :row
+        - 52
+        - - :cell
+          - teacher
+        - - :cell
+          - jane@school.edu
+        - - :cell
+          - Jane
+        - - :cell
+          - Brown
+        - - :cell
+          - testing456
+      - - :row
+        - 53
+        - - :cell
+          - staff
+        - - :cell
+          - mark@school.edu
+        - - :cell
+          - Mark
+        - - :cell
+          - White
+        - - :cell
+          - testing789
+      - - :row
+        - 54
+        - - :cell
+          - admin
+        - - :cell
+          - paul@school.edu
+        - - :cell
+          - Paul
+        - - :cell
+          - Greene
+        - - :cell
+          - testing098
+- - :scenario
+  - 56
+  - "Scenario:"
+  - Forgot password with bad email
+  - - :step_invocation
+    - 57
+    - Given
+    - I am on the login screen
+  - - :step_invocation
+    - 58
+    - When
+    - I follow "I forgot my password"
+  - - :step_invocation
+    - 59
+    - And
+    - I should see "Did you forget your password?"
+  - - :step_invocation
+    - 60
+    - And
+    - I should see "Email"
+  - - :step_invocation
+    - 61
+    - And
+    - I fill in "Email" with "this-is-bogus@school.edu"
+  - - :step_invocation
+    - 62
+    - And
+    - I press "Send me my password"
+  - - :step_invocation
+    - 63
+    - Then
+    - I should see "Your email wasn't recognized. Please try again."
+- - :scenario
+  - 65
+  - "Scenario:"
+  - Student logs in with student id
+  - - :step_invocation
+    - 66
+    - Given
+    - a student named "Bob Jones" with email bob@school.edu and password "testing123"
+  - - :step_invocation
+    - 67
+    - And
+    - the student has ID "123456"
+  - - :step_invocation
+    - 68
+    - And
+    - I am on the login screen
+  - - :step_invocation
+    - 69
+    - When
+    - I fill in "Email" with "123456"
+  - - :step_invocation
+    - 70
+    - And
+    - I fill in "Password" with "testing123"
+  - - :step_invocation
+    - 71
+    - And
+    - I press "Login to Schoolbinder"
+  - - :step_invocation
+    - 72
+    - Then
+    - I should see "You are logged in"

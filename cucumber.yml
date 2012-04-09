@@ -1,0 +1,2 @@
+default: -r features/support -r features/modes/headless.rb -r features/step_definitions
+selenium: -r features/support -r features/modes/selenium.rb -r features/step_definitions

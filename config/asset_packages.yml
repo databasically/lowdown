@@ -1,0 +1,18 @@
+--- 
+javascripts: 
+- base: 
+  - jquery.autocomplete
+  - jquery.scroll
+  - jquery.livequery
+  - jquery.template
+  - jquery.form
+  - jquery.status
+  - jquery.jeditable
+  - application
+stylesheets: 
+- base: 
+  - reset
+  - grid
+  - buttons
+  - text
+  - application

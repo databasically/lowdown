@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  hash: 
+  formatted: MyText
+  project_id: 1
+  position: 1
+
+two:
+  name: MyString
+  hash: 
+  formatted: MyText
+  project_id: 1
+  position: 1

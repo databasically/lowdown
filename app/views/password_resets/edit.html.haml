@@ -1,0 +1,19 @@
+#lowdown
+  %a{:href => "http://lowdownapp.com"}
+    %img{:src => "/images/logo-login.jpg"}/
+- if flash[:notice]
+  %p.notice= flash[:notice]
+- form_tag password_reset_path(@user.perishable_token), :id => "new_user_session", :method => :put do
+  %fieldset#normal-login
+    %h2 Change your password
+    - fields_for @user do |f|
+      %ol
+        %li.required
+          = f.label :password
+          = f.password_field :password
+        %li.required
+          = f.label :password_confirmation, "Password (again)"
+          = f.password_field :password_confirmation
+    .buttons
+      %button{:type => "submit"}
+        Change password

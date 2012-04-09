@@ -1,0 +1,20 @@
+#lowdown
+  %a{:href => "http://lowdownapp.com"}
+    %img{:src => "/images/logo-login.jpg"}/
+- form_for @user, :url => accept_path(params[:token]), :html => {:id => "new_user"} do |f|
+  %fieldset#normal-signup
+    %h2 Please set your name and password
+    %ol
+      %li.required
+        = f.label :fullname, "Your full name"
+        = f.text_field :fullname
+      %li.required
+        = f.label :password
+        = f.password_field :password
+      %li.required
+        = f.label :password_confirmation, "Password (again)"
+        = f.password_field :password_confirmation
+    .buttons
+      %button{:type => "submit"}
+        Submit
+  

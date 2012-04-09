@@ -1,0 +1,44 @@
+#admin
+  #top
+    - if false
+      %p.negative= "error message"
+      .clear
+    - if flash[:notice]
+      %p.notice=flash[:notice]
+      .clear
+    %h1 Account
+  #main
+    - form_for current_user, :url => profile_url do |f|
+      %fieldset#account
+        %ol
+          %li.optional
+            = f.label :fullname, "Your full name"
+            = f.text_field :fullname
+            - if current_user.fullname.blank?
+              %small.error &bull; Please provide your name
+          %li.required
+            = f.label :email
+            = f.text_field :email
+            - if current_user.email.blank?
+              %small.error &bull; Please provide your email
+          %li.optional
+            = f.label :timezone, "Time zone"
+            = f.time_zone_select :timezone, ActiveSupport::TimeZone::US_ZONES
+          %li.required
+            = f.label :password, "Password"
+            = f.password_field :password, :value => '', :style => "margin-bottom:0px"
+            %span
+              Leave blank to remain unchanged
+          %li.required
+            = f.label :password_confirmation, "Password (again)"
+            = f.password_field :password_confirmation, :value => '', :style => "margin:0px"
+            %span
+              Enter your password again for verification
+
+          %li.required
+            = f.label :openid_identifier, "#{image_tag('openid-16x16.gif')} OpenID URL"
+            = f.text_field :openid_identifier
+        .buttons
+          %button.positive{:type => "submit", :style => "padding: 5px 10px 6px;"}
+            %img{:src => "/images/tick.png"}/
+            Save changes to my account

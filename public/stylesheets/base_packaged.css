@@ -1,0 +1,509 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline}
+*:focus {outline: 0}
+body {line-height: 1em; color: black; background: #fff}
+ol, ul {list-style: none}
+ table {border-collapse: separate; border-spacing: 0; vertical-align: middle}
+caption, th, td {text-align: left; font-weight: normal; vertical-align: middle}
+q, blockquote {quotes: "" ""}
+q:before, q:after, blockquote:before, blockquote:after {content: ""}
+img a {border: none}
+ .grid-12 {margin-left: auto; margin-right: auto; width: 960px}
+ .grid-12 .cols-1, .grid-12 .cols-2, .grid-12 .cols-3, .grid-12 .cols-4, .grid-12 .cols-5, .grid-12 .cols-6, .grid-12 .cols-7, .grid-12 .cols-8, .grid-12 .cols-9, .grid-12 .cols-10, .grid-12 .cols-11, .grid-12 .cols-12 {display: inline; float: left; margin-left: 20px; margin-right: 20px}
+ .grid-12 .cols-1 {width: 60px}
+ .grid-12 .cols-2 {width: 140px}
+ .grid-12 .cols-3 {width: 220px}
+ .grid-12 .cols-4 {width: 300px}
+ .grid-12 .cols-5 {width: 380px}
+ .grid-12 .cols-6 {width: 460px}
+ .grid-12 .cols-7 {width: 540px}
+ .grid-12 .cols-8 {width: 620px}
+ .grid-12 .cols-9 {width: 700px}
+ .grid-12 .cols-10 {width: 780px}
+ .grid-12 .cols-11 {width: 860px}
+ .grid-12 .cols-12 {width: 940px}
+ .grid-12 .prefix-1 {padding-left: 80px}
+ .grid-12 .prefix-2 {padding-left: 160px}
+ .grid-12 .prefix-3 {padding-left: 240px}
+ .grid-12 .prefix-4 {padding-left: 320px}
+ .grid-12 .prefix-5 {padding-left: 400px}
+ .grid-12 .prefix-6 {padding-left: 480px}
+ .grid-12 .prefix-7 {padding-left: 560px}
+ .grid-12 .prefix-8 {padding-left: 640px}
+ .grid-12 .prefix-9 {padding-left: 720px}
+ .grid-12 .prefix-10 {padding-left: 800px}
+ .grid-12 .prefix-11 {padding-left: 880px}
+ .grid-12 .suffix-1 {padding-right: 80px}
+ .grid-12 .suffix-2 {padding-right: 160px}
+ .grid-12 .suffix-3 {padding-right: 240px}
+ .grid-12 .suffix-4 {padding-right: 320px}
+ .grid-12 .suffix-5 {padding-right: 400px}
+ .grid-12 .suffix-6 {padding-right: 480px}
+ .grid-12 .suffix-7 {padding-right: 560px}
+ .grid-12 .suffix-8 {padding-right: 640px}
+ .grid-12 .suffix-9 {padding-right: 720px}
+ .grid-12 .suffix-10 {padding-right: 800px}
+ .grid-12 .suffix-11 {padding-right: 880px}
+ #main {display: inline; float: left; margin-left: 20px; margin-right: 20px; width: 760px; margin-left: 0}
+ #sidebar {width: 165px; float: right; margin-left: 15px; margin-right: 0}
+ #admin #main {display: inline; float: left; margin-left: 20px; margin-right: 20px; width: 700px; margin-left: 0}
+ #admin #sidebar {display: inline; float: left; margin-left: 20px; margin-right: 20px; width: 220px; margin-right: 0}
+ .container {margin-left: auto; margin-right: auto; width: 960px}
+ #sidebar #plans {display: inline; float: left; margin-left: 20px; margin-right: 20px; width: 220px; margin: 0px}
+ #plans {margin-left: auto; margin-right: auto; width: 960px}
+ #plans .cols-1, #plans .cols-2, #plans .cols-3, #plans .cols-4, #plans .cols-5, #plans .cols-6, #plans .cols-7, #plans .cols-8, #plans .cols-9, #plans .cols-10, #plans .cols-11, #plans .cols-12 {display: inline; float: left; margin-left: 20px; margin-right: 20px}
+ #plans .cols-1 {width: 60px}
+ #plans .cols-2 {width: 140px}
+ #plans .cols-3 {width: 220px}
+ #plans .cols-4 {width: 300px}
+ #plans .cols-5 {width: 380px}
+ #plans .cols-6 {width: 460px}
+ #plans .cols-7 {width: 540px}
+ #plans .cols-8 {width: 620px}
+ #plans .cols-9 {width: 700px}
+ #plans .cols-10 {width: 780px}
+ #plans .cols-11 {width: 860px}
+ #plans .cols-12 {width: 940px}
+ #plans .prefix-1 {padding-left: 80px}
+ #plans .prefix-2 {padding-left: 160px}
+ #plans .prefix-3 {padding-left: 240px}
+ #plans .prefix-4 {padding-left: 320px}
+ #plans .prefix-5 {padding-left: 400px}
+ #plans .prefix-6 {padding-left: 480px}
+ #plans .prefix-7 {padding-left: 560px}
+ #plans .prefix-8 {padding-left: 640px}
+ #plans .prefix-9 {padding-left: 720px}
+ #plans .prefix-10 {padding-left: 800px}
+ #plans .prefix-11 {padding-left: 880px}
+ #plans .suffix-1 {padding-right: 80px}
+ #plans .suffix-2 {padding-right: 160px}
+ #plans .suffix-3 {padding-right: 240px}
+ #plans .suffix-4 {padding-right: 320px}
+ #plans .suffix-5 {padding-right: 400px}
+ #plans .suffix-6 {padding-right: 480px}
+ #plans .suffix-7 {padding-right: 560px}
+ #plans .suffix-8 {padding-right: 640px}
+ #plans .suffix-9 {padding-right: 720px}
+ #plans .suffix-10 {padding-right: 800px}
+ #plans .suffix-11 {padding-right: 880px}
+ #plans #one {display: inline; float: left; margin-left: 20px; margin-right: 20px; width: 300px; margin-left: 0; margin-right: 15px}
+ #plans #two {display: inline; float: left; margin-left: 20px; margin-right: 20px; width: 300px; margin-left: 15px; margin-right: 15px}
+ #plans #three {display: inline; float: left; margin-left: 20px; margin-right: 20px; width: 300px; margin-left: 15px; margin-right: 0}
+ .value {width: 580px; margin: 0px; float: left}
+ .cost {width: 90px; margin: 0px; float: left; text-align: center}
+ .buttons a, .buttons button {-moz-background-clip: border; -moz-background-inline-policy: continuous; -moz-background-origin: padding; -moz-border-radius-bottomleft: 10px; -moz-border-radius-bottomright: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); -webkit-border-radius: 10px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.15); border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.15); background: #EAEAEA url(/images/buttongradient.png) repeat-x scroll left top; border-color: #bdbdbd #9b9a9a #9b9a9a #bdbdbd; border-style: solid; border-width: 1px; color: #464646; cursor: pointer; display: block; float: left; font-weight: bold; font-family: "Lucida Grande",Tahoma,Arial,sans-serif; font-size: 82%; line-height: 130%; margin: 0 0.7em 0 0; padding: 5px 10px 6px; text-decoration: none}
+ a.button, button.button {-moz-background-clip: border; -moz-background-inline-policy: continuous; -moz-background-origin: padding; -moz-border-radius-bottomleft: 10px; -moz-border-radius-bottomright: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); -webkit-border-radius: 10px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.15); border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.15); background: #EAEAEA url(/images/buttongradient.png) repeat-x scroll left top; border-color: #bdbdbd #9b9a9a #9b9a9a #bdbdbd; border-style: solid; border-width: 1px; color: #464646; cursor: pointer; display: block; float: left; font-weight: bold; font-family: "Lucida Grande",Tahoma,Arial,sans-serif; font-size: 82%; line-height: 130%; margin: 0 0.7em 0 0; padding: 5px 10px 6px; text-decoration: none}
+ a.button, button.button {display: inline-block; float: none}
+ .button.small, .buttons.small {font-size: 75% !important}
+ .button.right, .buttons.right {float: right; margin-right: 0px}
+ .buttons button, button.button {overflow: visible; padding: 4px 10px 3px 7px; width: auto}
+ .buttons button[type], button.button[type] {line-height: 17px; padding: 5px 10px 5px 7px; width: auto}
+ .chrome .buttons button, .chrome button.button {padding: 4px 10px 4px 7px}
+ .buttons button img, .buttons a img {margin: 0 0px -3px 0 !important}
+ a.button img, button.button img {margin: 0 3px -3px 0 !important}
+ .buttons button:hover, .buttons a:hover {border: 1px solid #999999; color: #000000}
+ a.button:hover {border: 1px solid #999999; color: #000000}
+ button.button:hover {border: 1px solid #999999; color: #000000}
+ button.active {-moz-background-clip: border; -moz-background-inline-policy: continuous; -moz-background-origin: padding; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; background: #FFFFFF url(/images/buttongradient.png) repeat-x scroll left top; border-color: #CCCCCC}
+ .buttons a:active, a.button:active {-moz-background-clip: border; -moz-background-inline-policy: continuous; -moz-background-origin: padding; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; background: #FFFFFF url(/images/buttongradient.png) repeat-x scroll left top; border-color: #CCCCCC}
+ button.positive {color: #2e600d; font-weight: bold}
+ a.positive {color: #3f710d; font-weight: bold}
+ a.positive:hover {color: #232323}
+ a.positive:active {-moz-background-clip: border; -moz-background-inline-policy: continuous; -moz-background-origin: padding; background: #719a48 none repeat scroll 0 0; border: 1px solid #719a48; color: #FFFFFF; text-shadow: 1px 1px 1px #607710}
+ a.negative {color: #D12F19}
+ a.negative:hover, button.negative:hover {color: #D12F19}
+ a.negative:active {-moz-background-clip: border; -moz-background-inline-policy: continuous; -moz-background-origin: padding; background: #D12F19 none repeat scroll 0 0; border: 1px solid #D12F19; color: #FFFFFF; text-shadow: 1px 1px 1px #A93816}
+ button.positive:hover {color: #232323}
+ button.negative {color: #D12F19}
+ #cancel .buttons {width: 150px; margin-left: 40px}
+ * html .buttons button[type], * html button.button[type] {margin-bottom: 1px; padding: 4px 10px 3px 7px}
+ * html button.button {margin-bottom: 1px}
+ .icon {height: 16px; width: 16px}
+ label {font-weight: bold}
+ input {margin: 0.5em 0; width: 300px; padding: 5px}
+ textarea {margin: 0.5em 0; width: 390px; height: 250px; padding: 5px}
+ select {margin: 0}
+ fieldset {padding: 1.4em 1.8em 1.8em; margin: 0 0 1.5em 0; border-top: 1px solid #D4D4D2; border-right: 1px solid #b4b3b0; border-bottom: 1px solid #b4b3b0; border-left: 1px solid #D4D4D2; background: #fcfcfc}
+ fieldset label {line-height: 1.1em !important; font-weight: normal}
+ fieldset input {color: #222222; font-size: 16px !important; font-weight: bold; padding: 3px; margin: .3em 0}
+ fieldset fieldset {margin: 1.5em 0 0 0}
+ fieldset fieldset legend {font-size: 1.2em; margin-left: 45px}
+ legend {padding: 0px 8px; font-weight: bold; font-size: 1.5em; font-letter-spacing: -1px !important; font-family: "Calibri","Helvetica Neue", Helvetica, Arial, sans-serif}
+ form ol {margin: 0; padding: 0}
+ form ol li {list-style: none; padding: 5px 0px; margin: 0}
+ form label {color: #232323; width: 110px; font-size: .8em; display: inline-block; line-height: 1.8; vertical-align: middle}
+ form select {font-size: .78em; width: 150px; padding: 1px}
+ form input {font-size: .8em; padding: 4px; width: 440px}
+ form textarea {width: 440px}
+ form em {font-weight: bold; font-style: normal; color: #D12F19}
+ fieldset#account label {text-align: right; margin-right: 18px; width: 120px}
+ fieldset#account input {width: 340px}
+ fieldset#account span {text-align: left; padding-left: 146px; color: #7d7d7d; font-size: 10px; font-weight: normal}
+ fieldset#account .buttons {margin: 20px 0px 0px 143px}
+ form#new_user, form#new_user_session {margin: 0px auto 0px}
+ form#new_user h2, form#new_user_session h2 {text-align: center; margin-bottom: 15px}
+ form#new_user label, form#new_user_session label {width: 90px; line-height: .9em}
+ form#new_user fieldset, form#new_user_session fieldset {padding: 1.8em; margin-bottom: 10px; border: 8px solid #a1c47e; background: #fff url(/images/login-head.gif) no-repeat bottom right}
+ form#new_user li, form#new_user_session li {clear: both; padding: 0px; margin: 0px 0px 4px}
+ form#new_user .buttons, form#new_user_session .buttons {margin-top: 15px}
+ form#new_user .buttons.small, form#new_user_session .buttons.small {margin-top: 0px}
+ form#new_user a#normal-login, form#new_user a#normal-signup, form#new_user_session a#normal-login, form#new_user_session a#normal-signup {display: none}
+ form#new_user img.openicon, form#new_user_session img.openicon {margin: 0px 3px -2px 0px}
+ form#new_user {width: 480px}
+ form#new_user input {width: 390px}
+ form#new_user input#user_openid_identifier {width: 390px}
+ form#new_user label {width: 200px}
+ form#new_user .error-with-field {display: inline}
+ form#new_user .error-with-field .error {width: 312px; float: left}
+ form#new_user #open_id {border: 1px solid #AFC75D; width: 402px}
+ form#new_user #open_id #open_id_header {background: #E6EFC2 url(/images/open_id_header.gif) repeat-x scroll center bottom; color: #437A0E; font-size: .8em; padding: 8px 12px}
+ form#new_user #open_id #open_id_header a {float: right}
+ form#new_user #open_id #providers {padding: 5px; clear: both; color: #000; background-color: #fff}
+ form#new_user #open_id #providers a {width: 33%; font-size: .8em; float: left; background-color: #fff; text-decoration: none}
+ form#new_user_session {width: 480px}
+ form#new_user_session .error-with-field {display: inline}
+ form#new_user_session .error-with-field .error {width: 383px; float: left}
+ form#new_user_session input#user_session_email {width: 390px}
+ form#new_user_session input#user_session_password {width: 245px}
+ form#new_user_session input#user_session_openid_identifier {width: 390px}
+ form#new_user_session input#openid_username {width: 390px}
+ form#new_user_session #open_id {border: 1px solid #AFC75D; width: 402px; clear: both}
+ form#new_user_session #open_id #open_id_header {background: #E6EFC2 url(/images/open_id_header.gif) repeat-x scroll center bottom; color: #437A0E; font-size: .8em; padding: 8px 12px}
+ form#new_user_session #open_id #open_id_header a {float: right}
+ form#new_user_session #open_id #providers {padding: 5px; clear: both; color: #000; background-color: #fff}
+ form#new_user_session #open_id #providers a {width: 33%; font-size: .8em; float: left; background-color: #fff; text-decoration: none}
+ select#user_timezone {width: 354px; padding: 2px; font-size: 12px}
+ select#project_id {font-size: 10px; margin-top: -1px; width: 180px; padding: 2px}
+ #insetbox {margin-top: 20px; padding: 4px 14px 2px; background: #EBEFF5 none repeat scroll 0 0; border-left: 1px solid #BDC8D8; border-right: 1px solid #BDC8D8; border-top: 1px solid #BDC8D8; height: 75px}
+ #insetbox p {text-align: center; font-weight: bold}
+ #insetbox label {width: 405px; color: #3e6193; font-size: 12px; margin-bottom: 1px}
+ #insetbox span#accepted {font-weight: normal}
+ #projects input#project_name {width: 418px}
+ #projects input#project_rate {width: 65px}
+ #projects input#email {width: 404px; height: 19px}
+ #login_toggle {margin-right: 25px; font-size: 11px}
+ #login_toggle a {text-decoration: none; border-bottom: 1px solid #c5c5c5}
+ #login_toggle a:hover {border-bottom: 2px solid #b4b4b4}
+ .error {font-size: 13px; padding: 0.55em 0.8em; margin-bottom: 1em; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; background: #f9d8da; color: #bc180f; border-color: #e3a2a5}
+ .error a {color: #bc180f}
+ .notice {font-size: 13px; padding: 0.55em 0.8em; margin-bottom: 1em; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; background: #f8e89f; color: #b83107; border-color: #e9a438}
+ .notice a {color: #b83107; border-color: #d1b534}
+ .success {font-size: 13px; padding: 0.55em 0.8em; margin-bottom: 1em; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; background: #e0ebb4; color: #3e7805; border-color: #afc75d}
+ .success a {color: #3e7805}
+ .hide {display: none}
+ .highlight {background: yellow}
+ .added {background: #006600; color: white}
+ .removed {background: #990000; color: white}
+ body {font-family: 'Lucida Sans', 'Lucida Grande', Helvetica, Arial, sans-serif; color: #232323; font-style: normal}
+ h1 {font-family: Calibri, Helvetica Neue, Helvetica, Arial, sans-serif; color: #333333; font-style: normal; font-weight: bold; letter-spacing: -.5px; font-size: 24px; line-height: 1.2em; margin-bottom: 0.1em; text-shadow: 1px 1px 0 #fff}
+ h1 img {margin: -8px 0px 0px 0px}
+ h2 {font-family: Calibri, Helvetica Neue, Helvetica, Arial, sans-serif; color: #333333; font-style: normal; font-weight: bold; letter-spacing: -.5px; line-height: 0.8em; color: #232323; font-size: 24px; margin: 0 0 7px; padding: 0}
+ h3 {font-family: Calibri, Helvetica Neue, Helvetica, Arial, sans-serif; color: #333333; font-style: normal; font-weight: bold; font-size: 1.2em; line-height: 1; margin-bottom: 0.1em}
+ h4 {font-family: Calibri, Helvetica Neue, Helvetica, Arial, sans-serif; color: #333333; font-style: normal; font-weight: bold; font-size: 1em; line-height: 1.25; margin-bottom: 0.1em}
+ h5 {font-family: Calibri, Helvetica Neue, Helvetica, Arial, sans-serif; color: #333333; font-style: normal; font-weight: bold; font-size: .8em; font-weight: bold; margin-bottom: 1.5em}
+ h6 {font-family: Calibri, Helvetica Neue, Helvetica, Arial, sans-serif; color: #333333; font-style: normal; font-weight: bold; font-size: .6em; font-weight: bold}
+ h2 img, h3 img, h4 img, h5 img, h6 img {margin: 0}
+ p {font-family: 'Lucida Sans', 'Lucida Grande', Helvetica, Arial, sans-serif; color: #232323; font-style: normal; margin: 0 0 1em; font-size: .8em}
+ p img.left {display: inline; float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0}
+ p img.right {display: inline; float: right; margin: 1.5em 0 1.5em 1.5em; padding: 0}
+ a {color: #b3000c; text-decoration: none; border-bottom: 1px solid #c5c5c5}
+ a:hover {color: #232323}
+ a:active {color: #ff000c}
+ a:hover {border-bottom: 1px solid #b4b4b4}
+ blockquote {margin: 1.5em; color: #666; font-style: italic}
+ strong {font-weight: bold}
+ em {font-style: italic}
+ dfn {font-style: italic; font-weight: bold}
+ sup, sub {line-height: 0}
+ abbr, acronym {border-bottom: 1px dotted #666}
+ address {margin: 0 0 1.5em; font-style: italic}
+ del {color: #666}
+ pre {margin: 1.5em 0; white-space: pre}
+ pre, code, tt {font: 0.85em 'andale mono', 'lucida console', monospace; line-height: 1.3}
+ li ul, li ol {margin: 0 1.5em}
+ ul {margin-left: 0; margin: 0 1.5em 1.5em 1.5em; list-style-type: disc}
+ ul li {padding-left: 14px; background: url('/images/bullet-green.png?1254516676') no-repeat 4.5px 5.5px; list-style-type: none}
+ ol {margin: 0 1.5em 1.5em 1.5em; list-style-type: decimal}
+ dl {margin: 0 0 1.5em 0}
+ dl dt {font-weight: bold}
+ dd {margin-left: 1.5em}
+ table {font-family: 'Lucida Sans', 'Lucida Grande', Helvetica, Arial, sans-serif; color: #232323; font-style: normal; border: 2px solid black; background: #fff; margin-bottom: 1.4em; width: 100%; border-collapse: collapse; font-size: .8em}
+ table thead th {border-bottom: 2px solid black}
+ table tfoot th, table tfoot td {border-top: 2px solid black}
+ table th:first-child {border-right: 2px solid black}
+ table th, table td {border-right: 2px solid black; border-bottom: 2px solid black; border-left-width: 0px; border-top-width: 0px}
+ table th:last-child, table td:last-child, table th.last, table td.last {border-right-width: 0px}
+ table tbody tr:last-child th, table tbody tr:last-child td, table tfoot tr:last-child th, table tfoot tr:last-child td, table tbody tr.last th, table tbody tr.last td, table tfoot tr.last th, table tfoot tr.last td {border-bottom-width: 0px}
+ th {font-weight: bold}
+ thead th {background: #E8F0FC url(/images/header-main.gif) repeat-x scroll center bottom; border-bottom: 1px solid #9CAECC; border-top: 1px solid #9CAECC; color: #2D466E; font-family: "Lucida Grande",Helvetica,Arial,sans-serif; font-size: 12px; letter-spacing: 0; line-height: 18px; padding: 5px 10px; text-align: left; text-transform: none}
+ th, td, caption {padding: 5px 10px}
+ tr {border-bottom: 1px solid #cbcdd3}
+ tr.even td {background: #edecec}
+ tfoot {font-style: italic}
+ caption {background: #eee}
+ .left {display: inline; float: left}
+ .right {display: inline; float: right}
+ .clear {clear: both; font-size: 0; height: 0; line-height: 0}
+ .clearfix:after {clear: both; content: "."; display: block; height: 0; visibility: hidden}
+ * html .clearfix {height: 1%}
+ .clearfix {overflow: hidden; display: inline-block}
+ .clearfix {display: block}
+ label {font-weight: bold}
+ input {margin: 0.5em 0; width: 300px; padding: 5px}
+ textarea {margin: 0.5em 0; width: 390px; height: 250px; padding: 5px}
+ select {margin: 0}
+ fieldset {padding: 1.4em 1.8em 1.8em; margin: 0 0 1.5em 0; border-top: 1px solid #D4D4D2; border-right: 1px solid #b4b3b0; border-bottom: 1px solid #b4b3b0; border-left: 1px solid #D4D4D2; background: #fcfcfc}
+ fieldset label {line-height: 1.1em !important; font-weight: normal}
+ fieldset input {color: #222222; font-size: 16px !important; font-weight: bold; padding: 3px; margin: .3em 0}
+ fieldset fieldset {margin: 1.5em 0 0 0}
+ fieldset fieldset legend {font-size: 1.2em; margin-left: 45px}
+ legend {padding: 0px 8px; font-weight: bold; font-size: 1.5em; font-letter-spacing: -1px !important; font-family: "Calibri","Helvetica Neue", Helvetica, Arial, sans-serif}
+ form ol {margin: 0; padding: 0}
+ form ol li {list-style: none; padding: 5px 0px; margin: 0}
+ form label {color: #232323; width: 110px; font-size: .8em; display: inline-block; line-height: 1.8; vertical-align: middle}
+ form select {font-size: .78em; width: 150px; padding: 1px}
+ form input {font-size: .8em; padding: 4px; width: 440px}
+ form textarea {width: 440px}
+ form em {font-weight: bold; font-style: normal; color: #D12F19}
+ fieldset#account label {text-align: right; margin-right: 18px; width: 120px}
+ fieldset#account input {width: 340px}
+ fieldset#account span {text-align: left; padding-left: 146px; color: #7d7d7d; font-size: 10px; font-weight: normal}
+ fieldset#account .buttons {margin: 20px 0px 0px 143px}
+ form#new_user, form#new_user_session {margin: 0px auto 0px}
+ form#new_user h2, form#new_user_session h2 {text-align: center; margin-bottom: 15px}
+ form#new_user label, form#new_user_session label {width: 90px; line-height: .9em}
+ form#new_user fieldset, form#new_user_session fieldset {padding: 1.8em; margin-bottom: 10px; border: 8px solid #a1c47e; background: #fff url(/images/login-head.gif) no-repeat bottom right}
+ form#new_user li, form#new_user_session li {clear: both; padding: 0px; margin: 0px 0px 4px}
+ form#new_user .buttons, form#new_user_session .buttons {margin-top: 15px}
+ form#new_user .buttons.small, form#new_user_session .buttons.small {margin-top: 0px}
+ form#new_user a#normal-login, form#new_user a#normal-signup, form#new_user_session a#normal-login, form#new_user_session a#normal-signup {display: none}
+ form#new_user img.openicon, form#new_user_session img.openicon {margin: 0px 3px -2px 0px}
+ form#new_user {width: 480px}
+ form#new_user input {width: 390px}
+ form#new_user input#user_openid_identifier {width: 390px}
+ form#new_user label {width: 200px}
+ form#new_user .error-with-field {display: inline}
+ form#new_user .error-with-field .error {width: 312px; float: left}
+ form#new_user #open_id {border: 1px solid #AFC75D; width: 402px}
+ form#new_user #open_id #open_id_header {background: #E6EFC2 url(/images/open_id_header.gif) repeat-x scroll center bottom; color: #437A0E; font-size: .8em; padding: 8px 12px}
+ form#new_user #open_id #open_id_header a {float: right}
+ form#new_user #open_id #providers {padding: 5px; clear: both; color: #000; background-color: #fff}
+ form#new_user #open_id #providers a {width: 33%; font-size: .8em; float: left; background-color: #fff; text-decoration: none}
+ form#new_user_session {width: 480px}
+ form#new_user_session .error-with-field {display: inline}
+ form#new_user_session .error-with-field .error {width: 383px; float: left}
+ form#new_user_session input#user_session_email {width: 390px}
+ form#new_user_session input#user_session_password {width: 245px}
+ form#new_user_session input#user_session_openid_identifier {width: 390px}
+ form#new_user_session input#openid_username {width: 390px}
+ form#new_user_session #open_id {border: 1px solid #AFC75D; width: 402px; clear: both}
+ form#new_user_session #open_id #open_id_header {background: #E6EFC2 url(/images/open_id_header.gif) repeat-x scroll center bottom; color: #437A0E; font-size: .8em; padding: 8px 12px}
+ form#new_user_session #open_id #open_id_header a {float: right}
+ form#new_user_session #open_id #providers {padding: 5px; clear: both; color: #000; background-color: #fff}
+ form#new_user_session #open_id #providers a {width: 33%; font-size: .8em; float: left; background-color: #fff; text-decoration: none}
+ select#user_timezone {width: 354px; padding: 2px; font-size: 12px}
+ select#project_id {font-size: 10px; margin-top: -1px; width: 180px; padding: 2px}
+ #insetbox {margin-top: 20px; padding: 4px 14px 2px; background: #EBEFF5 none repeat scroll 0 0; border-left: 1px solid #BDC8D8; border-right: 1px solid #BDC8D8; border-top: 1px solid #BDC8D8; height: 75px}
+ #insetbox p {text-align: center; font-weight: bold}
+ #insetbox label {width: 405px; color: #3e6193; font-size: 12px; margin-bottom: 1px}
+ #insetbox span#accepted {font-weight: normal}
+ #projects input#project_name {width: 418px}
+ #projects input#project_rate {width: 65px}
+ #projects input#email {width: 404px; height: 19px}
+ #login_toggle {margin-right: 25px; font-size: 11px}
+ #login_toggle a {text-decoration: none; border-bottom: 1px solid #c5c5c5}
+ #login_toggle a:hover {border-bottom: 2px solid #b4b4b4}
+ .error {font-size: 13px; padding: 0.55em 0.8em; margin-bottom: 1em; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; background: #f9d8da; color: #bc180f; border-color: #e3a2a5}
+ .error a {color: #bc180f}
+ .notice {font-size: 13px; padding: 0.55em 0.8em; margin-bottom: 1em; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; background: #f8e89f; color: #b83107; border-color: #e9a438}
+ .notice a {color: #b83107; border-color: #d1b534}
+ .success {font-size: 13px; padding: 0.55em 0.8em; margin-bottom: 1em; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; background: #e0ebb4; color: #3e7805; border-color: #afc75d}
+ .success a {color: #3e7805}
+ .hide {display: none}
+ .highlight {background: yellow}
+ .added {background: #006600; color: white}
+ .removed {background: #990000; color: white}
+ body {background: #ebeae7}
+ #header {background: #2c2c2c; border-bottom: 5px solid #9cc276; border-top: 3px solid #1c1c1c; height: 51px}
+ #header #menu, #header #picker {display: inline; float: right; background: #232323; padding: 3px 8px 3px 5px; margin: 8px 0px 0px 0px; height: 28px}
+ #header #menu ul, #header #picker ul {margin: 0}
+ #header #menu ul li, #header #picker ul li {list-style-type: none; background: none; margin-left: 0px}
+ #header #menu ul li, #header #picker ul li {display: inline; float: left; background-image: none; padding: 5px; font-size: 12px; color: #545e53}
+ #header #menu ul li a, #header #picker ul li a {color: #bec6bd; display: block; border-bottom: none; text-decoration: none}
+ #header #menu ul li a:hover, #header #picker ul li a:hover {color: #fff; text-decoration: none; border-bottom: none}
+ #header #menu ul li.active, #header #menu ul li.active:hover, #header #picker ul li.active, #header #picker ul li.active:hover {color: #fff}
+ #header #picker {margin-right: 0px}
+ #header #logo img {float: left}
+ #header #logo h1 {float: left; font-weight: bold; margin: 3px 0px 0px 16px; padding: 0px; font-size: 22px; color: #fff; line-height: 2em; text-shadow: 1px 2px 0 #1C1C1C}
+ #content {min-height: 400px; padding: 25px 0px 60px; background: #ebeae7 url(/images/background.gif) repeat-x scroll left top}
+ #top {margin-bottom: 15px}
+ #top .buttons a {float: left; width: auto; display: inline; text-shadow: 1px 1px 0 #fff}
+ #top .buttons a.negative:active {text-shadow: none}
+ #top h1.folder {padding-left: 40px; margin-left: -40px; height: 28px}
+ #top h1.folder:hover {background: transparent url(/images/edit-folder.png) no-repeat scroll left 2px}
+ #top h1.folder form {padding: 0; margin: 0; position: absolute}
+ #top h1.folder input {margin: -4px 0 0 0px; font-weight: bold; font-size: 17px; height: 20px}
+ #main #projects fieldset {padding: 1em}
+ #main #projects h2 {text-align: center}
+ #main #projects ul {margin: 0px 0px 30px; padding: 0px; border: 1px solid #bfbeba}
+ #main #projects ul li {list-style-type: none; background: none; margin-left: 0px}
+ #main #projects ul li {font-size: 14px; font-weight: bold; text-decoration: none; color: #232323; padding: 9px 13px 9px; border-top: 1px solid #fff; background: #efefef; border-bottom: 1px solid #CCD2CB; display: block; line-height: 1.8em}
+ #main #projects ul li .buttons a {padding: 5px 10px 5px}
+ #main #projects ul li:hover {background: #f7f7f7}
+ #main #projects ul li:last-child {border-bottom: none}
+ #main #projects ul.autocomplete {border: none; position: absolute; background: #BDC8D8 url(/images/triangle.gif) no-repeat -10% 50%; margin: -2px 0px 0px; padding: 6px 6px; width: 300px}
+ #main #projects ul.autocomplete li {color: #232323; margin: 0; padding: 6px 9px; background-color: #fff; font-size: 14px; font-weight: normal}
+ #main #projects ul.autocomplete li.selected {color: white; background-color: navy}
+ #main #projects ul.autocomplete li:hover {color: #B83107; background-color: #fff3bd}
+ #main #projects ul.autocomplete span {display: inline; float: none}
+ #main #projects .buttons a {float: right; font-size: 80%}
+ #main #projects .projects_edit fieldset {padding: 1em 1.25em}
+ #main #projects .projects_edit form ul#users li {padding: 9px 13px !important; line-height: 1.8em}
+ #main #projects .projects_edit form ul#users li .buttons a, #main #projects .projects_edit form ul#users li .buttons button, #main #projects .projects_edit form ul#users li button.button {padding: 5px 10px 5px !important}
+ #main #projects .projects_edit form .buttons a {float: right; font-size: 80% !important; margin-right: 0px}
+ #main #projects .projects_edit .buttons a, #main #projects .projects_edit .buttons button, #main #projects .projects_edit button.button, #main #projects .projects_edit button#update_project {padding: 5px 10px 6px !important; font-size: 82% !important}
+ #main ul {margin: 0}
+ #main ul li {list-style-type: none; background: none; margin-left: 0px}
+ #main ul li.feature {display: block; margin: 0px 0px 10px; padding: 7px; background: #fff none repeat scroll 0 0; border-top: 1px solid #D4D4D2; border-right: 1px solid #b4b3b0; border-bottom: 1px solid #b4b3b0; border-left: 1px solid #D4D4D2}
+ #main ul li.feature#feature_new ul li.top {cursor: auto}
+ #main ul li.feature input {border: 1px solid #BBBBBB}
+ #main ul li.feature .move_corner {float: right; background: transparent url(/images/draggy-light.png) no-repeat top center; height: 19px; width: 19px; margin: 0px}
+ #main ul li.feature .move_corner ul.move_to_page {padding: 0; margin: 0; cursor: move}
+ #main ul li.feature .move_corner ul.move_to_page li {margin: 0; padding: 0; background: none; display: block; height: 19px; width: 19px}
+ #main ul li.feature .move_corner ul.move_to_page li:hover {padding: 0; margin: 0px; background: transparent url(/images/draggy.png) no-repeat center center; display: block; height: 19px; width: 19px; cursor: pointer}
+ #main ul li.feature ul li {padding: 0px}
+ #main ul li.feature ul li.top {margin: 0px; padding: 0px; border-bottom: 1px solid #bdc8d8; cursor: ns-resize}
+ #main ul li.feature ul li.top .value {font-weight: bold; font-family: Calibri, Helvetica Neue, Helvetica, Arial, sans-serif; color: #333333; font-style: normal; font-weight: bold; font-family: "Calibri"; font-size: 20px; padding: 13px 0px 13px 18px}
+ #main ul li.feature ul li.top .cost {font-family: Arial, Hevetica, sans-serif; color: #232323; font-style: normal; font-size: 19px; padding: 13px 0px 13px 15px}
+ #main ul li.feature ul li.middle {background: #ebeff5; border-bottom: 1px solid #d5dbe4; border-left: 1px solid #d5dbe4; border-right: 1px solid #d5dbe4}
+ #main ul li.feature ul li.middle .value {padding: 6px 16px; min-height: 21px}
+ #main ul li.feature ul li.middle .value p {font-family: 'Lucida Sans', 'Lucida Grande', Helvetica, Arial, sans-serif; color: #232323; font-style: normal; color: #7c8da0; margin: 4px 0px 0px 85px; font-size: 10px; font-weight: normal}
+ #main ul li.feature ul li.middle .value p span {font-style: italic; color: #6a7f97; font-size: 11px; font-family: Georgia, serif}
+ #main ul li.feature ul li.middle .value .buttons a, #main ul li.feature ul li.middle .value .buttons button {color: #575757; font-size: 10px; font-weight: normal; padding: 3px 7px 3px 8px; -moz-border-radius-bottomleft: 8px; -moz-border-radius-bottomright: 8px; -moz-border-radius-topleft: 8px; -moz-border-radius-topright: 8px; -webkit-border-radius: 8px}
+ #main ul li.feature ul li.middle .value .buttons a:hover, #main ul li.feature ul li.middle .value .buttons button:hover {color: #232323}
+ #main ul li.feature ul li.middle .value .buttons a.negative, #main ul li.feature ul li.middle .value .buttons button.negative {color: #c14837}
+ #main ul li.feature ul li.middle .value .buttons a.negative:active, #main ul li.feature ul li.middle .value .buttons button.negative:active {color: #fff}
+ #main ul li.feature ul li.middle .cost {color: #456588; font-size: 13px; padding: 8px}
+ #main ul li.feature ul li.drawer {background: #f7f7f5; border-right: 1px solid #D4D4D2; border-left: 1px solid #D4D4D2; border-bottom: 1px solid #D4D4D2}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature {padding: 5px 16px 5px 17px}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature .box {margin: 10px 0px 0px; padding: 6px; background: #E2E2E2; border: 1px solid #bfbeba}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner {border-top: 1px solid #fff; background: #efefef; border-bottom: 1px solid #CCD2CB}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner input {width: 480px !important; margin: 0.2em 0; padding: 4px 6px}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner label, #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner select {width: 115px; text-align: right; margin-right: 8px}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner select {padding-right: 5px; text-align: left; font-size: 12px}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol {margin: 10px 13px; margin-left: 0px}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li {padding-left: 31px}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li .handle {width: 0px; height: 0px; padding: 0; margin: 0; position: relative; cursor: ns-resize}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li .handle img {position: absolute; right: 0px; top: 6px; margin: .5px 6px 0px 0px; padding: 0px}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li .buttons a, #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li .buttons button {float: right; font-size: 70%; padding: 3px 6px 3px 7px; font-weight: bold; margin: 5px 0px 0px 0px}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li.add .buttons a {float: left; margin: 6px 0 4px 36px; color: #575757; font-size: 10px; font-weight: normal; padding: 3px 7px 3px 8px; -moz-border-radius-bottomleft: 8px; -moz-border-radius-bottomright: 8px; -moz-border-radius-topleft: 8px; -moz-border-radius-topright: 8px; -webkit-border-radius: 8px}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li.add .buttons a:hover {color: #232323}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li.add .buttons a.negative {color: #c14837}
+ #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li.add .buttons a.negative:active {color: #fff}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario {margin: 0px; padding: 5px 16px; border-bottom: 1px dashed #bfbeba}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .handle {width: 0px; height: 0px; padding: 0; margin: 0; position: relative; cursor: ns-resize}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .handle img {position: absolute; right: 0px; top: 6px; margin: .5px 6px 0px 0px; padding: 0px}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box {margin: 0px; padding: 6px; background: transparent; border: 1px solid transparent}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner {border-top: 1px solid transparent; background: transparent; border-bottom: 1px solid transparent}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner input {width: 480px; margin: 0.2em 0; padding: 4px 6px}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner label, #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner select {width: 115px; text-align: right; margin-right: 8px}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner select {padding-right: 5px; text-align: left; font-size: 12px}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol {margin: 0px 13px; margin-left: 0px}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li {padding-left: 31px}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li .handle {width: 0px; height: 0px; padding: 0; margin: 0; position: relative; cursor: ns-resize}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li .handle img {position: absolute; right: 0px; top: 6px; margin: .5px 6px 0px 0px; padding: 0px}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li .buttons a, #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li .buttons button {float: right; font-size: 70%; padding: 3px 6px 3px 7px; font-weight: bold; margin: 5px 0px 0px 0px}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li.add .buttons a {color: #575757; font-size: 10px; font-weight: normal; padding: 3px 7px 3px 8px; -moz-border-radius-bottomleft: 8px; -moz-border-radius-bottomright: 8px; -moz-border-radius-topleft: 8px; -moz-border-radius-topright: 8px; -webkit-border-radius: 8px; float: left; margin: 6px 0 4px 34px}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li.add .buttons a:hover {color: #232323}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li.add .buttons a.negative {color: #c14837}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li.add .buttons a.negative:active {color: #fff}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li.add .buttons a.negative {float: right}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li.add .buttons a.negative:active {color: #fff}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li input.scenario_name {width: 363px !important}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .cost {margin: 20px 0px 0px}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .cost .estimate input {width: 30px}
+ #main ul li.feature ul li.drawer ul.items li.edit_scenario .cost .estimate label {font-size: 12px; margin-left: 5px}
+ #main ul li.feature ul li.drawer ul.items li.footer {margin: 0px; padding: 10px 20px; background: #f0f0ee}
+ #main ul li.feature ul li.drawer ul.items li.footer .buttons button {font-size: 75% !important; padding: 4px 10px 4px !important}
+ #main ul li.feature ul li.drawer ul.items li.footer .buttons a {font-size: 75% !important; padding: 4px 10px 5px !important}
+ #main ul li.divider {padding: 7px; margin: 0px 0px 10px 0px; background: #EAE4DB; border-top: 1px solid #d7cebf; border-right: 1px solid #b7aa93; border-bottom: 1px solid #b7aa93; border-left: 1px solid #d7cebf}
+ #main ul li.divider.collapsed .buttons a.collapse_milestone span.expand {display: inline}
+ #main ul li.divider.collapsed .buttons a.collapse_milestone span.collapse {display: none}
+ #main ul li.divider ul {margin: 0; padding: 0; border: 0; overflow: hidden; display: inline-block; line-height: 18px; padding: 3px 17px 3px 10px; background: #f5f1ec; border-top: 1px solid #f8f5f1; border-left: 1px solid #f8f5f1; font-weight: normal; margin: 0px}
+ #main ul li.divider ul li {list-style-type: none; background: none; margin-left: 0px}
+ #main ul li.divider ul {display: block}
+ #main ul li.divider ul li {list-style-type: none; background: none; margin-left: 0px; white-space: nowrap; display: inline; float: left; padding-left: 4px; padding-right: 4px}
+ #main ul li.divider ul li.first {padding-left: 0px}
+ #main ul li.divider ul li.last {padding-right: 0px}
+ #main ul li.divider ul li {font-size: 12px; color: #867455; padding: 3px 7px; width: 70px; float: right}
+ #main ul li.divider ul li a {float: right; font-size: 11px; line-height: 1.3em; margin: 2px 8px 0px 0px; color: #867455}
+ #main ul li.divider ul li a:hover {color: #4E4535}
+ #main ul li.divider ul li.milestone_number {float: left; font-family: "Calibri", arial, helvetica; font-size: 15px; color: #4E4535; text-shadow: 1px 1px 1px #fff; cursor: ns-resize; width: 260px; margin: 0px}
+ #sidebar h2 {font-size: 21px}
+ #sidebar ul.pages {margin: 0 0 20px 0}
+ #sidebar ul.pages li {list-style-type: none; background: none; margin-left: 0px}
+ #sidebar ul.pages li {list-style-type: none; background: none; margin-left: 0px; padding: 0}
+ #sidebar ul.pages li:hover {background: #BFBEBA}
+ #sidebar ul.pages li a {color: #464646; text-shadow: 1px 1px 0 #fff; font-family: Calibri; font-weight: normal; font-size: 15px; display: block; padding: 9px 12px 9px 14px; margin-left: 7px; border-bottom: 1px solid #CCD2CB}
+ #sidebar ul.pages li a:hover {background: #f1f0ed; color: #232323}
+ #sidebar ul.pages li.selected, #sidebar ul.pages li.selected:hover {border: none; background: #9CC276}
+ #sidebar ul.pages li.selected a, #sidebar ul.pages li.selected:hover a {color: #232323; background: #fff; text-shadow: none}
+ #sidebar ul.pages li.selected.drophover, #sidebar ul.pages li.selected:hover.drophover {border: none; background: #9CC276}
+ #sidebar ul.pages li.selected.drophover a, #sidebar ul.pages li.selected.drophover a:hover, #sidebar ul.pages li.selected:hover.drophover a, #sidebar ul.pages li.selected:hover.drophover a:hover {color: #232323 !important; background: #fff; text-shadow: none}
+ #sidebar ul.pages li.drophover {background: #e0c35f}
+ #sidebar ul.pages li.drophover a {color: #B83107 !important; text-shadow: none; background: #fff3bd}
+ #sidebar #plans .box {height: auto !important; width: auto}
+ #plans {text-align: center}
+ #plans #one, #plans #two, #plans #three {text-align: center}
+ #plans .box {padding: 1.4em 1.8em 1.8em; margin: 0 0 .8em 0; border: 6px solid #a1c47e; background: #fcfcfc; height: 210px}
+ #plans .box h2 {color: #333333; font-size: 25px; margin-bottom: 10px}
+ #plans .box h3 {color: #608041; font-family: Helvetica,Arial,sans-serif; font-size: 22px; font-weight: normal; margin-bottom: 10px}
+ #plans .box ul.details {padding: 0px; margin: 5px 0px 20px}
+ #plans .box ul.details li {margin: 0px; background-image: none; color: #363636; padding: 3px 0px; font-weight: normal; font-size: 14px}
+ #plans .box ul.details li span {color: #c5291f}
+ #plans .box .buttons a {font-size: 90%; font-family: "Calibri",Helvetica,sans-serif; float: none; margin: 0}
+ #plans .box .trial {margin: 12px 0px; text-transform: none; font-size: 10px !important; padding: 3px 6px; font-size: 13px; padding: 0.55em 0.8em; margin-bottom: 1em; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; background: #f8e89f; color: #b83107; border-color: #e9a438}
+ #plans .box .trial a {color: #b83107; border-color: #d1b534}
+ #plans #needs {text-align: center; font-size: 13px; color: #5f5f5f; margin-bottom: 12px}
+ #plans #open_source {font-size: 14px; background: #FCFCFC none repeat scroll 0 0; border: 1px dashed #A1C47E; padding: 1.2em 1.3em; margin-bottom: 1.5em; text-align: center}
+ #plans #about_trial {text-align: center; background: #F8E89F; border: 1px dashed #E9A438; padding: 20px 90px}
+ #plans #about_trial h3 {color: #ae040f; font-size: 22px; margin-bottom: 10px}
+ #plans #about_trial p {color: #B83107}
+ #footer {bottom: 0; height: 34px; left: 0; position: fixed; width: 100%; background-color: #2C2C2C; border-top: 3px solid #1C1C1C; display: inline; float: right; padding: 6px 0px; margin: 0px; z-index: 1000}
+ #footer+#full #main {padding-bottom: 50px}
+ #footer ul {background: #232323 none repeat scroll 0 0; display: inline; width: 749px; float: left; padding: 3px 6px; margin: 0px}
+ #footer ul li {list-style-type: none; background: none; margin-left: 0px}
+ #footer ul li {display: inline; float: left; background-image: none; padding: 5px 0px; font-size: 12px; color: #bec6bd; display: block; text-decoration: none; margin: 0px; width: 85px}
+ #footer ul li.footer_title {font-family: arial, helvetica, sans-serif; font-size: 11px; letter-spacing: .05em; text-transform: uppercase; color: #737672; margin: 1px 0px 0px 20px; width: 380px}
+ #footer ul li.footer_title a {margin-left: 8px; color: #bec6bd; text-decoration: none; border-bottom: 1px solid #556154}
+ #footer ul li.footer_title a:hover {color: #fff; text-decoration: none; border-bottom: 1px solid #99a997}
+ #footer ul li span {color: #7c9179}
+ #footer ul li span a {color: #bec6bd; display: block; text-decoration: none}
+ #footer ul li span a:hover {color: #fff; text-decoration: none}
+ #footer ul li span.selected, #footer ul li span.selected:hover {font-weight: bold}
+ #lowdown {margin: 40px auto 10px; text-align: center}
+ #lowdown a, #lowdown a:hover {border-bottom: none}
+ body#homepage #header {height: 50px}
+ body#homepage #header #menu {padding: 4px 6px; margin-top: 8px}
+ body#homepage #content {padding: 0px}
+ body#homepage #splash {background: transparent url(/images/splash2.jpg) no-repeat 48% top; height: 495px}
+ body#homepage #splash #tagline {padding: 119px 0 0 90px}
+ body#homepage #splash #tagline p {font-family: Georgia, serif; font-size: 23px; color: #2c3920; margin-bottom: 12px}
+ body#homepage #splash #tagline .buttons {text-align: center}
+ body#homepage #ad {padding: 60px 0 0 70px}
+ body#homepage #ad h2 {font-family: Georgia, serif; font-size: 27px; font-weight: normal; color: #c3261c; margin-bottom: 15px}
+ body#homepage #ad p {font-family: Georgia, serif; width: 150px; font-size: 17.5px; width: 300px; line-height: 1.4em; color: #343434}
+ body#homepage #ad p span {color: #68844c}
+ body#homepage #lower {margin: 10px auto 10px; width: 836px}
+ body#homepage #lower h2 {font-family: Georgia, serif; font-size: 28px; font-weight: normal; color: #232323; margin-bottom: 15px}
+ body#homepage #lower #one img, body#homepage #lower #two img, body#homepage #lower #three img {border: 1px solid #868686}
+ body#homepage #lower p {font-family: Georgia, serif; font-size: 16px; line-height: 1.4em; color: #343434; height: 90px; text-align: left}
+ body#homepage #credits {height: 300px; margin: 0px auto 100px; background: transparent url(/images/credits.jpg) no-repeat center top}
+ body#homepage #credits #cucumber p {padding: 122px 0px 0px 150px; width: 340px; font-family: Georgia, serif; font-size: 16px; line-height: 1.4em; color: #537136}
+ body#homepage #credits #cucumber p a {line-height: 1em; margin-right: 10px; text-decoration: none; border-bottom: 1px solid #829a6a}
+ body#homepage #credits #cucumber p a:hover {border-bottom: 2px solid #677a55}
+ body#homepage #credits #microbrew p {text-align: center; width: 210px; padding: 165px 20px 0px; font-family: Georgia, serif; font-size: 15px; line-height: 1.5em; color: #594848}
+ body#homepage #credits #microbrew p a {line-height: 1em; margin-right: 10px; text-decoration: none; border-bottom: 1px solid #9c9284}
+ body#homepage #credits #microbrew p a:hover {border-bottom: 2px solid #7b7265}
+ table.status_window, table.status_window table {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; border-collapse: separate; border-spacing: 0; vertical-align: middle; color: #e5e5e5 ! important; font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; font-size: 110%; text-shadow: black 0 0 0; background-color: transparent; width: auto}
+ table.status_window tr, table.status_window td, table.status_window th, table.status_window table tr, table.status_window table td, table.status_window table th {border: none}
+ .status_content {padding: 2px 10px 2px 5px}

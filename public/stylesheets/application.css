@@ -1,0 +1,1373 @@
+/* line 1, ../../app/stylesheets/_forms.sass */
+label {
+  font-weight: bold; }
+
+/* line 3, ../../app/stylesheets/_forms.sass */
+input {
+  margin: 0.5em 0;
+  width: 300px;
+  padding: 5px; }
+
+/* line 7, ../../app/stylesheets/_forms.sass */
+textarea {
+  margin: 0.5em 0;
+  width: 390px;
+  height: 250px;
+  padding: 5px; }
+
+/* line 12, ../../app/stylesheets/_forms.sass */
+select {
+  margin: 0; }
+
+/* line 14, ../../app/stylesheets/_forms.sass */
+fieldset {
+  padding: 1.4em 1.8em 1.8em;
+  margin: 0 0 1.5em 0;
+  border-top: 1px solid #D4D4D2;
+  border-right: 1px solid #b4b3b0;
+  border-bottom: 1px solid #b4b3b0;
+  border-left: 1px solid #D4D4D2;
+  background: #fcfcfc; }
+  /* line 22, ../../app/stylesheets/_forms.sass */
+  fieldset label {
+    line-height: 1.1em !important;
+    font-weight: normal; }
+  /* line 25, ../../app/stylesheets/_forms.sass */
+  fieldset input {
+    color: #222222;
+    font-size: 16px !important;
+    font-weight: bold;
+    padding: 3px;
+    margin: .3em 0; }
+  /* line 31, ../../app/stylesheets/_forms.sass */
+  fieldset fieldset {
+    margin: 1.5em 0 0 0; }
+    /* line 33, ../../app/stylesheets/_forms.sass */
+    fieldset fieldset legend {
+      font-size: 1.2em;
+      margin-left: 45px; }
+
+/* line 36, ../../app/stylesheets/_forms.sass */
+legend {
+  padding: 0px 8px;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-letter-spacing: -1px !important;
+  font-family: "Calibri","Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 44, ../../app/stylesheets/_forms.sass */
+form ol {
+  margin: 0;
+  padding: 0; }
+  /* line 47, ../../app/stylesheets/_forms.sass */
+  form ol li {
+    list-style: none;
+    padding: 5px 0px;
+    margin: 0; }
+/* line 51, ../../app/stylesheets/_forms.sass */
+form label {
+  color: #232323;
+  width: 110px;
+  font-size: .8em;
+  display: inline-block;
+  line-height: 1.8;
+  vertical-align: middle; }
+/* line 58, ../../app/stylesheets/_forms.sass */
+form select {
+  font-size: .78em;
+  width: 150px;
+  padding: 1px; }
+/* line 62, ../../app/stylesheets/_forms.sass */
+form input {
+  font-size: .8em;
+  padding: 4px;
+  width: 440px; }
+/* line 66, ../../app/stylesheets/_forms.sass */
+form textarea {
+  width: 440px; }
+/* line 68, ../../app/stylesheets/_forms.sass */
+form em {
+  font-weight: bold;
+  font-style: normal;
+  color: #D12F19; }
+
+/* line 76, ../../app/stylesheets/_forms.sass */
+fieldset#account label {
+  text-align: right;
+  margin-right: 18px;
+  width: 120px; }
+/* line 80, ../../app/stylesheets/_forms.sass */
+fieldset#account input {
+  width: 340px; }
+/* line 82, ../../app/stylesheets/_forms.sass */
+fieldset#account span {
+  text-align: left;
+  padding-left: 146px;
+  color: #7d7d7d;
+  font-size: 10px;
+  font-weight: normal; }
+/* line 89, ../../app/stylesheets/_forms.sass */
+fieldset#account .buttons {
+  margin: 20px 0px 0px 143px; }
+
+/* line 94, ../../app/stylesheets/_forms.sass */
+form#new_user,
+form#new_user_session {
+  margin: 0px auto 0px; }
+  /* line 97, ../../app/stylesheets/_forms.sass */
+  form#new_user h2,
+  form#new_user_session h2 {
+    text-align: center;
+    margin-bottom: 15px; }
+  /* line 100, ../../app/stylesheets/_forms.sass */
+  form#new_user label,
+  form#new_user_session label {
+    width: 90px;
+    line-height: .9em; }
+  /* line 103, ../../app/stylesheets/_forms.sass */
+  form#new_user fieldset,
+  form#new_user_session fieldset {
+    padding: 1.8em;
+    margin-bottom: 10px;
+    border: 8px solid #a1c47e;
+    background: #fff url(/images/login-head.gif) no-repeat bottom right; }
+  /* line 108, ../../app/stylesheets/_forms.sass */
+  form#new_user li,
+  form#new_user_session li {
+    clear: both;
+    padding: 0px;
+    margin: 0px 0px 4px; }
+  /* line 112, ../../app/stylesheets/_forms.sass */
+  form#new_user .buttons,
+  form#new_user_session .buttons {
+    margin-top: 15px; }
+    /* line 114, ../../app/stylesheets/_forms.sass */
+    form#new_user .buttons.small,
+    form#new_user_session .buttons.small {
+      margin-top: 0px; }
+  /* line 116, ../../app/stylesheets/_forms.sass */
+  form#new_user a#normal-login, form#new_user a#normal-signup,
+  form#new_user_session a#normal-login, form#new_user_session a#normal-signup {
+    display: none; }
+  /* line 118, ../../app/stylesheets/_forms.sass */
+  form#new_user img.openicon,
+  form#new_user_session img.openicon {
+    margin: 0px 3px -2px 0px; }
+
+/* line 122, ../../app/stylesheets/_forms.sass */
+form#new_user {
+  width: 480px; }
+  /* line 124, ../../app/stylesheets/_forms.sass */
+  form#new_user input {
+    width: 390px; }
+    /* line 126, ../../app/stylesheets/_forms.sass */
+    form#new_user input#user_openid_identifier {
+      width: 390px; }
+  /* line 128, ../../app/stylesheets/_forms.sass */
+  form#new_user label {
+    width: 200px; }
+  /* line 130, ../../app/stylesheets/_forms.sass */
+  form#new_user .error-with-field {
+    display: inline; }
+    /* line 132, ../../app/stylesheets/_forms.sass */
+    form#new_user .error-with-field .error {
+      width: 312px;
+      float: left; }
+  /* line 135, ../../app/stylesheets/_forms.sass */
+  form#new_user #open_id {
+    border: 1px solid #AFC75D;
+    width: 402px; }
+    /* line 138, ../../app/stylesheets/_forms.sass */
+    form#new_user #open_id #open_id_header {
+      background: #E6EFC2 url(/images/open_id_header.gif) repeat-x scroll center bottom;
+      color: #437A0E;
+      font-size: .8em;
+      padding: 8px 12px; }
+      /* line 143, ../../app/stylesheets/_forms.sass */
+      form#new_user #open_id #open_id_header a {
+        float: right; }
+    /* line 145, ../../app/stylesheets/_forms.sass */
+    form#new_user #open_id #providers {
+      padding: 5px;
+      clear: both;
+      color: #000;
+      background-color: #fff; }
+      /* line 150, ../../app/stylesheets/_forms.sass */
+      form#new_user #open_id #providers a {
+        width: 33%;
+        font-size: .8em;
+        float: left;
+        background-color: #fff;
+        text-decoration: none; }
+
+/* line 158, ../../app/stylesheets/_forms.sass */
+form#new_user_session {
+  width: 480px; }
+  /* line 160, ../../app/stylesheets/_forms.sass */
+  form#new_user_session .error-with-field {
+    display: inline; }
+    /* line 162, ../../app/stylesheets/_forms.sass */
+    form#new_user_session .error-with-field .error {
+      width: 383px;
+      float: left; }
+  /* line 166, ../../app/stylesheets/_forms.sass */
+  form#new_user_session input#user_session_email {
+    width: 390px; }
+  /* line 168, ../../app/stylesheets/_forms.sass */
+  form#new_user_session input#user_session_password {
+    width: 245px; }
+  /* line 170, ../../app/stylesheets/_forms.sass */
+  form#new_user_session input#user_session_openid_identifier {
+    width: 390px; }
+  /* line 172, ../../app/stylesheets/_forms.sass */
+  form#new_user_session input#openid_username {
+    width: 390px; }
+  /* line 174, ../../app/stylesheets/_forms.sass */
+  form#new_user_session #open_id {
+    border: 1px solid #AFC75D;
+    width: 402px;
+    clear: both; }
+    /* line 178, ../../app/stylesheets/_forms.sass */
+    form#new_user_session #open_id #open_id_header {
+      background: #E6EFC2 url(/images/open_id_header.gif) repeat-x scroll center bottom;
+      color: #437A0E;
+      font-size: .8em;
+      padding: 8px 12px; }
+      /* line 183, ../../app/stylesheets/_forms.sass */
+      form#new_user_session #open_id #open_id_header a {
+        float: right; }
+    /* line 185, ../../app/stylesheets/_forms.sass */
+    form#new_user_session #open_id #providers {
+      padding: 5px;
+      clear: both;
+      color: #000;
+      background-color: #fff; }
+      /* line 190, ../../app/stylesheets/_forms.sass */
+      form#new_user_session #open_id #providers a {
+        width: 33%;
+        font-size: .8em;
+        float: left;
+        background-color: #fff;
+        text-decoration: none; }
+
+/* line 198, ../../app/stylesheets/_forms.sass */
+select#user_timezone {
+  width: 354px;
+  padding: 2px;
+  font-size: 12px; }
+
+/* line 202, ../../app/stylesheets/_forms.sass */
+select#project_id {
+  font-size: 10px;
+  margin-top: -1px;
+  width: 180px;
+  padding: 2px; }
+
+/* line 207, ../../app/stylesheets/_forms.sass */
+#insetbox {
+  margin-top: 20px;
+  padding: 4px 14px 2px;
+  background: #EBEFF5 none repeat scroll 0 0;
+  border-left: 1px solid #BDC8D8;
+  border-right: 1px solid #BDC8D8;
+  border-top: 1px solid #BDC8D8;
+  height: 75px; }
+  /* line 215, ../../app/stylesheets/_forms.sass */
+  #insetbox p {
+    text-align: center;
+    font-weight: bold; }
+  /* line 218, ../../app/stylesheets/_forms.sass */
+  #insetbox label {
+    width: 405px;
+    color: #3e6193;
+    font-size: 12px;
+    margin-bottom: 1px; }
+  /* line 223, ../../app/stylesheets/_forms.sass */
+  #insetbox span#accepted {
+    font-weight: normal; }
+
+/* line 226, ../../app/stylesheets/_forms.sass */
+#projects input#project_name {
+  width: 418px; }
+/* line 228, ../../app/stylesheets/_forms.sass */
+#projects input#project_rate {
+  width: 65px; }
+/* line 230, ../../app/stylesheets/_forms.sass */
+#projects input#email {
+  width: 404px;
+  height: 19px; }
+
+/* line 233, ../../app/stylesheets/_forms.sass */
+#login_toggle {
+  margin-right: 25px;
+  font-size: 11px; }
+  /* line 236, ../../app/stylesheets/_forms.sass */
+  #login_toggle a {
+    text-decoration: none;
+    border-bottom: 1px solid #c5c5c5; }
+    /* line 239, ../../app/stylesheets/_forms.sass */
+    #login_toggle a:hover {
+      border-bottom: 2px solid #b4b4b4; }
+
+/* line 33, ../../app/stylesheets/_colors.sass */
+.error {
+  font-size: 13px;
+  padding: 0.55em 0.8em;
+  margin-bottom: 1em;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  background: #f9d8da;
+  color: #bc180f;
+  border-color: #e3a2a5; }
+  /* line 60, ../../app/stylesheets/_colors.sass */
+  .error a {
+    color: #bc180f; }
+
+/* line 35, ../../app/stylesheets/_colors.sass */
+.notice {
+  font-size: 13px;
+  padding: 0.55em 0.8em;
+  margin-bottom: 1em;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  background: #f8e89f;
+  color: #b83107;
+  border-color: #e9a438; }
+  /* line 68, ../../app/stylesheets/_colors.sass */
+  .notice a {
+    color: #b83107;
+    border-color: #d1b534; }
+
+/* line 37, ../../app/stylesheets/_colors.sass */
+.success {
+  font-size: 13px;
+  padding: 0.55em 0.8em;
+  margin-bottom: 1em;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  background: #e0ebb4;
+  color: #3e7805;
+  border-color: #afc75d; }
+  /* line 77, ../../app/stylesheets/_colors.sass */
+  .success a {
+    color: #3e7805; }
+
+/* line 39, ../../app/stylesheets/_colors.sass */
+.hide {
+  display: none; }
+
+/* line 41, ../../app/stylesheets/_colors.sass */
+.highlight {
+  background: yellow; }
+
+/* line 43, ../../app/stylesheets/_colors.sass */
+.added {
+  background: #006600;
+  color: white; }
+
+/* line 45, ../../app/stylesheets/_colors.sass */
+.removed {
+  background: #990000;
+  color: white; }
+
+/* line 4, ../../app/stylesheets/application.sass */
+body {
+  background: #ebeae7; }
+
+/* line 7, ../../app/stylesheets/application.sass */
+#header {
+  background: #2c2c2c;
+  border-bottom: 5px solid #9cc276;
+  border-top: 3px solid #1c1c1c;
+  height: 51px; }
+  /* line 12, ../../app/stylesheets/application.sass */
+  #header #menu, #header #picker {
+    display: inline;
+    float: right;
+    background: #232323;
+    padding: 3px 8px 3px 5px;
+    margin: 8px 0px 0px 0px;
+    height: 28px; }
+    /* line 18, ../../app/stylesheets/application.sass */
+    #header #menu ul, #header #picker ul {
+      margin: 0; }
+      /* line 11, ../../app/stylesheets/_lists.sass */
+      #header #menu ul li, #header #picker ul li {
+        list-style-type: none;
+        background: none;
+        margin-left: 0px; }
+      /* line 21, ../../app/stylesheets/application.sass */
+      #header #menu ul li, #header #picker ul li {
+        display: inline;
+        float: left;
+        background-image: none;
+        padding: 5px;
+        font-size: 12px;
+        color: #545e53; }
+        /* line 27, ../../app/stylesheets/application.sass */
+        #header #menu ul li a, #header #picker ul li a {
+          color: #bec6bd;
+          display: block;
+          border-bottom: none;
+          text-decoration: none; }
+          /* line 32, ../../app/stylesheets/application.sass */
+          #header #menu ul li a:hover, #header #picker ul li a:hover {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: none; }
+        /* line 36, ../../app/stylesheets/application.sass */
+        #header #menu ul li.active, #header #menu ul li.active:hover, #header #picker ul li.active, #header #picker ul li.active:hover {
+          color: #fff; }
+  /* line 38, ../../app/stylesheets/application.sass */
+  #header #picker {
+    margin-right: 0px; }
+  /* line 41, ../../app/stylesheets/application.sass */
+  #header #logo img {
+    float: left; }
+  /* line 43, ../../app/stylesheets/application.sass */
+  #header #logo h1 {
+    float: left;
+    font-weight: bold;
+    margin: 3px 0px 0px 16px;
+    padding: 0px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 2em;
+    text-shadow: 1px 2px 0 #1C1C1C; }
+
+/* line 53, ../../app/stylesheets/application.sass */
+#content {
+  min-height: 400px;
+  padding: 25px 0px 60px;
+  background: #ebeae7 url(/images/background.gif) repeat-x scroll left top; }
+
+/* line 58, ../../app/stylesheets/application.sass */
+#top {
+  margin-bottom: 15px; }
+  /* line 60, ../../app/stylesheets/application.sass */
+  #top .buttons a {
+    float: left;
+    width: auto;
+    display: inline;
+    text-shadow: 1px 1px 0 #fff; }
+    /* line 65, ../../app/stylesheets/application.sass */
+    #top .buttons a.negative:active {
+      text-shadow: none; }
+  /* line 68, ../../app/stylesheets/application.sass */
+  #top h1.folder {
+    padding-left: 40px;
+    margin-left: -40px;
+    height: 28px; }
+    /* line 72, ../../app/stylesheets/application.sass */
+    #top h1.folder:hover {
+      background: transparent url(/images/edit-folder.png) no-repeat scroll left 2px; }
+    /* line 74, ../../app/stylesheets/application.sass */
+    #top h1.folder form {
+      padding: 0;
+      margin: 0;
+      position: absolute; }
+    /* line 78, ../../app/stylesheets/application.sass */
+    #top h1.folder input {
+      margin: -4px 0 0 0px;
+      font-weight: bold;
+      font-size: 17px;
+      height: 20px; }
+
+/* line 87, ../../app/stylesheets/application.sass */
+#main #projects fieldset {
+  padding: 1em; }
+/* line 89, ../../app/stylesheets/application.sass */
+#main #projects h2 {
+  text-align: center; }
+/* line 91, ../../app/stylesheets/application.sass */
+#main #projects ul {
+  margin: 0px 0px 30px;
+  padding: 0px;
+  border: 1px solid #bfbeba; }
+  /* line 11, ../../app/stylesheets/_lists.sass */
+  #main #projects ul li {
+    list-style-type: none;
+    background: none;
+    margin-left: 0px; }
+  /* line 96, ../../app/stylesheets/application.sass */
+  #main #projects ul li {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #232323;
+    padding: 9px 13px 9px;
+    border-top: 1px solid #fff;
+    background: #efefef;
+    border-bottom: 1px solid #CCD2CB;
+    display: block;
+    line-height: 1.8em; }
+    /* line 108, ../../app/stylesheets/application.sass */
+    #main #projects ul li .buttons a {
+      padding: 5px 10px 5px; }
+    /* line 110, ../../app/stylesheets/application.sass */
+    #main #projects ul li:hover {
+      background: #f7f7f7; }
+    /* line 112, ../../app/stylesheets/application.sass */
+    #main #projects ul li:last-child {
+      border-bottom: none; }
+  /* line 114, ../../app/stylesheets/application.sass */
+  #main #projects ul.autocomplete {
+    border: none;
+    position: absolute;
+    background: #BDC8D8 url(/images/triangle.gif) no-repeat -10% 50%;
+    margin: -2px 0px 0px;
+    padding: 6px 6px;
+    width: 300px; }
+    /* line 121, ../../app/stylesheets/application.sass */
+    #main #projects ul.autocomplete li {
+      color: #232323;
+      margin: 0;
+      padding: 6px 9px;
+      background-color: #fff;
+      font-size: 14px;
+      font-weight: normal; }
+      /* line 128, ../../app/stylesheets/application.sass */
+      #main #projects ul.autocomplete li.selected {
+        color: white;
+        background-color: navy; }
+      /* line 131, ../../app/stylesheets/application.sass */
+      #main #projects ul.autocomplete li:hover {
+        color: #B83107;
+        background-color: #fff3bd; }
+    /* line 134, ../../app/stylesheets/application.sass */
+    #main #projects ul.autocomplete span {
+      display: inline;
+      float: none; }
+/* line 137, ../../app/stylesheets/application.sass */
+#main #projects .buttons a {
+  float: right;
+  font-size: 80%; }
+/* line 141, ../../app/stylesheets/application.sass */
+#main #projects .projects_edit fieldset {
+  padding: 1em 1.25em; }
+/* line 145, ../../app/stylesheets/application.sass */
+#main #projects .projects_edit form ul#users li {
+  padding: 9px 13px !important;
+  line-height: 1.8em; }
+  /* line 148, ../../app/stylesheets/application.sass */
+  #main #projects .projects_edit form ul#users li .buttons a, #main #projects .projects_edit form ul#users li .buttons button, #main #projects .projects_edit form ul#users li button.button {
+    padding: 5px 10px 5px !important; }
+/* line 150, ../../app/stylesheets/application.sass */
+#main #projects .projects_edit form .buttons a {
+  float: right;
+  font-size: 80% !important;
+  margin-right: 0px; }
+/* line 154, ../../app/stylesheets/application.sass */
+#main #projects .projects_edit .buttons a, #main #projects .projects_edit .buttons button, #main #projects .projects_edit button.button, #main #projects .projects_edit button#update_project {
+  padding: 5px 10px 6px !important;
+  font-size: 82% !important; }
+/* line 157, ../../app/stylesheets/application.sass */
+#main ul {
+  margin: 0; }
+  /* line 11, ../../app/stylesheets/_lists.sass */
+  #main ul li {
+    list-style-type: none;
+    background: none;
+    margin-left: 0px; }
+  /* line 160, ../../app/stylesheets/application.sass */
+  #main ul li.feature {
+    display: block;
+    margin: 0px 0px 10px;
+    padding: 7px;
+    background: #fff none repeat scroll 0 0;
+    border-top: 1px solid #D4D4D2;
+    border-right: 1px solid #b4b3b0;
+    border-bottom: 1px solid #b4b3b0;
+    border-left: 1px solid #D4D4D2; }
+    /* line 170, ../../app/stylesheets/application.sass */
+    #main ul li.feature#feature_new ul li.top {
+      cursor: auto; }
+    /* line 172, ../../app/stylesheets/application.sass */
+    #main ul li.feature input {
+      border: 1px solid #BBBBBB; }
+    /* line 174, ../../app/stylesheets/application.sass */
+    #main ul li.feature .move_corner {
+      float: right;
+      background: transparent url(/images/draggy-light.png) no-repeat top center;
+      height: 19px;
+      width: 19px;
+      margin: 0px; }
+      /* line 180, ../../app/stylesheets/application.sass */
+      #main ul li.feature .move_corner ul.move_to_page {
+        padding: 0;
+        margin: 0;
+        cursor: move; }
+        /* line 184, ../../app/stylesheets/application.sass */
+        #main ul li.feature .move_corner ul.move_to_page li {
+          margin: 0;
+          padding: 0;
+          background: none;
+          display: block;
+          height: 19px;
+          width: 19px; }
+          /* line 191, ../../app/stylesheets/application.sass */
+          #main ul li.feature .move_corner ul.move_to_page li:hover {
+            padding: 0;
+            margin: 0px;
+            background: transparent url(/images/draggy.png) no-repeat center center;
+            display: block;
+            height: 19px;
+            width: 19px;
+            cursor: pointer; }
+    /* line 200, ../../app/stylesheets/application.sass */
+    #main ul li.feature ul li {
+      padding: 0px; }
+      /* line 202, ../../app/stylesheets/application.sass */
+      #main ul li.feature ul li.top {
+        margin: 0px;
+        padding: 0px;
+        border-bottom: 1px solid #bdc8d8;
+        cursor: ns-resize; }
+        /* line 207, ../../app/stylesheets/application.sass */
+        #main ul li.feature ul li.top .value {
+          font-weight: bold;
+          font-family: Calibri, Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #333333;
+          font-style: normal;
+          font-weight: bold;
+          font-family: "Calibri";
+          font-size: 20px;
+          padding: 13px 0px 13px 18px; }
+        /* line 213, ../../app/stylesheets/application.sass */
+        #main ul li.feature ul li.top .cost {
+          font-family: Arial, Hevetica, sans-serif;
+          color: #232323;
+          font-style: normal;
+          font-size: 19px;
+          padding: 13px 0px 13px 15px; }
+      /* line 217, ../../app/stylesheets/application.sass */
+      #main ul li.feature ul li.middle {
+        background: #ebeff5;
+        border-bottom: 1px solid #d5dbe4;
+        border-left: 1px solid #d5dbe4;
+        border-right: 1px solid #d5dbe4; }
+        /* line 222, ../../app/stylesheets/application.sass */
+        #main ul li.feature ul li.middle .value {
+          padding: 6px 16px;
+          min-height: 21px; }
+          /* line 225, ../../app/stylesheets/application.sass */
+          #main ul li.feature ul li.middle .value p {
+            font-family: 'Lucida Sans', 'Lucida Grande', Helvetica, Arial, sans-serif;
+            color: #232323;
+            font-style: normal;
+            color: #7c8da0;
+            margin: 4px 0px 0px 85px;
+            font-size: 10px;
+            font-weight: normal; }
+            /* line 232, ../../app/stylesheets/application.sass */
+            #main ul li.feature ul li.middle .value p span {
+              font-style: italic;
+              color: #6a7f97;
+              font-size: 11px;
+              font-family: Georgia, serif; }
+          /* line 238, ../../app/stylesheets/application.sass */
+          #main ul li.feature ul li.middle .value .buttons a, #main ul li.feature ul li.middle .value .buttons button {
+            color: #575757;
+            font-size: 10px;
+            font-weight: normal;
+            padding: 3px 7px 3px 8px;
+            -moz-border-radius-bottomleft: 8px;
+            -moz-border-radius-bottomright: 8px;
+            -moz-border-radius-topleft: 8px;
+            -moz-border-radius-topright: 8px;
+            -webkit-border-radius: 8px; }
+            /* line 67, ../../app/stylesheets/_base.sass */
+            #main ul li.feature ul li.middle .value .buttons a:hover, #main ul li.feature ul li.middle .value .buttons button:hover {
+              color: #232323; }
+            /* line 74, ../../app/stylesheets/_base.sass */
+            #main ul li.feature ul li.middle .value .buttons a.negative, #main ul li.feature ul li.middle .value .buttons button.negative {
+              color: #c14837; }
+              /* line 76, ../../app/stylesheets/_base.sass */
+              #main ul li.feature ul li.middle .value .buttons a.negative:active, #main ul li.feature ul li.middle .value .buttons button.negative:active {
+                color: #fff; }
+        /* line 240, ../../app/stylesheets/application.sass */
+        #main ul li.feature ul li.middle .cost {
+          color: #456588;
+          font-size: 13px;
+          padding: 8px; }
+      /* line 244, ../../app/stylesheets/application.sass */
+      #main ul li.feature ul li.drawer {
+        background: #f7f7f5;
+        border-right: 1px solid #D4D4D2;
+        border-left: 1px solid #D4D4D2;
+        border-bottom: 1px solid #D4D4D2; }
+        /* line 250, ../../app/stylesheets/application.sass */
+        #main ul li.feature ul li.drawer ul.items li.edit_feature {
+          padding: 5px 16px 5px 17px; }
+          /* line 252, ../../app/stylesheets/application.sass */
+          #main ul li.feature ul li.drawer ul.items li.edit_feature .box {
+            margin: 10px 0px 0px;
+            padding: 6px;
+            background: #E2E2E2;
+            border: 1px solid #bfbeba; }
+            /* line 257, ../../app/stylesheets/application.sass */
+            #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner {
+              border-top: 1px solid #fff;
+              background: #efefef;
+              border-bottom: 1px solid #CCD2CB; }
+              /* line 261, ../../app/stylesheets/application.sass */
+              #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner input {
+                width: 480px !important;
+                margin: 0.2em 0;
+                padding: 4px 6px; }
+              /* line 265, ../../app/stylesheets/application.sass */
+              #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner label, #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner select {
+                width: 115px;
+                text-align: right;
+                margin-right: 8px; }
+              /* line 269, ../../app/stylesheets/application.sass */
+              #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner select {
+                padding-right: 5px;
+                text-align: left;
+                font-size: 12px; }
+              /* line 273, ../../app/stylesheets/application.sass */
+              #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol {
+                margin: 10px 13px;
+                margin-left: 0px; }
+                /* line 44, ../../app/stylesheets/_base.sass */
+                #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li {
+                  padding-left: 31px; }
+                  /* line 48, ../../app/stylesheets/_base.sass */
+                  #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li .handle {
+                    width: 0px;
+                    height: 0px;
+                    padding: 0;
+                    margin: 0;
+                    position: relative;
+                    cursor: ns-resize; }
+                    /* line 55, ../../app/stylesheets/_base.sass */
+                    #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li .handle img {
+                      position: absolute;
+                      right: 0px;
+                      top: 6px;
+                      margin: .5px 6px 0px 0px;
+                      padding: 0px; }
+                /* line 277, ../../app/stylesheets/application.sass */
+                #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li .buttons a, #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li .buttons button {
+                  float: right;
+                  font-size: 70%;
+                  padding: 3px 6px 3px 7px;
+                  font-weight: bold;
+                  margin: 5px 0px 0px 0px; }
+                /* line 284, ../../app/stylesheets/application.sass */
+                #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li.add .buttons a {
+                  float: left;
+                  margin: 6px 0 4px 36px;
+                  color: #575757;
+                  font-size: 10px;
+                  font-weight: normal;
+                  padding: 3px 7px 3px 8px;
+                  -moz-border-radius-bottomleft: 8px;
+                  -moz-border-radius-bottomright: 8px;
+                  -moz-border-radius-topleft: 8px;
+                  -moz-border-radius-topright: 8px;
+                  -webkit-border-radius: 8px; }
+                  /* line 67, ../../app/stylesheets/_base.sass */
+                  #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li.add .buttons a:hover {
+                    color: #232323; }
+                  /* line 74, ../../app/stylesheets/_base.sass */
+                  #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li.add .buttons a.negative {
+                    color: #c14837; }
+                    /* line 76, ../../app/stylesheets/_base.sass */
+                    #main ul li.feature ul li.drawer ul.items li.edit_feature .box .inner ol li.add .buttons a.negative:active {
+                      color: #fff; }
+        /* line 289, ../../app/stylesheets/application.sass */
+        #main ul li.feature ul li.drawer ul.items li.edit_scenario {
+          margin: 0px;
+          padding: 5px 16px;
+          border-bottom: 1px dashed #bfbeba; }
+          /* line 48, ../../app/stylesheets/_base.sass */
+          #main ul li.feature ul li.drawer ul.items li.edit_scenario .handle {
+            width: 0px;
+            height: 0px;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            cursor: ns-resize; }
+            /* line 55, ../../app/stylesheets/_base.sass */
+            #main ul li.feature ul li.drawer ul.items li.edit_scenario .handle img {
+              position: absolute;
+              right: 0px;
+              top: 6px;
+              margin: .5px 6px 0px 0px;
+              padding: 0px; }
+          /* line 294, ../../app/stylesheets/application.sass */
+          #main ul li.feature ul li.drawer ul.items li.edit_scenario .box {
+            margin: 0px;
+            padding: 6px;
+            background: transparent;
+            border: 1px solid transparent; }
+            /* line 299, ../../app/stylesheets/application.sass */
+            #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner {
+              border-top: 1px solid transparent;
+              background: transparent;
+              border-bottom: 1px solid transparent; }
+              /* line 303, ../../app/stylesheets/application.sass */
+              #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner input {
+                width: 480px;
+                margin: 0.2em 0;
+                padding: 4px 6px; }
+              /* line 307, ../../app/stylesheets/application.sass */
+              #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner label, #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner select {
+                width: 115px;
+                text-align: right;
+                margin-right: 8px; }
+              /* line 311, ../../app/stylesheets/application.sass */
+              #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner select {
+                padding-right: 5px;
+                text-align: left;
+                font-size: 12px; }
+              /* line 315, ../../app/stylesheets/application.sass */
+              #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol {
+                margin: 0px 13px;
+                margin-left: 0px; }
+                /* line 44, ../../app/stylesheets/_base.sass */
+                #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li {
+                  padding-left: 31px; }
+                  /* line 48, ../../app/stylesheets/_base.sass */
+                  #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li .handle {
+                    width: 0px;
+                    height: 0px;
+                    padding: 0;
+                    margin: 0;
+                    position: relative;
+                    cursor: ns-resize; }
+                    /* line 55, ../../app/stylesheets/_base.sass */
+                    #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li .handle img {
+                      position: absolute;
+                      right: 0px;
+                      top: 6px;
+                      margin: .5px 6px 0px 0px;
+                      padding: 0px; }
+                /* line 319, ../../app/stylesheets/application.sass */
+                #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li .buttons a, #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li .buttons button {
+                  float: right;
+                  font-size: 70%;
+                  padding: 3px 6px 3px 7px;
+                  font-weight: bold;
+                  margin: 5px 0px 0px 0px; }
+                /* line 327, ../../app/stylesheets/application.sass */
+                #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li.add .buttons a {
+                  color: #575757;
+                  font-size: 10px;
+                  font-weight: normal;
+                  padding: 3px 7px 3px 8px;
+                  -moz-border-radius-bottomleft: 8px;
+                  -moz-border-radius-bottomright: 8px;
+                  -moz-border-radius-topleft: 8px;
+                  -moz-border-radius-topright: 8px;
+                  -webkit-border-radius: 8px;
+                  float: left;
+                  margin: 6px 0 4px 34px; }
+                  /* line 67, ../../app/stylesheets/_base.sass */
+                  #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li.add .buttons a:hover {
+                    color: #232323; }
+                  /* line 74, ../../app/stylesheets/_base.sass */
+                  #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li.add .buttons a.negative {
+                    color: #c14837; }
+                    /* line 76, ../../app/stylesheets/_base.sass */
+                    #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li.add .buttons a.negative:active {
+                      color: #fff; }
+                  /* line 331, ../../app/stylesheets/application.sass */
+                  #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li.add .buttons a.negative {
+                    float: right; }
+                    /* line 333, ../../app/stylesheets/application.sass */
+                    #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li.add .buttons a.negative:active {
+                      color: #fff; }
+                /* line 336, ../../app/stylesheets/application.sass */
+                #main ul li.feature ul li.drawer ul.items li.edit_scenario .box .inner ol li input.scenario_name {
+                  width: 363px !important; }
+          /* line 339, ../../app/stylesheets/application.sass */
+          #main ul li.feature ul li.drawer ul.items li.edit_scenario .cost {
+            margin: 20px 0px 0px; }
+            /* line 342, ../../app/stylesheets/application.sass */
+            #main ul li.feature ul li.drawer ul.items li.edit_scenario .cost .estimate input {
+              width: 30px; }
+            /* line 344, ../../app/stylesheets/application.sass */
+            #main ul li.feature ul li.drawer ul.items li.edit_scenario .cost .estimate label {
+              font-size: 12px;
+              margin-left: 5px; }
+        /* line 347, ../../app/stylesheets/application.sass */
+        #main ul li.feature ul li.drawer ul.items li.footer {
+          margin: 0px;
+          padding: 10px 20px;
+          background: #f0f0ee; }
+          /* line 351, ../../app/stylesheets/application.sass */
+          #main ul li.feature ul li.drawer ul.items li.footer .buttons button {
+            font-size: 75% !important;
+            padding: 4px 10px 4px !important; }
+          /* line 354, ../../app/stylesheets/application.sass */
+          #main ul li.feature ul li.drawer ul.items li.footer .buttons a {
+            font-size: 75% !important;
+            padding: 4px 10px 5px !important; }
+  /* line 358, ../../app/stylesheets/application.sass */
+  #main ul li.divider {
+    padding: 7px;
+    margin: 0px 0px 10px 0px;
+    background: #EAE4DB;
+    border-top: 1px solid #d7cebf;
+    border-right: 1px solid #b7aa93;
+    border-bottom: 1px solid #b7aa93;
+    border-left: 1px solid #d7cebf; }
+    /* line 368, ../../app/stylesheets/application.sass */
+    #main ul li.divider.collapsed .buttons a.collapse_milestone span.expand {
+      display: inline; }
+    /* line 370, ../../app/stylesheets/application.sass */
+    #main ul li.divider.collapsed .buttons a.collapse_milestone span.collapse {
+      display: none; }
+    /* line 372, ../../app/stylesheets/application.sass */
+    #main ul li.divider ul {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      overflow: hidden;
+      display: inline-block;
+      line-height: 18px;
+      padding: 3px 17px 3px 10px;
+      background: #f5f1ec;
+      border-top: 1px solid #f8f5f1;
+      border-left: 1px solid #f8f5f1;
+      font-weight: normal;
+      margin: 0px; }
+      /* line 11, ../../app/stylesheets/_lists.sass */
+      #main ul li.divider ul li {
+        list-style-type: none;
+        background: none;
+        margin-left: 0px; }
+      /* line 29, ../../app/stylesheets/_utility.sass */
+      #main ul li.divider ul {
+        display: block; }
+      /* line 79, ../../app/stylesheets/_lists.sass */
+      #main ul li.divider ul li {
+        list-style-type: none;
+        background: none;
+        margin-left: 0px;
+        white-space: nowrap;
+        display: inline;
+        float: left;
+        padding-left: 4px;
+        padding-right: 4px; }
+        /* line 69, ../../app/stylesheets/_lists.sass */
+        #main ul li.divider ul li.first {
+          padding-left: 0px; }
+        /* line 71, ../../app/stylesheets/_lists.sass */
+        #main ul li.divider ul li.last {
+          padding-right: 0px; }
+      /* line 382, ../../app/stylesheets/application.sass */
+      #main ul li.divider ul li {
+        font-size: 12px;
+        color: #867455;
+        padding: 3px 7px;
+        width: 70px;
+        float: right; }
+        /* line 388, ../../app/stylesheets/application.sass */
+        #main ul li.divider ul li a {
+          float: right;
+          font-size: 11px;
+          line-height: 1.3em;
+          margin: 2px 8px 0px 0px;
+          color: #867455; }
+          /* line 394, ../../app/stylesheets/application.sass */
+          #main ul li.divider ul li a:hover {
+            color: #4E4535; }
+        /* line 396, ../../app/stylesheets/application.sass */
+        #main ul li.divider ul li.milestone_number {
+          float: left;
+          font-family: "Calibri", arial, helvetica;
+          font-size: 15px;
+          color: #4E4535;
+          text-shadow: 1px 1px 1px #fff;
+          cursor: ns-resize;
+          width: 260px;
+          margin: 0px; }
+
+/* line 409, ../../app/stylesheets/application.sass */
+#sidebar h2 {
+  font-size: 21px; }
+/* line 411, ../../app/stylesheets/application.sass */
+#sidebar ul.pages {
+  margin: 0 0 20px 0; }
+  /* line 11, ../../app/stylesheets/_lists.sass */
+  #sidebar ul.pages li {
+    list-style-type: none;
+    background: none;
+    margin-left: 0px; }
+  /* line 414, ../../app/stylesheets/application.sass */
+  #sidebar ul.pages li {
+    list-style-type: none;
+    background: none;
+    margin-left: 0px;
+    padding: 0; }
+    /* line 417, ../../app/stylesheets/application.sass */
+    #sidebar ul.pages li:hover {
+      background: #BFBEBA; }
+    /* line 419, ../../app/stylesheets/application.sass */
+    #sidebar ul.pages li a {
+      color: #464646;
+      text-shadow: 1px 1px 0 #fff;
+      font-family: Calibri;
+      font-weight: normal;
+      font-size: 15px;
+      display: block;
+      padding: 9px 12px 9px 14px;
+      margin-left: 7px;
+      border-bottom: 1px solid #CCD2CB; }
+      /* line 430, ../../app/stylesheets/application.sass */
+      #sidebar ul.pages li a:hover {
+        background: #f1f0ed;
+        color: #232323; }
+    /* line 433, ../../app/stylesheets/application.sass */
+    #sidebar ul.pages li.selected,
+    #sidebar ul.pages li.selected:hover {
+      border: none;
+      background: #9CC276; }
+      /* line 437, ../../app/stylesheets/application.sass */
+      #sidebar ul.pages li.selected a,
+      #sidebar ul.pages li.selected:hover a {
+        color: #232323;
+        background: #fff;
+        text-shadow: none; }
+      /* line 441, ../../app/stylesheets/application.sass */
+      #sidebar ul.pages li.selected.drophover,
+      #sidebar ul.pages li.selected:hover.drophover {
+        border: none;
+        background: #9CC276; }
+        /* line 444, ../../app/stylesheets/application.sass */
+        #sidebar ul.pages li.selected.drophover a, #sidebar ul.pages li.selected.drophover a:hover,
+        #sidebar ul.pages li.selected:hover.drophover a, #sidebar ul.pages li.selected:hover.drophover a:hover {
+          color: #232323 !important;
+          background: #fff;
+          text-shadow: none; }
+    /* line 448, ../../app/stylesheets/application.sass */
+    #sidebar ul.pages li.drophover {
+      background: #e0c35f; }
+      /* line 450, ../../app/stylesheets/application.sass */
+      #sidebar ul.pages li.drophover a {
+        color: #B83107 !important;
+        text-shadow: none;
+        background: #fff3bd; }
+/* line 456, ../../app/stylesheets/application.sass */
+#sidebar #plans .box {
+  height: auto !important;
+  width: auto; }
+
+/* line 459, ../../app/stylesheets/application.sass */
+#plans {
+  text-align: center; }
+  /* line 461, ../../app/stylesheets/application.sass */
+  #plans #one, #plans #two, #plans #three {
+    text-align: center; }
+  /* line 463, ../../app/stylesheets/application.sass */
+  #plans .box {
+    padding: 1.4em 1.8em 1.8em;
+    margin: 0 0 .8em 0;
+    border: 6px solid #a1c47e;
+    background: #fcfcfc;
+    height: 210px; }
+    /* line 469, ../../app/stylesheets/application.sass */
+    #plans .box h2 {
+      color: #333333;
+      font-size: 25px;
+      margin-bottom: 10px; }
+    /* line 473, ../../app/stylesheets/application.sass */
+    #plans .box h3 {
+      color: #608041;
+      font-family: Helvetica,Arial,sans-serif;
+      font-size: 22px;
+      font-weight: normal;
+      margin-bottom: 10px; }
+    /* line 480, ../../app/stylesheets/application.sass */
+    #plans .box ul.details {
+      padding: 0px;
+      margin: 5px 0px 20px; }
+      /* line 483, ../../app/stylesheets/application.sass */
+      #plans .box ul.details li {
+        margin: 0px;
+        background-image: none;
+        color: #363636;
+        padding: 3px 0px;
+        font-weight: normal;
+        font-size: 14px; }
+        /* line 491, ../../app/stylesheets/application.sass */
+        #plans .box ul.details li span {
+          color: #c5291f; }
+    /* line 494, ../../app/stylesheets/application.sass */
+    #plans .box .buttons a {
+      font-size: 90%;
+      font-family: "Calibri",Helvetica,sans-serif;
+      float: none;
+      margin: 0; }
+    /* line 500, ../../app/stylesheets/application.sass */
+    #plans .box .trial {
+      margin: 12px 0px;
+      text-transform: none;
+      font-size: 10px !important;
+      padding: 3px 6px;
+      font-size: 13px;
+      padding: 0.55em 0.8em;
+      margin-bottom: 1em;
+      border-top: 1px solid #dddddd;
+      border-bottom: 1px solid #dddddd;
+      background: #f8e89f;
+      color: #b83107;
+      border-color: #e9a438; }
+      /* line 68, ../../app/stylesheets/_colors.sass */
+      #plans .box .trial a {
+        color: #b83107;
+        border-color: #d1b534; }
+  /* line 508, ../../app/stylesheets/application.sass */
+  #plans #needs {
+    text-align: center;
+    font-size: 13px;
+    color: #5f5f5f;
+    margin-bottom: 12px; }
+  /* line 513, ../../app/stylesheets/application.sass */
+  #plans #open_source {
+    font-size: 14px;
+    background: #FCFCFC none repeat scroll 0 0;
+    border: 1px dashed #A1C47E;
+    padding: 1.2em 1.3em;
+    margin-bottom: 1.5em;
+    text-align: center; }
+  /* line 520, ../../app/stylesheets/application.sass */
+  #plans #about_trial {
+    text-align: center;
+    background: #F8E89F;
+    border: 1px dashed #E9A438;
+    padding: 20px 90px; }
+    /* line 525, ../../app/stylesheets/application.sass */
+    #plans #about_trial h3 {
+      color: #ae040f;
+      font-size: 22px;
+      margin-bottom: 10px; }
+    /* line 529, ../../app/stylesheets/application.sass */
+    #plans #about_trial p {
+      color: #B83107; }
+
+/* line 531, ../../app/stylesheets/application.sass */
+#footer {
+  bottom: 0;
+  height: 34px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  background-color: #2C2C2C;
+  border-top: 3px solid #1C1C1C;
+  display: inline;
+  float: right;
+  padding: 6px 0px;
+  margin: 0px;
+  z-index: 1000; }
+  /* line 543, ../../app/stylesheets/application.sass */
+  #footer+#full #main {
+    padding-bottom: 50px; }
+  /* line 545, ../../app/stylesheets/application.sass */
+  #footer ul {
+    background: #232323 none repeat scroll 0 0;
+    display: inline;
+    width: 749px;
+    float: left;
+    padding: 3px 6px;
+    margin: 0px; }
+    /* line 11, ../../app/stylesheets/_lists.sass */
+    #footer ul li {
+      list-style-type: none;
+      background: none;
+      margin-left: 0px; }
+    /* line 553, ../../app/stylesheets/application.sass */
+    #footer ul li {
+      display: inline;
+      float: left;
+      background-image: none;
+      padding: 5px 0px;
+      font-size: 12px;
+      color: #bec6bd;
+      display: block;
+      text-decoration: none;
+      margin: 0px;
+      width: 85px; }
+      /* line 563, ../../app/stylesheets/application.sass */
+      #footer ul li.footer_title {
+        font-family: arial, helvetica, sans-serif;
+        font-size: 11px;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        color: #737672;
+        margin: 1px 0px 0px 20px;
+        width: 380px; }
+        /* line 572, ../../app/stylesheets/application.sass */
+        #footer ul li.footer_title a {
+          margin-left: 8px;
+          color: #bec6bd;
+          text-decoration: none;
+          border-bottom: 1px solid #556154; }
+          /* line 577, ../../app/stylesheets/application.sass */
+          #footer ul li.footer_title a:hover {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid #99a997; }
+      /* line 581, ../../app/stylesheets/application.sass */
+      #footer ul li span {
+        color: #7c9179; }
+        /* line 583, ../../app/stylesheets/application.sass */
+        #footer ul li span a {
+          color: #bec6bd;
+          display: block;
+          text-decoration: none; }
+          /* line 587, ../../app/stylesheets/application.sass */
+          #footer ul li span a:hover {
+            color: #fff;
+            text-decoration: none; }
+        /* line 590, ../../app/stylesheets/application.sass */
+        #footer ul li span.selected, #footer ul li span.selected:hover {
+          font-weight: bold; }
+
+/* line 592, ../../app/stylesheets/application.sass */
+#lowdown {
+  margin: 40px auto 10px;
+  text-align: center; }
+  /* line 595, ../../app/stylesheets/application.sass */
+  #lowdown a, #lowdown a:hover {
+    border-bottom: none; }
+
+/* line 599, ../../app/stylesheets/application.sass */
+body#homepage #header {
+  height: 50px; }
+  /* line 601, ../../app/stylesheets/application.sass */
+  body#homepage #header #menu {
+    padding: 4px 6px;
+    margin-top: 8px; }
+/* line 604, ../../app/stylesheets/application.sass */
+body#homepage #content {
+  padding: 0px; }
+/* line 606, ../../app/stylesheets/application.sass */
+body#homepage #splash {
+  background: transparent url(/images/splash2.jpg) no-repeat 48% top;
+  height: 495px; }
+  /* line 609, ../../app/stylesheets/application.sass */
+  body#homepage #splash #tagline {
+    padding: 119px 0 0 90px; }
+    /* line 611, ../../app/stylesheets/application.sass */
+    body#homepage #splash #tagline p {
+      font-family: Georgia, serif;
+      font-size: 23px;
+      color: #2c3920;
+      margin-bottom: 12px; }
+    /* line 616, ../../app/stylesheets/application.sass */
+    body#homepage #splash #tagline .buttons {
+      text-align: center; }
+/* line 618, ../../app/stylesheets/application.sass */
+body#homepage #ad {
+  padding: 60px 0 0 70px; }
+  /* line 620, ../../app/stylesheets/application.sass */
+  body#homepage #ad h2 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: normal;
+    color: #c3261c;
+    margin-bottom: 15px; }
+  /* line 626, ../../app/stylesheets/application.sass */
+  body#homepage #ad p {
+    font-family: Georgia, serif;
+    width: 150px;
+    font-size: 17.5px;
+    width: 300px;
+    line-height: 1.4em;
+    color: #343434; }
+    /* line 633, ../../app/stylesheets/application.sass */
+    body#homepage #ad p span {
+      color: #68844c; }
+/* line 636, ../../app/stylesheets/application.sass */
+body#homepage #lower {
+  margin: 10px auto 10px;
+  width: 836px; }
+  /* line 639, ../../app/stylesheets/application.sass */
+  body#homepage #lower h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #232323;
+    margin-bottom: 15px; }
+  /* line 646, ../../app/stylesheets/application.sass */
+  body#homepage #lower #one img, body#homepage #lower #two img, body#homepage #lower #three img {
+    border: 1px solid #868686; }
+  /* line 649, ../../app/stylesheets/application.sass */
+  body#homepage #lower p {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.4em;
+    color: #343434;
+    height: 90px;
+    text-align: left; }
+/* line 657, ../../app/stylesheets/application.sass */
+body#homepage #credits {
+  height: 300px;
+  margin: 0px auto 100px;
+  background: transparent url(/images/credits.jpg) no-repeat center top; }
+  /* line 662, ../../app/stylesheets/application.sass */
+  body#homepage #credits #cucumber p {
+    padding: 122px 0px 0px 150px;
+    width: 340px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.4em;
+    color: #537136; }
+    /* line 669, ../../app/stylesheets/application.sass */
+    body#homepage #credits #cucumber p a {
+      line-height: 1em;
+      margin-right: 10px;
+      text-decoration: none;
+      border-bottom: 1px solid #829a6a; }
+      /* line 674, ../../app/stylesheets/application.sass */
+      body#homepage #credits #cucumber p a:hover {
+        border-bottom: 2px solid #677a55; }
+  /* line 677, ../../app/stylesheets/application.sass */
+  body#homepage #credits #microbrew p {
+    text-align: center;
+    width: 210px;
+    padding: 165px 20px 0px;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    color: #594848; }
+    /* line 685, ../../app/stylesheets/application.sass */
+    body#homepage #credits #microbrew p a {
+      line-height: 1em;
+      margin-right: 10px;
+      text-decoration: none;
+      border-bottom: 1px solid #9c9284; }
+      /* line 690, ../../app/stylesheets/application.sass */
+      body#homepage #credits #microbrew p a:hover {
+        border-bottom: 2px solid #7b7265; }
+
+/* line 694, ../../app/stylesheets/application.sass */
+table.status_window, table.status_window table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+  color: #e5e5e5 ! important;
+  font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 110%;
+  text-shadow: black 0 0 0;
+  background-color: transparent;
+  width: auto; }
+  /* line 702, ../../app/stylesheets/application.sass */
+  table.status_window tr, table.status_window td, table.status_window th, table.status_window table tr, table.status_window table td, table.status_window table th {
+    border: none; }
+
+/* line 705, ../../app/stylesheets/application.sass */
+.status_content {
+  padding: 2px 10px 2px 5px; }

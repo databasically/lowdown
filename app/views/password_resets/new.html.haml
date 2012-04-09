@@ -1,0 +1,17 @@
+#lowdown
+  %a{:href => "http://lowdownapp.com"}
+    %img{:src => "/images/logo-login.jpg"}/
+- if flash[:notice]
+  %p.notice= flash[:notice]
+- form_tag password_resets_path, :id => "new_user_session" do
+  %fieldset#normal-login
+    %ol
+      %li.required
+        %label{:for => 'email'} Email
+        %br/
+        = text_field_tag :email, params[:email]
+    .buttons
+      %button{:type => "submit"}
+        Reset password
+  #login_toggle.small.right
+    = link_to "&laquo; Go back to login", login_path

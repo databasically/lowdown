@@ -1,0 +1,116 @@
+!text_color            ||= #232323
+!header_color          ||= #333333
+
+!link_color            ||= #B3000C
+!link_hover_color      ||= #232323
+!link_focus_color      ||= !link_hover_color
+!link_active_color     ||= !link_color + #C00
+!link_visited_color    ||= !link_color
+
+!feedback_border_color ||= #DDD
+!success_color         ||= #3e7805
+!success_bg_color      ||= #e0ebb4
+!success_border_color  ||= #afc75d
+
+!notice_color          ||= #B83107
+!notice_bg_color       ||= #F8E89F
+!notice_border_color   ||= #E9A438
+
+!error_color           ||= #bc180f
+!error_bg_color        ||= #f9d8da
+!error_border_color    ||= #e3a2a5
+
+!highlight_color       ||= #FF0
+!added_color           ||= #FFF
+!added_bg_color        ||= #060
+!removed_color         ||= #FFF
+!removed_bg_color      ||= #900
+
+!blueprint_table_header_color ||= #edecec
+!blueprint_table_stripe_color ||= #edecec
+
+=interaction
+  .error
+    +error
+  .notice
+    +notice
+  .success
+    +success
+  .hide
+    :display none
+  .highlight
+    +highlight
+  .added
+    +added
+  .removed
+    +removed
+
+=feedback-base
+  :font-size 13px
+  :padding 0.55em 0.8em
+  :margin-bottom 1em
+  :border-top= 1px "solid" !feedback_border_color
+  :border-bottom= 1px "solid" !feedback_border_color
+
+=error
+  +feedback-base
+  :background   = !error_bg_color
+  :color        = !error_color
+  :border-color = !error_border_color
+  a
+    :color      = !error_color
+
+=notice
+  +feedback-base
+  :background   = !notice_bg_color
+  :color        = !notice_color
+  :border-color = !notice_border_color
+  a
+    :color      = !notice_color
+    :border-color #d1b534
+
+=success
+  +feedback-base
+  :background   = !success_bg_color
+  :color        = !success_color
+  :border-color = !success_border_color
+  a
+    :color      = !success_color
+
+=highlight
+  :background = !highlight_color
+
+=added
+  :background = !added_bg_color
+  :color      = !added_color
+
+=removed
+  :background = !removed_bg_color
+  :color      = !removed_color
+
+// Set all the colors for a link with one mixin call
+// Order of arguments is:
+// normal, hover, active, visited, focus
+// states not specified will inherit.
+// Mixin like so:
+// a
+//   +link-colors(#00c, #0cc, #c0c, #ccc, #cc0)
+
+=link-colors(!normal, !hover = false, !active = false, !visited = false, !focus = false)
+  :color= !normal
+  @if !focus
+    &:focus
+      :color= !focus
+  @if !hover
+    &:hover
+      :color= !hover
+  @if !active
+    &:active
+      :color= !active
+      
+=hover-link
+  :text-decoration none
+  :border-bottom 1px solid #d9d9d9
+  &:hover
+    :text-decoration none
+    :border-bottom 2px solid #cbcdd3

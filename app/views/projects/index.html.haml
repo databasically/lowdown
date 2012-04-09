@@ -1,0 +1,28 @@
+#admin
+  #top
+    - if false
+      %p.negative="Error message can go here."
+      .clear
+    .buttons.right{:style => "margin: 0px 251px 0px 58px;"}
+      %a.center{ :href => new_project_path, :title => "Add a new project" }
+        %img{:src => "/images/add.png"}/
+        Add project
+      
+    %h1 Projects
+  #main
+    #projects
+      %fieldset
+        - if @projects.empty?
+          = link_to 'Create a new project now', new_project_url
+        - else
+          %ul#boxlist{:style => "margin-bottom:0px"}
+            - @projects.each do |project|
+              %li[project]
+                .buttons.right
+                  - if current_user == project.creator
+                    = link_to "Export", project_path(project, :title => "Export all features", :format => :zip), :style => "margin-right:0px"
+                    = link_to 'Edit Settings', edit_project_path(project), :class => 'positive' 
+                  - else
+                    = link_to 'Leave project', project_membership_path(project, project.memberships.find_by_user_id(current_user)), {:method => :delete, :confirm => "Are you sure you want to leave this project?"}, :style => "margin-right:0px"
+                %a{:href => project_path(project)}= project.name
+                .clear

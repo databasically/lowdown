@@ -1,0 +1,185 @@
+.buttons
+  a, button
+    :-moz-background-clip border
+    :-moz-background-inline-policy continuous
+    :-moz-background-origin padding
+    :-moz-border-radius-bottomleft 10px
+    :-moz-border-radius-bottomright 10px
+    :-moz-border-radius-topleft 10px
+    :-moz-border-radius-topright 10px
+    :-moz-box-shadow 0 1px 3px rgba(0, 0, 0, 0.15)
+    :-webkit-border-radius 10px
+    :-webkit-box-shadow 0 1px 3px rgba(0,0,0,0.15)
+    :border-radius 10px
+    :box-shadow 0 1px 3px rgba(0,0,0,0.15)
+    :background #EAEAEA url(/images/buttongradient.png) repeat-x scroll left top
+    :border-color #bdbdbd #9b9a9a #9b9a9a #bdbdbd
+    :border-style solid
+    :border-width 1px
+    :color #464646
+    :cursor pointer
+    :display block
+    :float left
+    :font-weight bold
+    :font-family "Lucida Grande",Tahoma,Arial,sans-serif
+    :font-size 82%
+    :line-height 130%
+    :margin 0 0.7em 0 0
+    :padding 5px 10px 6px
+    :text-decoration none
+
+a.button, button.button
+  :-moz-background-clip border
+  :-moz-background-inline-policy continuous
+  :-moz-background-origin padding
+  :-moz-border-radius-bottomleft 10px
+  :-moz-border-radius-bottomright 10px
+  :-moz-border-radius-topleft 10px
+  :-moz-border-radius-topright 10px
+  :-moz-box-shadow 0 1px 3px rgba(0, 0, 0, 0.15)
+  :-webkit-border-radius 10px
+  :-webkit-box-shadow 0 1px 3px rgba(0,0,0,0.15)
+  :border-radius 10px
+  :box-shadow 0 1px 3px rgba(0,0,0,0.15)
+  :background #EAEAEA url(/images/buttongradient.png) repeat-x scroll left top
+  :border-color #bdbdbd #9b9a9a #9b9a9a #bdbdbd
+  :border-style solid
+  :border-width 1px
+  :color #464646
+  :cursor pointer
+  :display block
+  :float left
+  :font-weight bold
+  :font-family "Lucida Grande",Tahoma,Arial,sans-serif
+  :font-size 82%
+  :line-height 130%
+  :margin 0 0.7em 0 0
+  :padding 5px 10px 6px
+  :text-decoration none
+
+a.button, button.button
+  :display inline-block
+  :float none
+
+
+.button, .buttons
+  &.small
+    :font-size 75% !important
+  &.right
+    :float right
+    :margin-right 0px
+    
+.buttons button, button.button
+  :overflow visible
+  :padding 4px 10px 3px 7px
+  :width auto
+
+.buttons button[type], button.button[type]
+  :line-height 17px
+  :padding 5px 10px 5px 7px
+  :width auto
+
+.chrome
+  .buttons button, button.button
+    :padding 4px 10px 4px 7px
+    
+.buttons
+  button img, a img
+    :margin 0 0px -3px 0 !important
+
+a.button img, button.button img
+  :margin 0 3px -3px 0 !important
+
+.buttons
+  button:hover, a:hover
+    :border 1px solid #999999
+    :color #000000
+
+a.button:hover
+  :border 1px solid #999999
+  :color #000000
+
+button
+  &.button:hover
+    :border 1px solid #999999
+    :color #000000
+
+  &.active
+    :-moz-background-clip border
+    :-moz-background-inline-policy continuous
+    :-moz-background-origin padding
+    :-moz-box-shadow none
+    :-webkit-box-shadow none
+    :box-shadow none
+    :background #FFFFFF url(/images/buttongradient.png) repeat-x scroll left top
+    :border-color #CCCCCC
+
+.buttons a:active, a.button:active
+  :-moz-background-clip border
+  :-moz-background-inline-policy continuous
+  :-moz-background-origin padding
+  :-moz-box-shadow none
+  :-webkit-box-shadow none
+  :box-shadow none
+  :background #FFFFFF url(/images/buttongradient.png) repeat-x scroll left top
+  :border-color #CCCCCC
+
+button.positive
+  :color #2e600d
+  :font-weight bold
+
+a.positive
+  :color #3f710d
+  :font-weight bold
+  &:hover
+    :color #232323
+a
+  &.positive:active
+    :-moz-background-clip border
+    :-moz-background-inline-policy continuous
+    :-moz-background-origin padding
+    :background #719a48 none repeat scroll 0 0
+    :border 1px solid #719a48
+    :color #FFFFFF
+    :text-shadow 1px 1px 1px #607710
+
+  &.negative
+    :color #D12F19
+    
+a.negative:hover, button.negative:hover
+  :color #D12F19
+  
+a.negative:active
+  :-moz-background-clip border
+  :-moz-background-inline-policy continuous
+  :-moz-background-origin padding
+  :background #D12F19 none repeat scroll 0 0
+  :border 1px solid #D12F19
+  :color #FFFFFF
+  :text-shadow 1px 1px 1px #A93816
+  
+button.positive:hover
+  :color #232323
+  
+button.negative
+  :color #D12F19
+
+#cancel 
+  .buttons
+    :width 150px
+    :margin-left 40px
+
+  
+*
+  html
+    .buttons button[type], button.button[type]
+      :margin-bottom 1px
+      :padding 4px 10px 3px 7px
+
+  html button.button
+    :margin-bottom 1px
+
+.icon
+  :height 16px
+  :width 16px
+

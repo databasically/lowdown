@@ -1,0 +1,22 @@
+%li.divider[milestone]
+  %ul
+    %li.milestone_number.top
+      Milestone
+    %li
+      == #{number_to_currency(milestone.cost, :precision => 0)}
+    %li
+      = pluralize(milestone.sum_hours, "Hour")
+    %li
+      = pluralize(milestone.scenario_count, "Scenario")
+    %li  
+      = pluralize(milestone.feature_count, "Feature")
+    %li
+      %a.delete_milestone{:href => project_milestone_path(milestone.project, milestone), :title => "Delete this milestone"}
+        remove
+
+
+
+
+  .clear
+  - if controller.controller_name == 'milestones' && controller.action_name != 'index'
+    = javascript_tag "$.get(#{project_milestones_url(@project, :format => :json).to_json}, {}, function(json){ $.each(json, updateMilestones); }, 'json');"

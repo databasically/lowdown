@@ -1,0 +1,39 @@
+%li[feature]
+  .move_corner
+    %ul.move_to_page
+      %li{:title => "Move this to another folder"}
+  %ul
+    %li.top
+      .value= escape_once(feature.name)
+      .cost
+        = number_to_currency(feature.cost, :precision => 0)
+      .clear
+    %li.middle
+      .value
+        .buttons
+          %a.delete_feature.negative{:style => "float:right;" + (params[:commit] == 'continue' ? '' : "display:none"), :href => project_feature_path(feature.project, feature), :title => "Delete this feature" } Delete this feature
+          %a{ :href => "#", :rel => "toggle", :title => "Number of scenarios" }
+            %span.toggle{:style => params[:commit] == 'continue' ? "display:none" : nil}= pluralize(feature.scenario_count, "scenario")
+            %span.toggle{:style => params[:commit] == 'continue' ? nil : "display:none"} Close
+          %a.edit_feature{:style => "display:none", :href => edit_project_feature_path(feature.project, feature), :title => "Edit this feature" } Edit
+        %p
+          Last edited by
+          %span= feature.updater.display_name
+          on
+          = feature.updated_at.in_time_zone.strftime("%B %e, %Y at %I:%M%p %Z").sub(/(\s)0(\d:)/, '\1\2')
+      .cost= pluralize(feature.hours || 0, 'hour')
+      .clear
+    - if params[:commit] == 'continue'
+      = render :partial => "form"
+    - else
+      %li.drawer{:style => "display:none"}
+        %ul.items
+          %li.edit_scenario
+            .box
+              .inner
+                %pre= feature.formatted
+
+- if controller.controller_name == 'features' # only invoke on create/update/show
+  :javascript
+    $.each(#{milestones_for_json.to_json}, updateMilestones);
+    $('#footer .container').html(#{render(:partial => 'projects/project_totals').to_json});

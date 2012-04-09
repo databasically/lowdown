@@ -1,0 +1,10 @@
+%li[@feature]
+  %ul
+    %li.top
+      .value= @feature.tree_mash.name
+      .cost= number_to_currency(@feature.cost, :precision => 0)
+      .clear
+    %li.middle
+      &nbsp;
+      .clear
+    = render :partial => "features/form"

@@ -1,0 +1,670 @@
+/* line 1, ../../app/stylesheets/_forms.sass */
+label {
+  font-weight: bold; }
+
+/* line 3, ../../app/stylesheets/_forms.sass */
+input {
+  margin: 0.5em 0;
+  width: 300px;
+  padding: 5px; }
+
+/* line 7, ../../app/stylesheets/_forms.sass */
+textarea {
+  margin: 0.5em 0;
+  width: 390px;
+  height: 250px;
+  padding: 5px; }
+
+/* line 12, ../../app/stylesheets/_forms.sass */
+select {
+  margin: 0; }
+
+/* line 14, ../../app/stylesheets/_forms.sass */
+fieldset {
+  padding: 1.4em 1.8em 1.8em;
+  margin: 0 0 1.5em 0;
+  border-top: 1px solid #D4D4D2;
+  border-right: 1px solid #b4b3b0;
+  border-bottom: 1px solid #b4b3b0;
+  border-left: 1px solid #D4D4D2;
+  background: #fcfcfc; }
+  /* line 22, ../../app/stylesheets/_forms.sass */
+  fieldset label {
+    line-height: 1.1em !important;
+    font-weight: normal; }
+  /* line 25, ../../app/stylesheets/_forms.sass */
+  fieldset input {
+    color: #222222;
+    font-size: 16px !important;
+    font-weight: bold;
+    padding: 3px;
+    margin: .3em 0; }
+  /* line 31, ../../app/stylesheets/_forms.sass */
+  fieldset fieldset {
+    margin: 1.5em 0 0 0; }
+    /* line 33, ../../app/stylesheets/_forms.sass */
+    fieldset fieldset legend {
+      font-size: 1.2em;
+      margin-left: 45px; }
+
+/* line 36, ../../app/stylesheets/_forms.sass */
+legend {
+  padding: 0px 8px;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-letter-spacing: -1px !important;
+  font-family: "Calibri","Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 44, ../../app/stylesheets/_forms.sass */
+form ol {
+  margin: 0;
+  padding: 0; }
+  /* line 47, ../../app/stylesheets/_forms.sass */
+  form ol li {
+    list-style: none;
+    padding: 5px 0px;
+    margin: 0; }
+/* line 51, ../../app/stylesheets/_forms.sass */
+form label {
+  color: #232323;
+  width: 110px;
+  font-size: .8em;
+  display: inline-block;
+  line-height: 1.8;
+  vertical-align: middle; }
+/* line 58, ../../app/stylesheets/_forms.sass */
+form select {
+  font-size: .78em;
+  width: 150px;
+  padding: 1px; }
+/* line 62, ../../app/stylesheets/_forms.sass */
+form input {
+  font-size: .8em;
+  padding: 4px;
+  width: 440px; }
+/* line 66, ../../app/stylesheets/_forms.sass */
+form textarea {
+  width: 440px; }
+/* line 68, ../../app/stylesheets/_forms.sass */
+form em {
+  font-weight: bold;
+  font-style: normal;
+  color: #D12F19; }
+
+/* line 76, ../../app/stylesheets/_forms.sass */
+fieldset#account label {
+  text-align: right;
+  margin-right: 18px;
+  width: 120px; }
+/* line 80, ../../app/stylesheets/_forms.sass */
+fieldset#account input {
+  width: 340px; }
+/* line 82, ../../app/stylesheets/_forms.sass */
+fieldset#account span {
+  text-align: left;
+  padding-left: 146px;
+  color: #7d7d7d;
+  font-size: 10px;
+  font-weight: normal; }
+/* line 89, ../../app/stylesheets/_forms.sass */
+fieldset#account .buttons {
+  margin: 20px 0px 0px 143px; }
+
+/* line 94, ../../app/stylesheets/_forms.sass */
+form#new_user,
+form#new_user_session {
+  margin: 0px auto 0px; }
+  /* line 97, ../../app/stylesheets/_forms.sass */
+  form#new_user h2,
+  form#new_user_session h2 {
+    text-align: center;
+    margin-bottom: 15px; }
+  /* line 100, ../../app/stylesheets/_forms.sass */
+  form#new_user label,
+  form#new_user_session label {
+    width: 90px;
+    line-height: .9em; }
+  /* line 103, ../../app/stylesheets/_forms.sass */
+  form#new_user fieldset,
+  form#new_user_session fieldset {
+    padding: 1.8em;
+    margin-bottom: 10px;
+    border: 8px solid #a1c47e;
+    background: #fff url(/images/login-head.gif) no-repeat bottom right; }
+  /* line 108, ../../app/stylesheets/_forms.sass */
+  form#new_user li,
+  form#new_user_session li {
+    clear: both;
+    padding: 0px;
+    margin: 0px 0px 4px; }
+  /* line 112, ../../app/stylesheets/_forms.sass */
+  form#new_user .buttons,
+  form#new_user_session .buttons {
+    margin-top: 15px; }
+    /* line 114, ../../app/stylesheets/_forms.sass */
+    form#new_user .buttons.small,
+    form#new_user_session .buttons.small {
+      margin-top: 0px; }
+  /* line 116, ../../app/stylesheets/_forms.sass */
+  form#new_user a#normal-login, form#new_user a#normal-signup,
+  form#new_user_session a#normal-login, form#new_user_session a#normal-signup {
+    display: none; }
+  /* line 118, ../../app/stylesheets/_forms.sass */
+  form#new_user img.openicon,
+  form#new_user_session img.openicon {
+    margin: 0px 3px -2px 0px; }
+
+/* line 122, ../../app/stylesheets/_forms.sass */
+form#new_user {
+  width: 480px; }
+  /* line 124, ../../app/stylesheets/_forms.sass */
+  form#new_user input {
+    width: 390px; }
+    /* line 126, ../../app/stylesheets/_forms.sass */
+    form#new_user input#user_openid_identifier {
+      width: 390px; }
+  /* line 128, ../../app/stylesheets/_forms.sass */
+  form#new_user label {
+    width: 200px; }
+  /* line 130, ../../app/stylesheets/_forms.sass */
+  form#new_user .error-with-field {
+    display: inline; }
+    /* line 132, ../../app/stylesheets/_forms.sass */
+    form#new_user .error-with-field .error {
+      width: 312px;
+      float: left; }
+  /* line 135, ../../app/stylesheets/_forms.sass */
+  form#new_user #open_id {
+    border: 1px solid #AFC75D;
+    width: 402px; }
+    /* line 138, ../../app/stylesheets/_forms.sass */
+    form#new_user #open_id #open_id_header {
+      background: #E6EFC2 url(/images/open_id_header.gif) repeat-x scroll center bottom;
+      color: #437A0E;
+      font-size: .8em;
+      padding: 8px 12px; }
+      /* line 143, ../../app/stylesheets/_forms.sass */
+      form#new_user #open_id #open_id_header a {
+        float: right; }
+    /* line 145, ../../app/stylesheets/_forms.sass */
+    form#new_user #open_id #providers {
+      padding: 5px;
+      clear: both;
+      color: #000;
+      background-color: #fff; }
+      /* line 150, ../../app/stylesheets/_forms.sass */
+      form#new_user #open_id #providers a {
+        width: 33%;
+        font-size: .8em;
+        float: left;
+        background-color: #fff;
+        text-decoration: none; }
+
+/* line 158, ../../app/stylesheets/_forms.sass */
+form#new_user_session {
+  width: 480px; }
+  /* line 160, ../../app/stylesheets/_forms.sass */
+  form#new_user_session .error-with-field {
+    display: inline; }
+    /* line 162, ../../app/stylesheets/_forms.sass */
+    form#new_user_session .error-with-field .error {
+      width: 383px;
+      float: left; }
+  /* line 166, ../../app/stylesheets/_forms.sass */
+  form#new_user_session input#user_session_email {
+    width: 390px; }
+  /* line 168, ../../app/stylesheets/_forms.sass */
+  form#new_user_session input#user_session_password {
+    width: 245px; }
+  /* line 170, ../../app/stylesheets/_forms.sass */
+  form#new_user_session input#user_session_openid_identifier {
+    width: 390px; }
+  /* line 172, ../../app/stylesheets/_forms.sass */
+  form#new_user_session input#openid_username {
+    width: 390px; }
+  /* line 174, ../../app/stylesheets/_forms.sass */
+  form#new_user_session #open_id {
+    border: 1px solid #AFC75D;
+    width: 402px;
+    clear: both; }
+    /* line 178, ../../app/stylesheets/_forms.sass */
+    form#new_user_session #open_id #open_id_header {
+      background: #E6EFC2 url(/images/open_id_header.gif) repeat-x scroll center bottom;
+      color: #437A0E;
+      font-size: .8em;
+      padding: 8px 12px; }
+      /* line 183, ../../app/stylesheets/_forms.sass */
+      form#new_user_session #open_id #open_id_header a {
+        float: right; }
+    /* line 185, ../../app/stylesheets/_forms.sass */
+    form#new_user_session #open_id #providers {
+      padding: 5px;
+      clear: both;
+      color: #000;
+      background-color: #fff; }
+      /* line 190, ../../app/stylesheets/_forms.sass */
+      form#new_user_session #open_id #providers a {
+        width: 33%;
+        font-size: .8em;
+        float: left;
+        background-color: #fff;
+        text-decoration: none; }
+
+/* line 198, ../../app/stylesheets/_forms.sass */
+select#user_timezone {
+  width: 354px;
+  padding: 2px;
+  font-size: 12px; }
+
+/* line 202, ../../app/stylesheets/_forms.sass */
+select#project_id {
+  font-size: 10px;
+  margin-top: -1px;
+  width: 180px;
+  padding: 2px; }
+
+/* line 207, ../../app/stylesheets/_forms.sass */
+#insetbox {
+  margin-top: 20px;
+  padding: 4px 14px 2px;
+  background: #EBEFF5 none repeat scroll 0 0;
+  border-left: 1px solid #BDC8D8;
+  border-right: 1px solid #BDC8D8;
+  border-top: 1px solid #BDC8D8;
+  height: 75px; }
+  /* line 215, ../../app/stylesheets/_forms.sass */
+  #insetbox p {
+    text-align: center;
+    font-weight: bold; }
+  /* line 218, ../../app/stylesheets/_forms.sass */
+  #insetbox label {
+    width: 405px;
+    color: #3e6193;
+    font-size: 12px;
+    margin-bottom: 1px; }
+  /* line 223, ../../app/stylesheets/_forms.sass */
+  #insetbox span#accepted {
+    font-weight: normal; }
+
+/* line 226, ../../app/stylesheets/_forms.sass */
+#projects input#project_name {
+  width: 418px; }
+/* line 228, ../../app/stylesheets/_forms.sass */
+#projects input#project_rate {
+  width: 65px; }
+/* line 230, ../../app/stylesheets/_forms.sass */
+#projects input#email {
+  width: 404px;
+  height: 19px; }
+
+/* line 233, ../../app/stylesheets/_forms.sass */
+#login_toggle {
+  margin-right: 25px;
+  font-size: 11px; }
+  /* line 236, ../../app/stylesheets/_forms.sass */
+  #login_toggle a {
+    text-decoration: none;
+    border-bottom: 1px solid #c5c5c5; }
+    /* line 239, ../../app/stylesheets/_forms.sass */
+    #login_toggle a:hover {
+      border-bottom: 2px solid #b4b4b4; }
+
+/* line 33, ../../app/stylesheets/_colors.sass */
+.error {
+  font-size: 13px;
+  padding: 0.55em 0.8em;
+  margin-bottom: 1em;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  background: #f9d8da;
+  color: #bc180f;
+  border-color: #e3a2a5; }
+  /* line 60, ../../app/stylesheets/_colors.sass */
+  .error a {
+    color: #bc180f; }
+
+/* line 35, ../../app/stylesheets/_colors.sass */
+.notice {
+  font-size: 13px;
+  padding: 0.55em 0.8em;
+  margin-bottom: 1em;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  background: #f8e89f;
+  color: #b83107;
+  border-color: #e9a438; }
+  /* line 68, ../../app/stylesheets/_colors.sass */
+  .notice a {
+    color: #b83107;
+    border-color: #d1b534; }
+
+/* line 37, ../../app/stylesheets/_colors.sass */
+.success {
+  font-size: 13px;
+  padding: 0.55em 0.8em;
+  margin-bottom: 1em;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  background: #e0ebb4;
+  color: #3e7805;
+  border-color: #afc75d; }
+  /* line 77, ../../app/stylesheets/_colors.sass */
+  .success a {
+    color: #3e7805; }
+
+/* line 39, ../../app/stylesheets/_colors.sass */
+.hide {
+  display: none; }
+
+/* line 41, ../../app/stylesheets/_colors.sass */
+.highlight {
+  background: yellow; }
+
+/* line 43, ../../app/stylesheets/_colors.sass */
+.added {
+  background: #006600;
+  color: white; }
+
+/* line 45, ../../app/stylesheets/_colors.sass */
+.removed {
+  background: #990000;
+  color: white; }
+
+/* line 3, ../../app/stylesheets/text.sass */
+body {
+  font-family: 'Lucida Sans', 'Lucida Grande', Helvetica, Arial, sans-serif;
+  color: #232323;
+  font-style: normal; }
+
+/* line 5, ../../app/stylesheets/text.sass */
+h1 {
+  font-family: Calibri, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -.5px;
+  font-size: 24px;
+  line-height: 1.2em;
+  margin-bottom: 0.1em;
+  text-shadow: 1px 1px 0 #fff; }
+  /* line 12, ../../app/stylesheets/text.sass */
+  h1 img {
+    margin: -8px 0px 0px 0px; }
+
+/* line 14, ../../app/stylesheets/text.sass */
+h2 {
+  font-family: Calibri, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -.5px;
+  line-height: 0.8em;
+  color: #232323;
+  font-size: 24px;
+  margin: 0 0 7px;
+  padding: 0; }
+
+/* line 22, ../../app/stylesheets/text.sass */
+h3 {
+  font-family: Calibri, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1;
+  margin-bottom: 0.1em; }
+
+/* line 27, ../../app/stylesheets/text.sass */
+h4 {
+  font-family: Calibri, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.25;
+  margin-bottom: 0.1em; }
+
+/* line 32, ../../app/stylesheets/text.sass */
+h5 {
+  font-family: Calibri, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  font-size: .8em;
+  font-weight: bold;
+  margin-bottom: 1.5em; }
+
+/* line 37, ../../app/stylesheets/text.sass */
+h6 {
+  font-family: Calibri, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  font-size: .6em;
+  font-weight: bold; }
+
+/* line 41, ../../app/stylesheets/text.sass */
+h2 img, h3 img, h4 img, h5 img, h6 img {
+  margin: 0; }
+
+/* line 43, ../../app/stylesheets/text.sass */
+p {
+  font-family: 'Lucida Sans', 'Lucida Grande', Helvetica, Arial, sans-serif;
+  color: #232323;
+  font-style: normal;
+  margin: 0 0 1em;
+  font-size: .8em; }
+  /* line 47, ../../app/stylesheets/text.sass */
+  p img.left {
+    display: inline;
+    float: left;
+    margin: 1.5em 1.5em 1.5em 0;
+    padding: 0; }
+  /* line 51, ../../app/stylesheets/text.sass */
+  p img.right {
+    display: inline;
+    float: right;
+    margin: 1.5em 0 1.5em 1.5em;
+    padding: 0; }
+
+/* line 55, ../../app/stylesheets/text.sass */
+a {
+  color: #b3000c;
+  text-decoration: none;
+  border-bottom: 1px solid #c5c5c5; }
+  /* line 105, ../../app/stylesheets/_colors.sass */
+  a:hover {
+    color: #232323; }
+  /* line 108, ../../app/stylesheets/_colors.sass */
+  a:active {
+    color: #ff000c; }
+  /* line 59, ../../app/stylesheets/text.sass */
+  a:hover {
+    border-bottom: 1px solid #b4b4b4; }
+
+/* line 61, ../../app/stylesheets/text.sass */
+blockquote {
+  margin: 1.5em;
+  color: #666;
+  font-style: italic; }
+
+/* line 65, ../../app/stylesheets/text.sass */
+strong {
+  font-weight: bold; }
+
+/* line 67, ../../app/stylesheets/text.sass */
+em {
+  font-style: italic; }
+
+/* line 69, ../../app/stylesheets/text.sass */
+dfn {
+  font-style: italic;
+  font-weight: bold; }
+
+/* line 72, ../../app/stylesheets/text.sass */
+sup, sub {
+  line-height: 0; }
+
+/* line 74, ../../app/stylesheets/text.sass */
+abbr, acronym {
+  border-bottom: 1px dotted #666; }
+
+/* line 76, ../../app/stylesheets/text.sass */
+address {
+  margin: 0 0 1.5em;
+  font-style: italic; }
+
+/* line 79, ../../app/stylesheets/text.sass */
+del {
+  color: #666; }
+
+/* line 81, ../../app/stylesheets/text.sass */
+pre {
+  margin: 1.5em 0;
+  white-space: pre; }
+
+/* line 84, ../../app/stylesheets/text.sass */
+pre, code, tt {
+  font: 0.85em 'andale mono', 'lucida console', monospace;
+  line-height: 1.3; }
+
+/* line 86, ../../app/stylesheets/text.sass */
+li ul, li ol {
+  margin: 0 1.5em; }
+
+/* line 88, ../../app/stylesheets/text.sass */
+ul {
+  margin-left: 0;
+  margin: 0 1.5em 1.5em 1.5em;
+  list-style-type: disc; }
+  /* line 21, ../../app/stylesheets/_lists.sass */
+  ul li {
+    padding-left: 14px;
+    background: url('/images/bullet-green.png?1254516676') no-repeat 4.5px 5.5px;
+    list-style-type: none; }
+
+/* line 92, ../../app/stylesheets/text.sass */
+ol {
+  margin: 0 1.5em 1.5em 1.5em;
+  list-style-type: decimal; }
+
+/* line 95, ../../app/stylesheets/text.sass */
+dl {
+  margin: 0 0 1.5em 0; }
+  /* line 97, ../../app/stylesheets/text.sass */
+  dl dt {
+    font-weight: bold; }
+
+/* line 99, ../../app/stylesheets/text.sass */
+dd {
+  margin-left: 1.5em; }
+
+/* line 102, ../../app/stylesheets/text.sass */
+table {
+  font-family: 'Lucida Sans', 'Lucida Grande', Helvetica, Arial, sans-serif;
+  color: #232323;
+  font-style: normal;
+  border: 2px solid black;
+  background: #fff;
+  margin-bottom: 1.4em;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .8em; }
+  /* line 6, ../../app/stylesheets/_tables.sass */
+  table thead th {
+    border-bottom: 2px solid black; }
+  /* line 9, ../../app/stylesheets/_tables.sass */
+  table tfoot th, table tfoot td {
+    border-top: 2px solid black; }
+  /* line 12, ../../app/stylesheets/_tables.sass */
+  table th:first-child {
+    border-right: 2px solid black; }
+  /* line 16, ../../app/stylesheets/_tables.sass */
+  table th, table td {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left-width: 0px;
+    border-top-width: 0px; }
+    /* line 22, ../../app/stylesheets/_tables.sass */
+    table th:last-child, table td:last-child,
+    table th.last, table td.last {
+      border-right-width: 0px; }
+  /* line 28, ../../app/stylesheets/_tables.sass */
+  table tbody tr:last-child th, table tbody tr:last-child td, table tfoot tr:last-child th, table tfoot tr:last-child td,
+  table tbody tr.last th, table tbody tr.last td, table tfoot tr.last th, table tfoot tr.last td {
+    border-bottom-width: 0px; }
+
+/* line 112, ../../app/stylesheets/text.sass */
+th {
+  font-weight: bold; }
+
+/* line 114, ../../app/stylesheets/text.sass */
+thead th {
+  background: #E8F0FC url(/images/header-main.gif) repeat-x scroll center bottom;
+  border-bottom: 1px solid #9CAECC;
+  border-top: 1px solid #9CAECC;
+  color: #2D466E;
+  font-family: "Lucida Grande",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+  padding: 5px 10px;
+  text-align: left;
+  text-transform: none; }
+
+/* line 126, ../../app/stylesheets/text.sass */
+th, td, caption {
+  padding: 5px 10px; }
+
+/* line 128, ../../app/stylesheets/text.sass */
+tr {
+  border-bottom: 1px solid #cbcdd3; }
+
+/* line 130, ../../app/stylesheets/text.sass */
+tr.even td {
+  background: #edecec; }
+
+/* line 132, ../../app/stylesheets/text.sass */
+tfoot {
+  font-style: italic; }
+
+/* line 134, ../../app/stylesheets/text.sass */
+caption {
+  background: #eee; }
+
+/* line 136, ../../app/stylesheets/text.sass */
+.left {
+  display: inline;
+  float: left; }
+
+/* line 138, ../../app/stylesheets/text.sass */
+.right {
+  display: inline;
+  float: right; }
+
+/* line 140, ../../app/stylesheets/text.sass */
+.clear {
+  clear: both;
+  font-size: 0;
+  height: 0;
+  line-height: 0; }
+
+/* line 145, ../../app/stylesheets/text.sass */
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+/* line 151, ../../app/stylesheets/text.sass */
+* html .clearfix {
+  height: 1%; }
+
+/* line 153, ../../app/stylesheets/text.sass */
+.clearfix {
+  overflow: hidden;
+  display: inline-block; }
+  /* line 29, ../../app/stylesheets/_utility.sass */
+  .clearfix {
+    display: block; }

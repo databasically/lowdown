@@ -1,0 +1,42 @@
+#lowdown
+  %a{:href => "http://lowdownapp.com"}
+    %img{:src => "/images/logo-login.jpg"}/
+- if flash[:notice]
+  %p.notice= flash[:notice]
+- form_for @user_session, :url => user_session_path do |f|
+  %fieldset#normal-login{normal_signup_toggle}
+    %ol
+      %li.required
+        = f.label :email
+        %br/
+        = f.text_field :email
+      %li.required
+        = f.label :password
+        %br/
+        .buttons.small.right{:style => "margin:10px 0px 0px"}
+          %a{:href => new_password_reset_path, :style => "margin:0px"} 
+            I forgot my password
+        = f.password_field :password
+          
+    .buttons
+      %button{:type => "submit"} 
+        Login
+  #login_toggle.small.right
+    = link_to "Login with OpenID", "#openid-login", {:class => 'toggle'}.merge(normal_signup_toggle)
+- form_for @user_session, :url => user_session_path do |f|
+  %fieldset#openid-login{openid_signup_toggle}
+    %ol
+      %li.required
+        %img.openicon{:src => "/images/openid-16x16.gif"}/
+        = f.label :openid_identifier, "OpenID URL"
+        = f.text_field :openid_identifier
+      %li#openid_username.required{:style => "display:none"}
+        %label Username
+        %input#openid_username{:type => "text", :size => "30"}
+    .buttons
+      %button{:type => "submit"} 
+        Login
+
+  #login_toggle.small.right
+    = link_to "Login with email/password", "#normal-login", {:class => 'toggle'}.merge(openid_signup_toggle)
+

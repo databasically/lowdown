@@ -1,0 +1,7 @@
+identity: lowdown
+sreg:
+  fullname: Lowdown App
+  email: lowdown@lowdownapp.com
+  nickname: lowdown
+  timezone: America/Chicago
+  language: EN

@@ -1,0 +1,98 @@
+--- !ruby/object:Gem::Specification 
+name: whenever
+version: !ruby/object:Gem::Version 
+  version: 0.4.1
+platform: ruby
+authors: 
+- Javan Makhmali
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-11-29 00:00:00 -06:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: chronic
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 0.2.3
+    version: 
+description: Clean ruby syntax for defining and deploying messy cron jobs.
+email: javan@javan.us
+executables: 
+- whenever
+- wheneverize
+extensions: []
+
+extra_rdoc_files: 
+- README.rdoc
+files: 
+- .gitignore
+- CHANGELOG.rdoc
+- README.rdoc
+- Rakefile
+- bin/whenever
+- bin/wheneverize
+- lib/whenever.rb
+- lib/whenever/base.rb
+- lib/whenever/command_line.rb
+- lib/whenever/job_list.rb
+- lib/whenever/job_types/default.rb
+- lib/whenever/job_types/rake_task.rb
+- lib/whenever/job_types/runner.rb
+- lib/whenever/outputs/cron.rb
+- lib/whenever/outputs/cron/output_redirection.rb
+- lib/whenever/version.rb
+- test/command_line_test.rb
+- test/cron_test.rb
+- test/output_at_test.rb
+- test/output_command_test.rb
+- test/output_env_test.rb
+- test/output_rake_test.rb
+- test/output_redirection_test.rb
+- test/output_runner_test.rb
+- test/test_helper.rb
+- whenever.gemspec
+has_rdoc: true
+homepage: http://github.com/javan/whenever
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --charset=UTF-8
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.5
+signing_key: 
+specification_version: 3
+summary: Clean ruby syntax for defining and deploying messy cron jobs.
+test_files: 
+- test/command_line_test.rb
+- test/cron_test.rb
+- test/output_at_test.rb
+- test/output_command_test.rb
+- test/output_env_test.rb
+- test/output_rake_test.rb
+- test/output_redirection_test.rb
+- test/output_runner_test.rb
+- test/test_helper.rb

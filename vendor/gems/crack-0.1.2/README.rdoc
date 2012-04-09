@@ -1,0 +1,22 @@
+= crack
+
+Really simple JSON and XML parsing, ripped from Merb and Rails. The XML parser is ripped from Merb and the JSON parser is ripped from Rails. I take no credit, just packaged them for all to enjoy and easily use.
+
+= usage
+  
+  gem 'crack'
+  require 'crack' # for xml and json
+  require 'crack/json' # for just json
+  require 'crack/xml' # for just xml
+
+= examples
+  
+  Crack::XML.parse("<tag>This is the contents</tag>")
+    # => {'tag' => 'This is the contents'}
+  
+  Crack::JSON.parse('{"tag":"This is the contents"}')
+    # => {'tag' => 'This is the contents'}
+
+== Copyright
+
+Copyright (c) 2009 John Nunemaker. See LICENSE for details.

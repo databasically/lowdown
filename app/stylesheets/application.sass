@@ -1,0 +1,706 @@
+@import base.sass
+@import lists.sass
+
+body
+  :background #ebeae7
+
+#header
+  :background #2c2c2c
+  :border-bottom 5px solid #9cc276
+  :border-top 3px solid #1c1c1c
+  :height 51px
+  #menu, #picker
+    +float-right
+    :background #232323
+    :padding 3px 8px 3px 5px
+    :margin 8px 0px 0px 0px
+    :height 28px
+    ul
+      +no-bullets
+      :margin 0
+      li
+        +float-left
+        :background-image none
+        :padding 5px
+        :font-size 12px
+        :color #545e53
+        a
+          :color #bec6bd
+          :display block
+          :border-bottom none
+          :text-decoration none
+          &:hover
+            :color #fff
+            :text-decoration none
+            :border-bottom none
+        &.active, &.active:hover
+          :color #fff
+  #picker
+    :margin-right 0px
+  #logo
+    img
+      :float left
+    h1
+      :float left
+      +bold
+      :margin 3px 0px 0px 16px
+      :padding 0px
+      :font-size 22px
+      :color #fff
+      :line-height 2em
+      :text-shadow 1px 2px 0 #1C1C1C
+
+#content
+  :min-height 400px
+  :padding 25px 0px 60px
+  :background #ebeae7 url(/images/background.gif) repeat-x scroll left top
+
+#top
+  :margin-bottom 15px
+  .buttons a
+    :float left
+    :width auto
+    :display inline
+    :text-shadow 1px 1px 0 #fff
+    &.negative:active
+      :text-shadow none
+      
+  h1.folder
+    :padding-left 40px
+    :margin-left -40px
+    :height 28px
+    &:hover
+      :background transparent url(/images/edit-folder.png) no-repeat scroll left 2px
+    form
+      :padding 0
+      :margin 0 
+      :position absolute
+    input
+      :margin -4px 0 0 0px
+      :font-weight bold
+      :font-size 17px
+      :height 20px
+
+
+#main
+  #projects
+    fieldset
+      :padding 1em
+    h2
+      :text-align center
+    ul
+      +no-bullets
+      :margin 0px 0px 30px
+      :padding 0px
+      :border 1px solid #bfbeba
+      li
+        :font
+          :size 14px
+          :weight bold
+        :text-decoration none
+        :color #232323
+        :padding 9px 13px 9px
+        :border-top 1px solid #fff
+        :background #efefef
+        :border-bottom 1px solid #CCD2CB
+        :display block
+        :line-height 1.8em
+        .buttons a
+          :padding 5px 10px 5px
+        &:hover
+          :background #f7f7f7
+        &:last-child
+          :border-bottom none          
+      &.autocomplete
+        :border none
+        :position absolute
+        :background #BDC8D8 url(/images/triangle.gif) no-repeat -10% 50%
+        :margin -2px 0px 0px
+        :padding 6px 6px
+        :width 300px
+        li
+          :color #232323
+          :margin 0
+          :padding 6px 9px
+          :background-color #fff
+          :font-size 14px
+          :font-weight normal
+          &.selected
+            :color white
+            :background-color navy
+          &:hover
+            :color #B83107
+            :background-color #fff3bd
+        span
+          :display inline
+          :float none
+    .buttons a
+      :float right
+      :font-size 80%
+    .projects_edit
+      fieldset
+        :padding 1em 1.25em
+      form
+        ul#users
+          li
+            :padding 9px 13px !important
+            :line-height 1.8em
+            .buttons a, .buttons button, button.button
+              :padding 5px 10px 5px !important
+        .buttons a
+          :float right
+          :font-size 80% !important
+          :margin-right 0px
+      .buttons a, .buttons button, button.button, button#update_project
+        :padding 5px 10px 6px !important
+        :font-size 82% !important
+  ul
+    +no-bullets
+    :margin 0
+    li.feature
+      :display block
+      :margin 0px 0px 10px
+      :padding 7px
+      :background #fff none repeat scroll 0 0
+      :border-top 1px solid #D4D4D2
+      :border-right 1px solid #b4b3b0
+      :border-bottom 1px solid #b4b3b0
+      :border-left 1px solid #D4D4D2
+      &#feature_new
+        ul li.top
+          :cursor auto
+      input
+        :border 1px solid #BBBBBB
+      .move_corner
+        :float right
+        :background transparent url(/images/draggy-light.png) no-repeat top center
+        :height 19px
+        :width 19px
+        :margin 0px
+        ul.move_to_page
+          :padding 0
+          :margin 0
+          :cursor move
+          li
+            :margin 0
+            :padding 0
+            :background none
+            :display block
+            :height 19px
+            :width 19px
+            &:hover
+              :padding 0
+              :margin 0px
+              :background transparent url(/images/draggy.png) no-repeat center center
+              :display block
+              :height 19px
+              :width 19px
+              :cursor pointer
+      ul
+        li
+          :padding 0px
+          &.top
+            :margin 0px
+            :padding 0px
+            :border-bottom 1px solid #bdc8d8
+            :cursor ns-resize
+            .value
+              +bold
+              +header
+              :font-family "Calibri"
+              :font-size 20px
+              :padding 13px 0px 13px 18px
+            .cost
+              +numbers
+              :font-size 19px
+              :padding 13px 0px 13px 15px
+          &.middle
+            :background #ebeff5
+            :border-bottom 1px solid #d5dbe4
+            :border-left 1px solid #d5dbe4
+            :border-right 1px solid #d5dbe4
+            .value
+              :padding 6px 16px
+              :min-height 21px
+              p
+                +text
+                :color #7c8da0
+                :margin 4px 0px 0px 85px
+                :font
+                  :size 10px
+                  :weight normal
+                span
+                  +italic
+                  :color #6a7f97
+                  :font
+                    :size 11px
+                    :family Georgia, serif
+              .buttons a, .buttons button
+                +tinybutton
+            .cost
+              :color #456588
+              :font-size 13px
+              :padding 8px
+          &.drawer
+            :background #f7f7f5
+            :border-right 1px solid #D4D4D2
+            :border-left 1px solid #D4D4D2
+            :border-bottom 1px solid #D4D4D2
+            ul.items
+              li.edit_feature
+                :padding 5px 16px 5px 17px
+                .box
+                  :margin 10px 0px 0px
+                  :padding 6px
+                  :background #E2E2E2
+                  :border 1px solid #bfbeba
+                  .inner
+                    :border-top 1px solid #fff
+                    :background #efefef
+                    :border-bottom 1px solid #CCD2CB
+                    input
+                      :width 480px !important
+                      :margin 0.2em 0
+                      :padding 4px 6px
+                    label, select
+                      :width 115px
+                      :text-align right
+                      :margin-right 8px
+                    select
+                      :padding-right 5px
+                      :text-align left
+                      :font-size 12px
+                    ol
+                      :margin 10px 13px
+                      +sortable-with-drag-handle
+                      li
+                        .buttons a, .buttons button
+                          :float right
+                          :font-size 70%
+                          :padding 3px 6px 3px 7px
+                          :font-weight bold
+                          :margin 5px 0px 0px 0px
+                        &.add
+                          .buttons a
+                            :float left
+                            :margin 6px 0 4px 36px
+                            +tinybutton
+
+              li.edit_scenario
+                :margin 0px
+                :padding 5px 16px
+                :border-bottom 1px dashed #bfbeba
+                +drag-handle
+                .box
+                  :margin 0px
+                  :padding 6px
+                  :background transparent
+                  :border 1px solid transparent
+                  .inner
+                    :border-top 1px solid transparent
+                    :background transparent
+                    :border-bottom 1px solid transparent
+                    input
+                      :width 480px
+                      :margin 0.2em 0
+                      :padding 4px 6px
+                    label, select
+                      :width 115px
+                      :text-align right
+                      :margin-right 8px
+                    select
+                      :padding-right 5px
+                      :text-align left
+                      :font-size 12px
+                    ol
+                      :margin 0px 13px
+                      +sortable-with-drag-handle
+                      li
+                        .buttons a, .buttons button
+                          :float right
+                          :font-size 70%
+                          :padding 3px 6px 3px 7px
+                          :font-weight bold
+                          :margin 5px 0px 0px 0px
+                        &.add
+                          .buttons
+                            a
+                              +tinybutton
+                              :float left
+                              :margin 6px 0 4px 34px
+                              &.negative
+                                :float right
+                                &:active
+                                  :color #fff
+                        input
+                          &.scenario_name
+                            :width 363px !important
+
+                .cost
+                  :margin 20px 0px 0px
+                  .estimate
+                    input
+                      :width 30px
+                    label
+                      :font-size 12px
+                      :margin-left 5px
+              li.footer
+                :margin 0px
+                :padding 10px 20px
+                :background #f0f0ee
+                .buttons button
+                  :font-size 75% !important
+                  :padding 4px 10px 4px !important
+                .buttons a
+                  :font-size 75% !important
+                  :padding 4px 10px 5px !important
+
+    li.divider
+      :padding 7px
+      :margin 0px 0px 10px 0px
+      :background #EAE4DB
+      :border-top 1px solid #d7cebf
+      :border-right 1px solid #b7aa93
+      :border-bottom 1px solid #b7aa93
+      :border-left 1px solid #d7cebf
+      &.collapsed
+        .buttons a.collapse_milestone
+          span.expand
+            :display inline
+          span.collapse
+            :display none
+      ul
+        +no-bullets
+        +horizontal-list
+        :line-height 18px
+        :padding 3px 17px 3px 10px
+        :background #f5f1ec
+        :border-top 1px solid #f8f5f1
+        :border-left 1px solid #f8f5f1
+        :font-weight normal
+        :margin 0px
+        li
+          :font-size 12px
+          :color #867455
+          :padding 3px 7px
+          :width 70px
+          :float right
+          a
+            :float right
+            :font-size 11px
+            :line-height 1.3em
+            :margin 2px 8px 0px 0px
+            :color #867455
+            &:hover
+              :color #4E4535
+          &.milestone_number
+            :float left
+            :font-family "Calibri", arial, helvetica
+            :font-size 15px
+            :color #4E4535
+            :text-shadow 1px 1px 1px #fff
+            :cursor ns-resize
+            :width 260px
+            :margin 0px
+
+
+
+#sidebar
+  h2
+    :font-size 21px
+  ul.pages
+    +no-bullets
+    :margin 0 0 20px 0
+    li
+      +no-bullet
+      :padding 0
+      &:hover
+        :background #BFBEBA
+      a
+        :color #464646
+        :text-shadow 1px 1px 0 #fff
+        :font
+          :family= "Calibri"
+          :weight normal
+          :size 15px
+        :display block
+        :padding 9px 12px 9px 14px
+        :margin-left 7px
+        :border-bottom 1px solid #CCD2CB
+        &:hover
+          :background #f1f0ed
+          :color #232323
+      &.selected,
+      &.selected:hover
+        :border none
+        :background #9CC276
+        a
+          :color #232323
+          :background #fff
+          :text-shadow none
+        &.drophover
+          :border none
+          :background #9CC276
+          a, a:hover
+            :color #232323 !important
+            :background #fff
+            :text-shadow none
+      &.drophover
+        :background #e0c35f
+        a
+          :color #B83107 !important
+          :text-shadow none
+          :background #fff3bd
+
+  #plans
+    .box
+      :height auto !important
+      :width auto
+#plans
+  :text-align center
+  #one, #two, #three
+    :text-align center
+  .box
+    :padding 1.4em 1.8em 1.8em
+    :margin 0 0 .8em 0
+    :border 6px solid #a1c47e
+    :background #fcfcfc
+    :height 210px
+    h2
+      :color #333333
+      :font-size 25px
+      :margin-bottom 10px
+    h3
+      :color #608041
+      :font
+        :family Helvetica,Arial,sans-serif
+        :size 22px
+        :weight normal
+      :margin-bottom 10px
+    ul.details
+      :padding 0px
+      :margin 5px 0px 20px
+      li
+        :margin 0px
+        :background-image none
+        :color #363636
+        :padding 3px 0px
+        :font
+          :weight normal
+          :size 14px
+        span
+          :color #c5291f
+    .buttons
+      a
+        :font
+          :size 90%
+          :family "Calibri",Helvetica,sans-serif
+        :float none
+        :margin 0
+    .trial
+      :margin 12px 0px
+      :text-transform none
+      :font-size 10px !important
+      :padding 3px 6px
+      +notice
+
+
+  #needs
+    :text-align center
+    :font-size 13px
+    :color #5f5f5f
+    :margin-bottom 12px
+  #open_source
+    :font-size 14px
+    :background #FCFCFC none repeat scroll 0 0
+    :border 1px dashed #A1C47E
+    :padding 1.2em 1.3em
+    :margin-bottom 1.5em
+    :text-align center
+  #about_trial
+    :text-align center
+    :background #F8E89F
+    :border 1px dashed #E9A438
+    :padding 20px 90px
+    h3
+      :color #ae040f
+      :font-size 22px
+      :margin-bottom 10px
+    p
+      :color #B83107
+#footer
+  :bottom 0
+  :height 34px
+  :left 0
+  :position fixed
+  :width 100%
+  :background-color #2C2C2C
+  :border-top 3px solid #1C1C1C
+  +float-right
+  :padding 6px 0px
+  :margin 0px
+  :z-index 1000
+  &+#full #main
+    :padding-bottom 50px
+  ul
+    +no-bullets
+    :background #232323 none repeat scroll 0 0
+    :display inline
+    :width 749px
+    :float left
+    :padding 3px 6px
+    :margin 0px
+    li
+      +float-left
+      :background-image none
+      :padding 5px 0px
+      :font-size 12px
+      :color #bec6bd
+      :display block
+      :text-decoration none
+      :margin 0px
+      :width 85px
+      &.footer_title
+        :font
+          :family arial, helvetica, sans-serif
+          :size 11px
+        :letter-spacing .05em
+        :text-transform uppercase
+        :color #737672
+        :margin 1px 0px 0px 20px
+        :width 380px
+        a
+          :margin-left 8px
+          :color #bec6bd
+          :text-decoration none
+          :border-bottom 1px solid #556154
+          &:hover
+            :color #fff
+            :text-decoration none
+            :border-bottom 1px solid #99a997
+      span
+        :color #7c9179
+        a
+          :color #bec6bd
+          :display block
+          :text-decoration none
+          &:hover
+            :color #fff
+            :text-decoration none
+        &.selected, &.selected:hover
+          +bold
+#lowdown
+  :margin 40px auto 10px
+  :text-align center
+  a, a:hover
+    :border-bottom none
+
+body#homepage
+  #header
+    :height 50px
+    #menu
+      :padding 4px 6px
+      :margin-top 8px
+  #content
+    :padding 0px
+  #splash
+    :background transparent url(/images/splash2.jpg) no-repeat 48% top
+    :height 495px
+    #tagline
+      :padding 119px 0 0 90px
+      p
+        :font-family Georgia, serif
+        :font-size 23px
+        :color #2c3920
+        :margin-bottom 12px
+      .buttons
+        :text-align center
+  #ad
+    :padding 60px 0 0 70px
+    h2
+      :font-family Georgia, serif
+      :font-size 27px
+      :font-weight normal
+      :color #c3261c
+      :margin-bottom 15px
+    p
+      :font-family Georgia, serif
+      :width 150px
+      :font-size 17.5px
+      :width 300px
+      :line-height 1.4em
+      :color #343434
+      span
+        :color #68844c
+
+  #lower
+    :margin 10px auto 10px
+    :width 836px
+    h2
+      :font-family Georgia, serif
+      :font-size 28px
+      :font-weight normal
+      :color #232323
+      :margin-bottom 15px
+    #one, #two, #three
+      img
+        :border 1px solid #868686
+
+    p
+      :font-family Georgia, serif
+      :font-size 16px
+      :line-height 1.4em
+      :color #343434
+      :height 90px
+      :text-align left
+
+  #credits
+    :height 300px
+    :margin 0px auto 100px
+    :background transparent url(/images/credits.jpg) no-repeat center top
+    #cucumber
+      p
+        :padding 122px 0px 0px 150px
+        :width 340px
+        :font-family Georgia, serif
+        :font-size 16px
+        :line-height 1.4em
+        :color #537136
+        a
+          :line-height 1em
+          :margin-right 10px
+          :text-decoration none
+          :border-bottom 1px solid #829a6a
+          &:hover
+            :border-bottom 2px solid #677a55
+    #microbrew
+      p
+        :text-align center
+        :width 210px
+        :padding 165px 20px 0px
+        :font-family Georgia, serif
+        :font-size 15px
+        :line-height 1.5em
+        :color #594848
+        a
+          :line-height 1em
+          :margin-right 10px
+          :text-decoration none
+          :border-bottom 1px solid #9c9284
+          &:hover
+            :border-bottom 2px solid #7b7265
+
+
+table.status_window, table.status_window table
+  +reset-table
+  :color #e5e5e5 ! important
+  :font-family "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif
+  :font-size 110%
+  :text-shadow black 0 0 0
+  :background-color transparent
+  :width auto
+  tr, td, th
+    :border none
+
+.status_content
+  :padding 2px 10px 2px 5px

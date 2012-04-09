@@ -1,0 +1,46 @@
+body { text-align: center; }
+* html body legend { margin: 0px -8px 16px 0; padding: 0; }
+html>body p code { *white-space: normal; }
+
+.container { text-align: left; }
+
+ol { margin-left: 2em; }
+
+sup { vertical-align: text-top; }
+
+sub { vertical-align: text-bottom; }
+
+hr { margin: -8px auto 11px; }
+
+img { -ms-interpolation-mode: bicubic; }
+
+fieldset { padding-top: 0; }
+
+input.text { margin: 0.5em 0; background-color: #fff; border: 1px solid #bbb; }
+input.text:focus { border: 1px solid #666; }
+input.title { margin: 0.5em 0; background-color: #fff; border: 1px solid #bbb; }
+input.title:focus { border: 1px solid #666; }
+input.checkbox { position: relative; top: 0.25em; }
+input.radio { position: relative; top: 0.25em; }
+input.button { position: relative; top: 0.25em; }
+
+textarea { margin: 0.5em 0; }
+
+select { margin: 0.5em 0; }
+
+button { position: relative; top: 0.25em; }
+
+fieldset#account { padding-top: 1.8em; }
+
+button#add_user { margin: 18px 14px 0px 0px !important; }
+
+ul.ui-sortable li.footer .buttons a { margin-top: 3px; padding: 4px 10px 4px !important; line-height: 128%; }
+
+li.edit_feature .box ol.ui-sortable li select, li.edit_scenario .box ol.ui-sortable li select { padding: 0px !important; }
+
+#header #menu { height: 29px; padding: 4px 8px 4px 5px; }
+#header select#project_id { margin-top: -2px; }
+
+#footer ul li.footer_title { font-size: 11px; letter-spacing: 0.02em; }
+
+.handle img { margin-top: 0px !important; }

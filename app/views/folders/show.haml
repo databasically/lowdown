@@ -1,0 +1,35 @@
+#footer
+  .container
+    = render :partial => 'projects/project_totals'
+#top
+  .buttons.right{:style => "margin: 0px 16px 0px 58px;"}
+    - link_to project_folders_path(@project), :method => :post, :class => "center", :id => "new_folder", :title => "Add a new folder" do
+      %img{:src => "/images/folder.png"}/
+      Add folder
+  .buttons.right{:style => "margin-top: 0px"}
+    %a#new_feature.center{ :href => new_project_folder_feature_path(@project, @folder), :title => "Add a new feature" }
+      %img{:src => "/images/add.png"}/
+      Add feature
+    %a#new_milestone.center{:href => project_folder_milestones_path(@project, @folder), :title => "Add a new milestone"}
+      %img{:src => "/images/add.png"}/
+      Add milestone
+    - if @project.folders.count > 1
+      - link_to project_folder_path(@project, @folder), :method => :delete, :id => "delete_folder", :class => "negative", :confirm => "Are you sure you want to delete the folder \"#{@folder.name}\"?  All features, scenarios, and milestones in this folder will be deleted. There is no undo. Deletion is permanent." do
+        Delete this folder
+  %h1{:title => "Click to edit folder name", "data-url" => project_folder_path(@project, @folder), "data-token" => form_authenticity_token}[@folder]= escape_once(@folder.name)
+
+.clear
+#main
+  - @feature = Feature.new_with_defaults(:project => @project, :folder => @folder) if @folder.project_items.empty?
+  %ul[@project]
+    = render(:partial => @folder.project_items) || render(:file => "features/new")
+#sidebar
+  %ul.pages
+    - @project.folders.each do |folder|
+      %li{:class => (folder == @folder) ? 'selected' : nil}[folder]
+        = link_to folder.name, project_folder_path(@project, folder)
+.clear
+- if flash[:folder_created]
+  - content_for :javascript do
+    :javascript
+      $(function(){ $('h1.folder').click(); });

@@ -1,0 +1,73 @@
+!!! Strict
+%html{ "xml:lang" => "en", :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %link{ :rel => "shortcut icon", :href => "/favicon.ico" }
+    = stylesheet_link_merged :base
+    /[if IE 7]
+      = stylesheet_link_tag 'ie_7'
+    /[if IE 8]
+      = stylesheet_link_tag 'ie_8'
+    %title
+      - if @project
+        - if @project.new_record?
+          New project -
+        - elsif current_page?(edit_project_path(@project))
+          == Settings - #{@project.name} (project) -
+        - else
+          == #{@project.name} (project) -
+      - elsif current_page?(edit_profile_path)
+        Account -
+      Lowdown
+  %body
+    #header
+      .container
+        - if current_user
+          #menu
+            %ul
+              %li
+                %a{:href => "/projects"}
+                  Projects
+              %li
+                |
+              %li
+                %a{ :href => "/profile/edit"}
+                  Account
+              %li
+                |
+              %li
+                = link_to 'Logout', logout_path
+          - if @project && !@project.new_record? && @projects.try(:any?)
+            #picker
+              %ul
+                %li
+                  = select_tag 'project_id', options_from_collection_for_select(@projects, :id, :name, @project && @project.id)
+                %li
+
+        #logo
+          - if @project
+            %a{:style => "border:none", :href => current_user ? projects_path : root_path }
+              %img{ :src => "/images/app-logo.jpg", :alt => "Lowdown", :style => "margin-left: 0px; padding: 0px" }/
+            %h1= escape_once(@project.name)
+          - else
+            %a{:style => "border:none", :href => current_user ? projects_path : root_path }
+              %img{ :src => "/images/logo-background.gif", :alt => "Lowdown", :style => "margin-left: 0px; padding: 0px" }/
+
+    .clear
+    #content
+      .container
+        = yield
+    = javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'
+    = javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js'
+    = javascript_include_merged :base
+    = yield :javascript
+    - unless Rails.env.development?
+      :javascript
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      :javascript
+        try {
+        var pageTracker = _gat._getTracker("UA-2309237-12");
+        pageTracker._trackPageview();
+        } catch(err) {}
+      

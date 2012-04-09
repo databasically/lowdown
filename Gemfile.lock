@@ -1,0 +1,254 @@
+PATH
+  remote: vendor/gems/andand-1.3.1
+  specs:
+    andand (1.3.1)
+
+PATH
+  remote: vendor/gems/authlogic-2.1.2
+  specs:
+    authlogic (2.1.2)
+      activesupport
+
+PATH
+  remote: vendor/gems/authlogic-oid-1.0.4
+  specs:
+    authlogic-oid (1.0.4)
+
+PATH
+  remote: vendor/gems/bmabey-database_cleaner-0.2.3
+  specs:
+    bmabey-database_cleaner (0.2.3)
+
+PATH
+  remote: vendor/gems/bmabey-email_spec-0.3.1
+  specs:
+    bmabey-email_spec (0.3.1)
+
+PATH
+  remote: vendor/gems/builder-2.1.2
+  specs:
+    builder (2.1.2)
+
+PATH
+  remote: vendor/gems/chriseppstein-compass-0.8.10
+  specs:
+    chriseppstein-compass (0.8.10)
+
+PATH
+  remote: vendor/gems/chriseppstein-compass-960-plugin-0.9.7
+  specs:
+    compass-960-plugin (0.9.7)
+      chriseppstein-compass
+
+PATH
+  remote: vendor/gems/crack-0.1.2
+  specs:
+    crack (0.1.2)
+
+PATH
+  remote: vendor/gems/cucumber-0.3.96
+  specs:
+    cucumber (0.3.96)
+
+PATH
+  remote: vendor/gems/diff-lcs-1.1.2
+  specs:
+    diff-lcs (1.1.2)
+
+PATH
+  remote: vendor/gems/faker-0.3.1
+  specs:
+    faker (0.3.1)
+
+PATH
+  remote: vendor/gems/haml-2.2.2
+  specs:
+    haml (2.2.2)
+
+PATH
+  remote: vendor/gems/hoe-1.12.2
+  specs:
+    hoe (1.12.2)
+
+PATH
+  remote: vendor/gems/httparty-0.4.4
+  specs:
+    httparty (0.4.4)
+      crack (>= 0.1.1)
+
+PATH
+  remote: vendor/gems/mash-0.0.3
+  specs:
+    mash (0.0.3)
+
+PATH
+  remote: vendor/gems/polyglot-0.2.5
+  specs:
+    polyglot (0.2.5)
+
+PATH
+  remote: vendor/gems/roman-rots-0.2.1
+  specs:
+    rots (0.2.1)
+
+PATH
+  remote: vendor/gems/rspec-1.2.8
+  specs:
+    rspec (1.2.8)
+
+PATH
+  remote: vendor/gems/rspec-rails-1.2.7.1
+  specs:
+    rspec-rails (1.2.7.1)
+
+PATH
+  remote: vendor/gems/ruby-openid-2.1.6
+  specs:
+    ruby-openid (2.1.6)
+
+PATH
+  remote: vendor/gems/rubyforge-1.0.4
+  specs:
+    rubyforge (1.0.4)
+
+PATH
+  remote: vendor/gems/rubyzip-0.9.1
+  specs:
+    rubyzip (0.9.1)
+
+PATH
+  remote: vendor/gems/selenium-client-1.2.16
+  specs:
+    selenium-client (1.2.16)
+
+PATH
+  remote: vendor/gems/term-ansicolor-1.0.4
+  specs:
+    term-ansicolor (1.0.4)
+
+PATH
+  remote: vendor/gems/thoughtbot-factory_girl-1.2.1
+  specs:
+    thoughtbot-factory_girl (1.2.1)
+
+PATH
+  remote: vendor/gems/treetop-1.3.0
+  specs:
+    treetop (1.3.0)
+
+PATH
+  remote: vendor/gems/whenever-0.4.1
+  specs:
+    whenever (0.4.1)
+      chronic (>= 0.2.3)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    RedCloth (4.2.2)
+    actionmailer (2.3.5)
+      actionpack (= 2.3.5)
+    actionpack (2.3.5)
+      activesupport (= 2.3.5)
+      rack (~> 1.0.0)
+    activerecord (2.3.5)
+      activesupport (= 2.3.5)
+    activeresource (2.3.5)
+      activesupport (= 2.3.5)
+    activesupport (2.3.5)
+    addressable (2.2.7)
+    chronic (0.2.3)
+      hoe (>= 1.2.1)
+    daemons (1.0.10)
+    fastthread (1.0.7)
+    gemcutter (0.3.0)
+      json_pure
+    heroku (2.23.0)
+      launchy (>= 0.3.2)
+      netrc (~> 0.7.1)
+      rest-client (~> 1.6.1)
+      rubyzip
+    json (1.1.7)
+    json_pure (1.2.0)
+    launchy (2.1.0)
+      addressable (~> 2.2.6)
+    mechanize (0.9.2)
+      nokogiri (>= 1.2.1)
+    mime-types (1.18)
+    netrc (0.7.1)
+    nokogiri (1.5.2)
+    paperclip (2.1.2)
+    pg (0.13.2)
+    rack (1.0.1)
+    rails (2.3.5)
+      actionmailer (= 2.3.5)
+      actionpack (= 2.3.5)
+      activerecord (= 2.3.5)
+      activeresource (= 2.3.5)
+      activesupport (= 2.3.5)
+      rake (>= 0.8.3)
+    rake (0.9.2.2)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    sequel (3.20.0)
+    sinatra (1.0)
+      rack (>= 1.0)
+    sqlite3 (1.3.5)
+    sqlite3-ruby (1.3.3)
+      sqlite3 (>= 1.3.3)
+    taps (0.3.23)
+      rack (>= 1.0.1)
+      rest-client (>= 1.4.0, < 1.7.0)
+      sequel (~> 3.20.0)
+      sinatra (~> 1.0.0)
+      sqlite3-ruby (~> 1.2)
+    webrat (0.5.3)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  RedCloth (= 4.2.2)
+  andand (= 1.3.1)!
+  authlogic (= 2.1.2)!
+  authlogic-oid (= 1.0.4)!
+  bmabey-database_cleaner (= 0.2.3)!
+  bmabey-email_spec (= 0.3.1)!
+  builder (= 2.1.2)!
+  chriseppstein-compass (= 0.8.10)!
+  chronic (= 0.2.3)
+  compass-960-plugin (= 0.9.7)!
+  crack (= 0.1.2)!
+  cucumber (= 0.3.96)!
+  daemons (= 1.0.10)
+  diff-lcs (= 1.1.2)!
+  faker (= 0.3.1)!
+  fastthread (= 1.0.7)
+  gemcutter (= 0.3.0)
+  haml (= 2.2.2)!
+  heroku
+  hoe (= 1.12.2)!
+  httparty (= 0.4.4)!
+  json (= 1.1.7)
+  json_pure (= 1.2.0)
+  mash (= 0.0.3)!
+  mechanize (= 0.9.2)
+  paperclip (= 2.1.2)
+  pg
+  polyglot (= 0.2.5)!
+  rails (= 2.3.5)
+  rots (= 0.2.1)!
+  rspec (= 1.2.8)!
+  rspec-rails (= 1.2.7.1)!
+  ruby-openid (= 2.1.6)!
+  rubyforge (= 1.0.4)!
+  rubyzip (= 0.9.1)!
+  selenium-client (= 1.2.16)!
+  taps
+  term-ansicolor (= 1.0.4)!
+  thoughtbot-factory_girl (= 1.2.1)!
+  treetop (= 1.3.0)!
+  webrat (= 0.5.3)
+  whenever (= 0.4.1)!

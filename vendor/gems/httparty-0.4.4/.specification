@@ -1,0 +1,134 @@
+--- !ruby/object:Gem::Specification 
+name: httparty
+version: !ruby/object:Gem::Version 
+  version: 0.4.4
+platform: ruby
+authors: 
+- John Nunemaker
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-07-19 00:00:00 -04:00
+default_executable: httparty
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: crack
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 0.1.1
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: echoe
+  type: :development
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: "0"
+    version: 
+description: Makes http fun! Also, makes consuming restful web services dead easy.
+email: nunemaker@gmail.com
+executables: 
+- httparty
+extensions: []
+
+extra_rdoc_files: 
+- bin/httparty
+- lib/httparty/cookie_hash.rb
+- lib/httparty/core_extensions.rb
+- lib/httparty/exceptions.rb
+- lib/httparty/module_inheritable_attributes.rb
+- lib/httparty/request.rb
+- lib/httparty/response.rb
+- lib/httparty/version.rb
+- lib/httparty.rb
+- README.rdoc
+files: 
+- bin/httparty
+- cucumber.yml
+- examples/aaws.rb
+- examples/basic.rb
+- examples/delicious.rb
+- examples/google.rb
+- examples/rubyurl.rb
+- examples/twitter.rb
+- examples/whoismyrep.rb
+- features/basic_authentication.feature
+- features/command_line.feature
+- features/deals_with_http_error_codes.feature
+- features/handles_multiple_formats.feature
+- features/steps/env.rb
+- features/steps/httparty_response_steps.rb
+- features/steps/httparty_steps.rb
+- features/steps/mongrel_helper.rb
+- features/steps/remote_service_steps.rb
+- features/supports_redirection.feature
+- History
+- httparty.gemspec
+- lib/httparty/cookie_hash.rb
+- lib/httparty/core_extensions.rb
+- lib/httparty/exceptions.rb
+- lib/httparty/module_inheritable_attributes.rb
+- lib/httparty/request.rb
+- lib/httparty/response.rb
+- lib/httparty/version.rb
+- lib/httparty.rb
+- Manifest
+- MIT-LICENSE
+- Rakefile
+- README.rdoc
+- spec/fixtures/delicious.xml
+- spec/fixtures/empty.xml
+- spec/fixtures/google.html
+- spec/fixtures/twitter.json
+- spec/fixtures/twitter.xml
+- spec/fixtures/undefined_method_add_node_for_nil.xml
+- spec/httparty/cookie_hash_spec.rb
+- spec/httparty/request_spec.rb
+- spec/httparty/response_spec.rb
+- spec/httparty_spec.rb
+- spec/spec.opts
+- spec/spec_helper.rb
+- website/css/common.css
+- website/index.html
+has_rdoc: true
+homepage: http://httparty.rubyforge.org
+licenses: []
+
+post_install_message: When you HTTParty, you must party hard!
+rdoc_options: 
+- --line-numbers
+- --inline-source
+- --title
+- Httparty
+- --main
+- README.rdoc
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "1.2"
+  version: 
+requirements: []
+
+rubyforge_project: httparty
+rubygems_version: 1.3.5
+signing_key: 
+specification_version: 2
+summary: Makes http fun! Also, makes consuming restful web services dead easy.
+test_files: []
+

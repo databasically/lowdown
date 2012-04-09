@@ -1,0 +1,115 @@
+--- !ruby/object:Gem::Specification 
+name: authlogic-oid
+version: !ruby/object:Gem::Version 
+  version: 1.0.4
+platform: ruby
+authors: 
+- Ben Johnson of Binary Logic
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-05-31 00:00:00 -04:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: authlogic
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: "0"
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: hoe
+  type: :development
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 1.12.2
+    version: 
+description: Extension of the Authlogic library to add OpenID support.
+email: bjohnson@binarylogic.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- Manifest.txt
+- CHANGELOG.rdoc
+- README.rdoc
+files: 
+- CHANGELOG.rdoc
+- MIT-LICENSE
+- Manifest.txt
+- README.rdoc
+- Rakefile
+- init.rb
+- lib/authlogic_openid.rb
+- lib/authlogic_openid/acts_as_authentic.rb
+- lib/authlogic_openid/session.rb
+- lib/authlogic_openid/version.rb
+- test/acts_as_authentic_test.rb
+- test/fixtures/users.yml
+- test/libs/open_id_authentication/CHANGELOG
+- test/libs/open_id_authentication/README
+- test/libs/open_id_authentication/Rakefile
+- test/libs/open_id_authentication/generators/open_id_authentication_tables/open_id_authentication_tables_generator.rb
+- test/libs/open_id_authentication/generators/open_id_authentication_tables/templates/migration.rb
+- test/libs/open_id_authentication/generators/upgrade_open_id_authentication_tables/templates/migration.rb
+- test/libs/open_id_authentication/generators/upgrade_open_id_authentication_tables/upgrade_open_id_authentication_tables_generator.rb
+- test/libs/open_id_authentication/init.rb
+- test/libs/open_id_authentication/lib/open_id_authentication.rb
+- test/libs/open_id_authentication/lib/open_id_authentication/association.rb
+- test/libs/open_id_authentication/lib/open_id_authentication/db_store.rb
+- test/libs/open_id_authentication/lib/open_id_authentication/mem_cache_store.rb
+- test/libs/open_id_authentication/lib/open_id_authentication/nonce.rb
+- test/libs/open_id_authentication/lib/open_id_authentication/request.rb
+- test/libs/open_id_authentication/lib/open_id_authentication/timeout_fixes.rb
+- test/libs/open_id_authentication/tasks/open_id_authentication_tasks.rake
+- test/libs/open_id_authentication/test/mem_cache_store_test.rb
+- test/libs/open_id_authentication/test/normalize_test.rb
+- test/libs/open_id_authentication/test/open_id_authentication_test.rb
+- test/libs/open_id_authentication/test/status_test.rb
+- test/libs/open_id_authentication/test/test_helper.rb
+- test/libs/rails_trickery.rb
+- test/libs/user.rb
+- test/libs/user_session.rb
+- test/session_test.rb
+- test/test_helper.rb
+has_rdoc: true
+homepage: http://github.com/binarylogic/authlogic_openid
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --main
+- README.rdoc
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: authlogic-oid
+rubygems_version: 1.3.5
+signing_key: 
+specification_version: 3
+summary: Extension of the Authlogic library to add OpenID support.
+test_files: 
+- test/acts_as_authentic_test.rb
+- test/session_test.rb

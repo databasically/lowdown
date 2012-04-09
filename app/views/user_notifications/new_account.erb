@@ -1,0 +1,36 @@
+<%= @current_user.fullname %> added you to their project 
+"<%= @project.name %>" on Lowdown.
+
+To get started collaborating on this project, follow this link:
+  <%= accept_url(:token => @new_user.perishable_token, :host => @host) %>
+
+What is Lowdown?
+  We help keep your software project on track. 
+  Developers, designers, project managers and owners can all work 
+  together using a common language, so everyone stays on the same page.
+  
+How does Lowdown help your team make better software?
+  * As your team collaborates on features, those plain language features 
+  turn into tests for your applications using Cucumber that verify that
+  your software does what it's supposed to do.  
+  * Feature estimates give you an idea of the cost of a feature so you
+  can make business decisions with more information.
+  * Milestones let you prioritize the feature sets in any order you want.
+
+Questions?
+  If you have any questions or problems, please contact us at:
+    support@lowdownapp.com
+
+Suggestions?
+  We would love to hear from you with any ideas for making Lowdown better:
+    feedback@lowdownapp.com
+    
+Finally:
+  We hate spam as much as you do, so we promise not to give out your
+  information. If you ignore this, we'll leave you alone.
+
+Cheers,
+
+  The Lowdown Team
+  support@lowdownapp.com
+  http://lowdownapp.com/

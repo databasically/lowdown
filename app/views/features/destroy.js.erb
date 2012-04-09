@@ -1,0 +1,3 @@
+$('#<%= dom_id(@feature) %>').animate({opacity: 0}, 500, function(){ $(this).remove() });
+$.each(<%= milestones_for_json.to_json %>, updateMilestones);
+$('#footer .container').html(<%= render(:partial => 'projects/project_totals').to_json %>);

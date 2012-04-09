@@ -1,0 +1,2 @@
+$('#<%= dom_id(@milestone) %>').animate({opacity: 0}, 500, function(){ $(this).remove() });
+$.each(<%= milestones_for_json.to_json %>, updateMilestones);

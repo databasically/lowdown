@@ -1,0 +1,19 @@
+%ul
+  %li.footer_title
+    Project totals
+    - if current_user == @project.creator
+      = link_to 'Edit Settings', edit_project_path(@project)
+  %li
+    = @project.features.count
+    %span Features
+  %li
+    = @project.features.sum(:scenario_count)
+    %span Scenarios
+  %li
+    = @project.total_hours
+    %span Hours
+  %li
+    = number_to_currency(@project.total_cost, :precision => 0)
+    %span
+      Estimate
+ 

@@ -1,0 +1,10 @@
+require("spec_helper.js");
+require("../../public/javascripts/<%= file_path_without_spec %>.js");
+
+Screw.Unit(function(){
+  describe("<%= class_name_without_spec %>", function(){
+    it("does something", function(){
+      expect("hello").to(equal, "hello");
+    });
+  });
+});

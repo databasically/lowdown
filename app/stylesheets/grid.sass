@@ -1,0 +1,112 @@
+!ninesixty_gutter_width ||= 20px
+!ninesixty_grid_width ||= 960px
+ 
+=grid-container
+  :margin-left auto
+  :margin-right auto
+  :width= !ninesixty_grid_width
+ 
+=grid-width(!n, !cols, !gutter_width = !ninesixty_gutter_width)
+  :width= (!ninesixty_grid_width / !cols) * !n - !gutter_width
+ 
+=grid-unit-base(!gutter_width = !ninesixty_gutter_width)
+  :display inline
+  :float left
+  :margin
+    :left= !gutter_width / 1
+    :right= !gutter_width / 1
+ 
+=grid(!n, !cols, !gutter_width = !ninesixty_gutter_width)
+  +grid-unit-base(!gutter_width)
+  +grid-width(!n, !cols, !gutter_width)
+
+ 
+=grids(!cols, !gutter_width = !ninesixty_gutter_width)
+  #{enumerate(".cols-",1,!cols)}
+    +grid-unit-base
+  @for !n from 1 through !cols
+    .cols-#{!n}
+      +grid-width(!n, !cols, !gutter_width)
+ 
+=grid-prefix(!n, !cols)
+  :padding-left= (!ninesixty_grid_width / !cols) * !n
+ 
+=grid-prefixes(!cols)
+  @for !n from 1 through !cols - 1
+    .prefix-#{!n}
+      +grid-prefix(!n, !cols)
+ 
+=grid-suffix(!n, !cols)
+  :padding-right= (!ninesixty_grid_width / !cols) * !n
+ 
+=grid-suffixes(!cols)
+  @for !n from 1 through !cols - 1
+    .suffix-#{!n}
+      +grid-suffix(!n, !cols)
+ 
+=grid-system(!cols)
+  +grid-container
+  +grids(!cols)
+  +grid-prefixes(!cols)
+  +grid-suffixes(!cols)
+
+=value
+  :width 580px
+  :margin 0px
+  :float left
+
+=cost
+  :width 90px
+  :margin 0px
+  :float left
+  :text-align center
+  
+.grid-12  
+  +grid-system(12)
+  
+#main
+  +grid(13,16)
+  :margin-left 0
+  
+#sidebar
+  :width 165px
+  :float right
+  :margin-left 15px
+  :margin-right 0
+  
+#admin #main
+  +grid(12,16)
+  :margin-left 0
+  
+#admin #sidebar
+  +grid(4,16)
+  :margin-right 0
+  
+.container
+  +grid-container
+
+#sidebar
+  #plans
+    +grid(4,16)
+    :margin 0px
+#plans
+  +grid-system(12)
+  #one
+    +grid(4,12)
+    :margin-left 0
+    :margin-right 15px
+  #two
+    +grid(4,12)
+    :margin-left 15px
+    :margin-right 15px
+  #three
+    +grid(4,12)
+    :margin-left 15px
+    :margin-right 0
+
+.value
+  +value
+.cost
+  +cost
+
+

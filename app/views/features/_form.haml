@@ -1,0 +1,20 @@
+%li.drawer
+  - form_for([@project, @feature]) do |form|
+    %div{:style => "display:none"}= form.hidden_field :folder_id
+    %ul.items
+      = render :partial => "features/form_feature_head"
+      - Array(@feature.tree_mash.elements).compact.each_with_index do |element, index|
+        = render :partial => "features/form_feature_element", :object => element, :locals => {:index => index}
+      %li.footer
+        .buttons
+          %input{:type => "hidden", :name => "commit", :value => "continue"}/
+          %a.new_scenario{:href => "#", :title => "Add a new scenario" }
+            %img{:src => "/images/add.png"}/
+            Add scenario
+          %a.cancel.negative{:href => @feature.new_record? ? '#' : project_feature_path(@project, @feature), :title => "Cancel editing", :style => "float:right;margin-right:15px"}
+            Cancel
+          %button.positive{:type => "submit", :title => "Save and close", :style => "float:right", :name => "commit", :value => "close"} Save and close
+          %button.positive{ :type => "submit", :title => "Save changes", :style => "float:right", :name => "commit", :value => "continue" }
+            Save
+        
+        .clear

@@ -1,0 +1,121 @@
+// ============  float ============ >
+
+// Implementation of float:left with fix for double-margin bug
+=float-left
+  +float("left")
+
+// Implementation of float:right with fix for double-margin bug
+=float-right
+  +float("right")
+
+// Available as alternate syntax with just +float
+=float(!side = "left")
+  :display inline
+  :float= !side
+  
+  
+// ============  clearfix  ============ >
+
+//
+  Extends the element to enclose any floats it contains.
+  This basic method is preferred for the usual case, when positioned content will not show outside the bounds of the container.
+  Recommendations include using this in conjunction with a width:
+  http://www.quirksmode.org/blog/archives/2005/03/clearing_floats.html
+  
+=has-layout
+  // This makes ie6 get layout
+  :display inline-block
+  // and this puts it back to block
+  &
+    :display block
+
+=clearfix
+  :overflow hidden
+  +has-layout
+
+//
+  Extends the element to enclose any floats it contains.
+  This older "Easy Clearing" method has the advantage of allowing positioned elements to hang outside the bounds of the container, at the expense of more tricky CSS.
+  http://www.positioniseverything.net/easyclearing.html
+  
+=pie-clearfix
+  &:after
+    :content " "
+    :display block
+    :height 0
+    :clear both
+    :overflow hidden
+    :visibility hidden
+  +has-layout
+  
+// ============  other  ============ >
+
+=nowrap
+  :white-space nowrap
+  
+=inline-block
+  :zoom 1
+  :display inline
+  :display -moz-inline-box
+  :display inline-block
+  :vertical-align top
+  
+
+// ============  Specific resets  ============ >
+
+// For more specific resets, use the reset mixins provided below
+=global-reset
+  html, body
+    +reset
+  +nested-reset
+
+// Reset all elements within some selector scope.To reset the selector itself,
+// mixin the appropriate reset mixin for that element type as well. This could be
+// useful if you want to style a part of your page in a dramatically different way.
+=nested-reset
+  div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+  pre, a, abbr, acronym, address, code, del, dfn, em, img,
+  dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr
+    +reset
+  blockquote, q
+    +reset-quotation
+  th, td, caption
+    +reset-table-cell
+  table
+    +reset-table
+  a img
+    :border none
+
+=reset-box-model
+  :margin 0
+  :padding 0
+  :border 0
+
+=reset
+  +reset-box-model
+  :font
+    :weight inherit
+    :style inherit
+    :size 100%
+    :family inherit
+  :vertical-align baseline
+
+=reset-quotation
+  +reset
+  :quotes "" ""
+  &:before,
+  &:after
+    :content ""
+
+=reset-table-cell
+  +reset
+  :text-align left
+  :font-weight normal
+  :vertical-align middle
+
+=reset-table
+  +reset
+  :border-collapse separate
+  :border-spacing 0
+  :vertical-align middle
+    

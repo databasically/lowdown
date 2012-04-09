@@ -1,0 +1,53 @@
+#admin
+  #top
+    - if flash[:notice]
+      %p.notice=flash[:notice]
+      .clear
+    - if flash[:error]
+      %p.notice=flash[:error]
+      .clear
+    %h1
+      = "Edit #{@project.name}"
+  #main
+    #projects.projects_edit
+      %fieldset
+        - form_for(@project) do |f|
+          %ol
+            %li{:style => "float:right;margin-right:0px;width:100px"}
+              = f.label :rate, "Hourly rate"
+              = f.text_field :rate, :size => 4
+            %li
+              = f.label :name, "Project name"
+              %br/
+              = f.text_field :name, :class => 'limit', :size => 35
+        - form_tag project_memberships_path(@project), :id => "add_members_form" do
+          #insetbox
+            %ol
+              %li
+                = label_tag :email, "Enter the email of someone you want to add to this project"
+                %span.buttons.right
+                  %button#add_user{:type => "submit", :style => "margin:23px 105px 0px 0px;"} Add User
+                = text_field_tag :email, '', :autocomplete => "off"
+                
+          %ul#users
+            - @project.memberships.each do |membership|
+              %li
+                .buttons
+                  = link_to 'Remove', project_membership_path(@project, membership), {:class => 'negative', :method => :delete} if (current_user == @project.creator) && (membership.user != @project.creator)
+                = membership.user.email
+                = "(#{membership.user.fullname || 'Invitation not accepted yet'})"
+                - if membership.user == @project.creator
+                  %em owner
+                .clear
+        .buttons
+          = link_to '&laquo; Back', referrer_or(project_path(@project)), :style => "float:left"
+          %button#update_project.positive{:style => "float:right !important;margin-right:0px;padding:5px 10px 6px;"}
+            %img{:src => "/images/tick.png"}/
+            Update project settings
+        
+  #sidebar
+    .box
+      %h2 Delete Project
+      %p Remember to export your project before deleting it. All features, scenarios, etc. will be destroyed. There is no undo.
+      .buttons
+        = link_to "Delete project", project_path, :method => :delete, :confirm => "Are you sure you want to delete this project? There is no undo: all features in this project will be deleted.", :class => "negative"

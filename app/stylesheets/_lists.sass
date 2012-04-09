@@ -1,0 +1,111 @@
+// ============  bullets.sass ============ >
+
+// Turn off the bullet for an element of a list
+=no-bullet
+  :list-style-type none
+  :background none
+  :margin-left 0px
+
+// turns off the bullets for an entire list
+=no-bullets
+  li
+    +no-bullet
+
+// Make a list(ul/ol) have an image bullet
+// mixin should be used like this for an icon that is 5x7:
+// ul.pretty
+//   +pretty-bullets("my-icon.png", 5px, 7px)
+
+=pretty-bullets(!bullet_icon, !width, !height, !line_height = 18px, !padding = 14px)
+  :margin-left 0
+  li
+    :padding-left= !padding
+    :background= image_url(!bullet_icon) "no-repeat" ((!padding - !width) / 2) ((!line_height - !height) / 2)
+    :list-style-type none
+
+// ============  horizontal_list.sass ============ >
+
+//**
+  Horizontal list layout module.
+  
+  Easy mode using simple descendant li selectors:
+  
+    ul.nav
+      +horizontal-list
+  
+  Advanced mode:
+  If you need to target the list items using a different selector then use
+  +horizontal-list-container on your ul/ol and +horizontal-list-item on your li.
+  This may help when working on layouts involving nested lists. For example:
+  
+    ul.nav
+      +horizontal-list-container
+      > li
+        +horizontal-list-item
+
+
+//**
+  Can be mixed into any selector that target a ul or ol that is meant
+  to have a horizontal layout. Used to implement +horizontal-list.
+=horizontal-list-container
+  +reset-box-model
+  +clearfix
+
+=reset-box-model
+  :margin 0
+  :padding 0
+  :border 0
+
+//**
+  Can be mixed into any li selector that is meant to participate in a horizontal layout.
+  Used to implement +horizontal-list.
+=horizontal-list-item(!padding = 4px)
+  +no-bullet
+  :white-space nowrap
+  +float-left
+  :padding
+    :left= !padding
+    :right= !padding
+  &.first
+    :padding-left 0px
+  &.last
+    :padding-right 0px
+
+//**
+  A list(ol,ul) that is layed out such that the elements are floated left and won't wrap.
+  This is not an inline list.
+=horizontal-list(!padding = 4px)
+  +horizontal-list-container
+  li
+    +horizontal-list-item(!padding)
+
+
+// ============  inline_list.sass ============ >
+
+=inline-list
+  :list-style-type none
+  :margin 0px
+  :padding 0px
+  :display inline
+  li
+    :margin 0px
+    :padding 0px
+    :display inline
+
+// makes an inlin list that is comma delimited.
+// use of this recipe is not recommended at this time due to browser support issues.
+//
+// use of :content and :after is not fully supported in all browsers.
+// See http://www.quirksmode.org/css/contents.html#t15 for the support matrix
+//
+// :last-child is not fully supported
+// see http://www.quirksmode.org/css/contents.html#t29 for the support matrix
+
+=comma-delimited-list
+  +inline-list
+  li
+    &:after
+      :content ", "
+    &:last-child, &.last
+      &:after
+        :content ""

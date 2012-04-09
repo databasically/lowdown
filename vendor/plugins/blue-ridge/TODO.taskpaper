@@ -1,0 +1,42 @@
+Release 1:
+- cleanup README
+	- include correct copyright notices of vendored software @done
+	- add API documentation (require, etc) @done
+	- explain that we're jQuery-opinionated, but give jQuery.noConflict() example for Prototype @done
+	- list Java (version?) as a system requirement
+- improve test output for command line @done(2009-01-30)
+- merge back to Relevance's javascript_testing project on GitHub @done
+- change generators to use Screw.Unit style instead of JS-Spec @done
+- test that env-js works with DOCTYPEs now? @done(2009-01-30)
+- rake task to open fixtures in your favorite web browser? @done
+- make the generator check for "test", "spec", and then "examples" directory to create the "javascript" dir @done(2009-04-11)
+- support Prototype @done
+- support jQuery 1.3.x @env.js @done(2009-05-08)
+	- in browser @done(2009-04-11)
+	- from command line  @done(2009-05-08)
+- when clicking on a describe or it block in browser, run focused tests (thanks rsim!) @done(2009-04-11)
+- fix timing issues of "require" calls in browser tests often causing first test to fail @done(2009-04-11)
+- include Smoke for mocking @done(2009-04-11)
+	- automatically require @done(2009-04-11)
+		- command line @done(2009-04-11)
+		- browser @done(2009-04-11)
+	- add examples of mocking to README @done
+	- improve mocking example in README - show code under test
+	- caveat re stubbing in README
+- change name of plugin @done
+	- change the relevance github fork's name @done
+	- create a "javascript_testing" github project with a README that points folks to the new name @done
+	- what is the new name? --> "blue-ridge" @done
+Release 2:
+- Document TextMate support
+	- fork the screw.unit text mate bundle
+		- add the TextMate runner from the karnowski/javascript_testing Textmate bundle
+	- "git clone git://github.com/coreyti/screw-unit-tmbundle.git screw-unit.tmbundle"
+		- have to remove the "run" macro there
+	- "git clone git://github.com/karnowski/javascript-testing-tmbundle.git javascript-testing.tmbundle"
+		- needs to be smart enough to look for spec, test, or examples -- right now hard-coded to "test"
+	- known text-mate issue with builder.rb: http://robsanheim.com/2007/12/07/fixing-textmate-test-issues-blank_slate_method_added-stack-level-too-deep-systemstackerror/
+		- might also have to move it in the "Pristine Copy" version too
+- sprockets support?
+- improve "require" to take an array and chain them together in order
+- handle display of nested describes better for command-line

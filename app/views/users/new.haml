@@ -1,0 +1,42 @@
+#lowdown
+  %a{:href => "http://lowdownapp.com"}
+    %img{:src => "/images/logo-login.jpg"}/
+%p.notice{:style => "text-align: center; width: 460px; margin: auto auto 1.5em;"}
+  You're signing up for Lowdown!
+- form_for @user, :url => users_path do |f|
+  %fieldset#normal-signup{normal_signup_toggle}
+    %h2 Signup
+    %ol
+      %li.optional
+        = f.label :fullname, "Your full name"
+        %br/
+        = f.text_field :fullname
+      %li.required
+        = f.label :email
+        %br/
+        = f.text_field :email
+      %li.required
+        = f.label :password
+        %br/
+        = f.password_field :password
+      %li.required
+        = f.label :password_confirmation
+        %br/
+        = f.password_field :password_confirmation
+    .buttons
+      %button{:type => "submit"} Signup
+  %fieldset#openid-signup{openid_signup_toggle}
+    %h2 Signup
+    %ol
+      %li.required
+        %img.openicon{:src => "/images/openid-16x16.gif"}/
+        = f.label :openid_identifier, "OpenID URL"
+        = f.text_field :openid_identifier
+        %li#openid_username.required{:style => "display:none"}
+          %label Username
+          %input#openid_username{:type => "text", :size => "30"}
+    .buttons
+      %button{:type => "submit"} Signup
+  #login_toggle.small.right
+    = link_to "Signup with OpenID", "#openid-signup", {:class => 'toggle'}.merge(normal_signup_toggle)
+    = link_to "Signup with email/password", "#normal-signup", {:class => 'toggle'}.merge(openid_signup_toggle)

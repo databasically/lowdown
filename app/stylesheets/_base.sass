@@ -1,0 +1,77 @@
+@import colors.sass
+@import lists.sass
+@import tables.sass
+@import utility.sass
+@import forms.sass
+
+!family_header    ||= "Calibri, Helvetica Neue, Helvetica, Arial, sans-serif"
+!family_fixed     ||= "'andale mono', 'lucida console', monospace"
+!family           ||= "'Lucida Sans', 'Lucida Grande', Helvetica, Arial, sans-serif"
+!numbers          ||= "Arial, Hevetica, sans-serif"
+
++interaction
+
+=bold
+  :font-weight bold
+=underline
+  :text-decoration underline
+=uppercase
+  :text-transform uppercase
+=capitalize
+  :text-transform capitalize
+=lowercase
+  :text-transform lowercase
+=italic
+  :font-style italic
+=header
+  :font-family= !family_header
+  :color= !header_color
+  :font-style normal
+  :font-weight bold
+=text
+  :font-family= !family
+  :color= !text_color
+  :font-style normal
+=numbers
+  :font-family= !numbers
+  :color= !text_color
+  :font-style normal
+=fixed
+  :font= .85em !family_fixed
+  :line-height 1.3
+=sortable-with-drag-handle
+  :margin-left 0px
+  li
+    :padding-left 31px
+    +drag-handle
+=drag-handle
+  .handle
+    :width 0px
+    :height 0px
+    :padding 0
+    :margin 0
+    :position relative
+    :cursor ns-resize
+    img
+      :position absolute
+      :right 0px
+      :top 6px
+      :margin .5px 6px 0px 0px
+      :padding 0px
+=tinybutton
+  :color #575757
+  :font
+    :size 10px
+    :weight normal
+  :padding 3px 7px 3px 8px                            
+  &:hover
+    :color #232323
+  :-moz-border-radius-bottomleft 8px
+  :-moz-border-radius-bottomright 8px
+  :-moz-border-radius-topleft 8px
+  :-moz-border-radius-topright 8px
+  :-webkit-border-radius 8px
+  &.negative
+    :color #c14837
+    &:active 
+      :color #fff
