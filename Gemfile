@@ -38,6 +38,7 @@ group :test, :cucumber do
   gem "rspec", "1.2.8"                                  , :path => "vendor/gems/rspec-1.2.8"
   gem "rspec-rails", "1.2.7.1"                          , :path => "vendor/gems/rspec-rails-1.2.7.1"
   gem "thoughtbot-factory_girl", "1.2.1", :require => 'factory_girl', :path => "vendor/gems/thoughtbot-factory_girl-1.2.1"
+  gem "test-unit"
 end
 
 group :cucumber do
