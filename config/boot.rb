@@ -1,6 +1,11 @@
 # Don't change this file!
 # Configure your app in config/environment.rb and config/environments/*.rb
 
+# fix for RubyGems 1.6.0 with Ruby on Rails version earlier than version 3
+# See http://stackoverflow.com/questions/5176782/uninitialized-constant-activesupportdependenciesmutex-nameerror
+require 'thread'
+require File.join(File.dirname(__FILE__), 'boot')
+
 RAILS_ROOT = "#{File.dirname(__FILE__)}/.." unless defined?(RAILS_ROOT)
 
 module Rails
